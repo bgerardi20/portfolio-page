@@ -43,3 +43,53 @@
     -o-padding-end: 0px;
 }
 
+/*header section */
+
+nav {
+    position: fixed;
+    width: 100%;
+    background-color: #006633;
+    padding: 15px;
+    top: 0;
+    z-index: 1000;
+}
+
+/* */
+
+/*header section */
+
+section h3 {
+    font-family: ;
+    color: ;
+    font-size: 1.4rem;
+    margin-bottom: 30px;
+}
+
+
+.section-container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    clear: both;
+    display: block;
+    height: auto;
+}
+
+section.skills .skills-container {
+    width: 100%;
+    background-color: #FFFFFF;
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+section.skills .skills-container img {
+    padding-left: ;
+    padding-right: ;
+    padding-bottom: ;
+}
+
+/* */
