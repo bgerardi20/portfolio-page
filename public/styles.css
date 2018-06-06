@@ -45,6 +45,8 @@
 
 /*header section */
 
+body {}
+
 nav {
     position: fixed;
     width: 100%;
@@ -74,7 +76,11 @@ img {
 }
 
 h4 {
-    font-size: 19px;
+    font-size: 22px;
+}
+
+p {
+    font-family: 'Libre Baskerville', serif;
 }
 
 .headerImage {
@@ -142,19 +148,33 @@ section h3 {
     margin-bottom: 30px;
 }
 
-section p {
-    padding-top: 10px;
+section.aboutMe p {
+    padding-top: 5px;
     font-size: 1.2rem;
-    padding-bottom: 20px;
+    padding-bottom: 5px;
 }
 
 
 .sectionContainer {
-    width: 90%;
-    max-width: 1000px;
-    margin: 0 auto;
-    clear: both;
+    width: 95%;
+    max-width: 1100px;
     display: block;
+    padding: 0.7rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.skillIconsContainer {
+    max-width: 1100px;
+    display: block;
+    padding: 0.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
 }
 
 section.skills .skills-container {
@@ -187,22 +207,16 @@ section.skills .skills-container img {
     padding-left: 2rem;
 }
 
-.skillIconsContainer {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    width: 95%;
-    padding: 1.5rem;
-}
-
 section.aboutMe img {
     float: right;
     padding-bottom: 30px;
+    width: 33%;
 }
 
 .aboutMeContent {
-    width: 70%;
+    width: 66%;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 /* */
@@ -221,11 +235,12 @@ section.contact h3 {
 section.contact i {
     font-size: 7rem;
     color: #325C8B;
-    /* margin-left: auto; */
-    /* margin-right: auto; */
-    /* text-align: center; */
     padding-left: 3rem;
     padding-right: 3rem;
+}
+
+section.contact i:hover {
+    text-shadow: 4px 4px #F89C6B;
 }
 
 .contactIconContainer {
@@ -234,8 +249,80 @@ section.contact i {
     margin-bottom: 3rem;
 }
 
+section.projects .projectContainer img {
+    height: 300px;
+    margin-top: -1rem;
+    width: 50%;
+    vertical-align: top;
+}
 
+section.projects .projectContainer {
+    background-color: #F4F3F5;
+    margin-bottom: 15px;
+    padding: 15px;
+}
 
+section.projects .projectContainer h6 {
+    font-family: 'Libre Franklin', sans-serifx;
+    font-size: 19px;
+    border-bottom: 2px solid #F89C6B;
+    padding-bottom: 6px;
+}
+
+section.projects .projectContainer ul {
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: .8rem;
+}
+
+section.projects .projectContainer li {
+    display: inline-block;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 6px;
+    padding-right: 6px;
+    margin-bottom: 7px;
+    border: 2px solid #4D75A2;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+section.projects .projectContainer a {
+    text-decoration: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: inline-block;
+    background-color: #325C8B;
+    color: #F4F3F5;
+    margin-top: 10px;
+    margin-right: 5px;
+    width: 90px;
+    text-align: center;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+section.projects .projectContainer div {
+    width: 50%;
+    vertical-align: top;
+}
+
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12 {
+    float: left;
+    padding-left: 1.04166666%;
+    padding-right: 1.04166666%;
+    width: 100%;
+}
 
 
 
@@ -258,6 +345,8 @@ div.footerInfo p {
     margin-left: auto;
     margin-right: auto;
     font-size: 20px;
+    font-family: 'Libre Franklin', sans-serif;
+
 }
 
 
