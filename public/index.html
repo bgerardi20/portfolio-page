@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Capstone</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
 
     <!-- ADD GOOGLE FONT HERE    <link href="https://fonts.googleapis.com/css?family=Poppins|Roboto:700" rel="stylesheet"> -->
 
@@ -19,7 +20,7 @@
     <nav class="navContainer">
 
         <div class="navName">
-            <h1>Brendan Gerardi</h1>
+            <h1 class="namePic">Brendan Gerardi</h1>
         </div>
 
         <div class="navList">
@@ -42,62 +43,63 @@
     <header class="headerContainer">
 
         <h1 class="headerTitle">
-            "Building solutions"
-            <br> "through creative thinking"
+            Building solutions through creative thinking
         </h1>
-
-        <!--           add image to css instead of html-->
-        <img class="headerImage" src="./website-images/dallas-bridge-header-image.jpg" alt="bridge_inspiration">
-
 
     </header>
 
     <section class="aboutMe">
 
+        <div class="sectionContainer">
 
+            <h3 class="sectionTitle">
+                About Me
+                <img src="" alt="headshop" class="col-4">
+            </h3>
+
+
+            <p class="aboutMeContent">Hi, I’m Ellie, a fullstack web developer and graduate of the Fullstack Web Development Program at Thinkful. As an avid learner, I love coding because it constantly challenges me to expand my skills and knowledge.</p>
+            <p class="aboutMeContent">With a background in art history with a focus in Roman architecture, I have spent years studying the ways in which a building's design can invoke desired behavior, convey specific messages, and direct a visitor’s movement pattern. As I build websites, I am always thinking of ways to merge functionality and messaging into elegant design.</p>
+
+        </div>
 
     </section>
 
     <section class="skills">
 
-        <div class="section-container">
+        <div class="sectionContainer">
 
-            <h3 class="section-title">Skills</h3>
-            <!--                create react app, google, MVC, Travis CI, VLC,  -->
-            <div class="">
+            <h3 class="sectionTitle">Skills</h3>
+            <!--organize these before production-->
+            <div class="skillIconsContainer">
                 <img src="../github-images/html-logo-2.png" alt="HTML">
                 <img src="../github-images/css-logo.png" alt="CSS">
                 <img src="../github-images/js-logo.png" alt="JavaScript">
                 <img src="../github-images/jquery-logo.jpg" alt="jQuery">
                 <img src="../github-images/ajax-logo.png" alt="AJAX">
-                <img src="../github-images/API-logo.png" alt="API">
                 <img src="../github-images/react-native.png" alt="React">
                 <img src="../github-images/redux.png" alt="Redux">
-                <img src="../github-images/react-router.png" alt="React Router">
-                <img src="../github-images/redux-form-2.png" alt="Redux Form">
+                <img src="../github-images/react-router-logo-2.png" alt="React Router">
+                <img src="../github-images/redux-form-logo-3.png" alt="Redux Form">
                 <img src="../github-images/node-logo-2.png" alt="NodeJS">
                 <img src="../github-images/mongodb-logo.png" alt="MongoDB">
                 <img src="../github-images/mongoose-letters.png" alt="Mongoose">
                 <img src="../github-images/mlab-logo.png" alt="mLab">
+                <img src="../github-images/heroku-logo.png" alt="Heroku">
                 <img src="../github-images/robo-mongo-logo.png" alt="RoboMongo">
                 <img src="../github-images/mocha-logo.png" alt="Mocha">
                 <img src="../github-images/chai-logo.png" alt="Chai">
-                <img src="../github-images/brackets-logo.png" alt="Brackets">
-                <img src="../github-images/sublime-logo.png" alt="Sublime Text">
-                <img src="../github-images/github-logo.png" alt="Github">
-                <img src="../github-images/crud-logo.png" alt="CRUD">
+                <img src="../github-images/travis-ci-logo.png" alt="TravisCI">
                 <img src="../github-images/express-logo.png" alt="Express">
-                <img src="../github-images/git-logo.png" alt="Git">
-                <img src="../github-images/github-desktop-logo-2.png" alt="Github Desktop">
-                <img src="../github-images/heroku-logo.png" alt="Heroku">
                 <img src="../github-images/json-logo.png" alt="JSON">
                 <img src="../github-images/npm-logo.png" alt="npm">
                 <img src="../github-images/postman-logo.png" alt="Postman">
                 <img src="../github-images/restful-2.png" alt="Rest API">
-                <img src="../github-images/terminal-logo.png" alt="Terminal">
                 <img src="../github-images/webpack-logo.jpg" alt="Webpack">
-                <img src="../github-images/microsoft-office-logo.png" alt="Microsoft Office">
-                <img src="../github-images/slack-logo-2.png" alt="Slack">
+                <img src="../github-images/brackets-logo.png" alt="Brackets">
+                <img src="../github-images/sublime-logo.png" alt="Sublime Text">
+                <img src="../github-images/github-logo.png" alt="Github">
+                <img src="../github-images/slack-logo-3.png" alt="Slack">
             </div>
 
         </div>
@@ -105,22 +107,28 @@
     </section>
 
     <section class="projects">
-
+        <h3 class="sectionTitle">Projects</h3>
 
 
     </section>
 
     <section class="contact">
+        <h3 class="sectionTitle">Contact</h3>
 
-
-
+        <div class="contactIconContainer">
+            <a class="footer" href="mailto:brendan.gerardi@gmail.com" target="_blank"><i class="fas fa-envelope footerIcon"></i></a>
+            <a class="footer" href="https://github.com/bgerardi20" target="_blank"><i class="fab fa-github"></i> </a>
+            <a class="footer" href="https://www.linkedin.com/in/brendan-gerardi-45b11111b/" target="_blank"><i class="fab fa-linkedin footerIcon"></i></a>
+            <a class="footer" href="https://angel.co/brendan-gerardi" target="_blank"><i class="fab fa-angellist"></i></a>
+        </div>
     </section>
 
 
     <footer>
-        <a class="footer" href="https://www.linkedin.com/in/brendan-gerardi-45b11111b/" target="_blank"><i class="fab fa-linkedin footerIcon"></i>LinkedIn</a>
-        <a class="footer" href="mailto:brendan.gerardi@gmail.com" target="_blank"><i class="fas fa-envelope footerIcon"></i>Email</a>
-        <a class="footer" href="https://github.com/bgerardi20" target="_blank"><i class="fab fa-github-square footerIcon"></i>Github</a>
+        <div class="footerInfo">
+            <p><i class="far fa-copyright"></i> 2018</p>
+            <p>Brendan Gerardi</p>
+        </div>
     </footer>
 
 

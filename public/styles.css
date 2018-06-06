@@ -49,27 +49,32 @@ nav {
     position: fixed;
     width: 100%;
     background-color: #7498C1;
-    padding: 15px;
+    padding: 20px;
     top: 0;
     z-index: 1000;
+    border-bottom: 2px solid #D57541;
 }
 
 header {
-    /*    background: url(./website-images/dallas-bridge-header-image.jpg) no-repeat;*/
+    background: url(./website-images/dallas-bridge-header-image.jpg) no-repeat;
+    background-position: 50% 90%;
     background-size: cover;
     width: 100%;
-    height: 500px;
-    margin-top: 20px;
+    height: 600px;
+    margin-top: 6rem;
     position: relative;
 }
 
 img {
-    height: 150px;
-    width: 150px;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    height: 100px;
+    padding-left: .5rem;
+    padding-right: .5rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
+}
+
+h4 {
+    font-size: 19px;
 }
 
 .headerImage {
@@ -81,26 +86,48 @@ img {
 }
 
 .headerTitle {
-    color: black;
+    color: white;
     position: absolute;
+    font-size: 2rem;
+    text-align: left;
+    bottom: 1rem;
+    left: 1rem;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+.navName {
+    width: 49%;
+    display: inline-block;
+    text-align: center;
+}
+
+.namePic {
+    font-family: 'Abril Fatface', cursive;
+    color: #FFCFB6;
+    text-shadow: 0.3px 0.3px black;
+    font-size: 3rem;
 }
 
 .navList {
-    background-color: #FFF7DC;
-    width: 100%;
+    width: 49%;
     text-align: right;
-    border-bottom: 1px solid #D5B441;
-
-
+    display: inline-block
 }
 
 .navOptions {
     display: inline-block;
-    padding: 1rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    color: #D5B441;
+    margin: .5rem;
+    margin-left: auto;
+    margin-right: auto;
+    color: rgb(255, 247, 220);
+    padding-left: 2rem;
+    padding-right: 2rem;
     text-decoration: none;
+    border-right: 1px solid rgb(255, 247, 220);
+}
+
+.navOptions:last-child {
+    border-right: none;
 }
 
 /* */
@@ -108,20 +135,26 @@ img {
 /*header section */
 
 section h3 {
-    font-family: ;
-    color: ;
-    font-size: 1.4rem;
+    font-family: 'Libre Franklin', sans-serif;
+    color: #F89C6B;
+    font-size: 1.7rem;
+    /*    margin-top: 100px;*/
     margin-bottom: 30px;
 }
 
+section p {
+    padding-top: 10px;
+    font-size: 1.2rem;
+    padding-bottom: 20px;
+}
 
-.section-container {
+
+.sectionContainer {
     width: 90%;
     max-width: 1000px;
     margin: 0 auto;
     clear: both;
     display: block;
-    height: auto;
 }
 
 section.skills .skills-container {
@@ -141,4 +174,104 @@ section.skills .skills-container img {
     padding-bottom: ;
 }
 
+.aboutMe,
+.skills,
+.contact,
+.projects {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 7rem;
+    padding-bottom: 1rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
+
+.skillIconsContainer {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 95%;
+    padding: 1.5rem;
+}
+
+section.aboutMe img {
+    float: right;
+    padding-bottom: 30px;
+}
+
+.aboutMeContent {
+    width: 70%;
+}
+
 /* */
+
+/*contact section*/
+
+.contact {
+    text-align: center;
+}
+
+section.contact h3 {
+    color: black;
+    padding-bottom: 3rem;
+}
+
+section.contact i {
+    font-size: 7rem;
+    color: #325C8B;
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    /* text-align: center; */
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.contactIconContainer {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3rem;
+}
+
+
+
+
+
+
+
+/**/
+
+/*footer section*/
+
+footer {
+    text-align: center;
+    background-color: #FFCFB6;
+    border-top: 2px solid #D57541;
+    /*    height: 100px;*/
+    padding: 1rem;
+}
+
+
+div.footerInfo p {
+    display: inline;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+/**/
+
+.navOptions:hover {
+    background-color: #325C8B;
+    color: white;
+}
