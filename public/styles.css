@@ -45,7 +45,9 @@
 
 /*header section */
 
-body {}
+body {
+    /*    background-color: #FFF7DC;*/
+}
 
 nav {
     position: fixed;
@@ -54,21 +56,22 @@ nav {
     padding: 20px;
     top: 0;
     z-index: 1000;
-    border-bottom: 2px solid #D57541;
+    border-bottom: 4px solid #D57541;
 }
 
 header {
     background: url(./website-images/dallas-bridge-header-image.jpg) no-repeat;
     background-position: 50% 90%;
     background-size: cover;
+    opacity: 0.9;
     width: 100%;
-    height: 600px;
+    height: 500px;
     margin-top: 6rem;
     position: relative;
 }
 
 img {
-    height: 100px;
+    height: 125px;
     padding-left: .5rem;
     padding-right: .5rem;
     padding-top: 1rem;
@@ -105,6 +108,7 @@ p {
     width: 49%;
     display: inline-block;
     text-align: center;
+    vertical-align: middle;
 }
 
 .namePic {
@@ -117,7 +121,8 @@ p {
 .navList {
     width: 49%;
     text-align: right;
-    display: inline-block
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .navOptions {
@@ -126,17 +131,25 @@ p {
     margin-left: auto;
     margin-right: auto;
     color: rgb(255, 247, 220);
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     text-decoration: none;
-    border-right: 1px solid rgb(255, 247, 220);
+    /*    border-right: 1px solid rgb(255, 247, 220);*/
 }
 
+/*
 .navOptions:last-child {
     border-right: none;
 }
+*/
 
 /* */
+
+.specialTitle {
+    background-color: #A3BFDD;
+    padding: 15px;
+    border-radius: 10px 10px;
+}
 
 /*header section */
 
@@ -179,7 +192,7 @@ section.aboutMe p {
 
 section.skills .skills-container {
     width: 100%;
-    background-color: #FFFFFF;
+    /*    background-color: #FFFFFF;*/
     margin-bottom: 1rem;
     padding-left: 1rem;
     padding-right: 1rem;
@@ -223,14 +236,17 @@ section.aboutMe img {
 
 /*contact section*/
 
+/*
 .contact {
     text-align: center;
 }
+*/
 
+/*
 section.contact h3 {
     color: black;
     padding-bottom: 3rem;
-}
+}*/
 
 section.contact i {
     font-size: 7rem;
@@ -247,19 +263,25 @@ section.contact i:hover {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 3rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-align: center;
 }
 
 section.projects .projectContainer img {
-    height: 300px;
+    height: 307px;
     margin-top: -1rem;
-    width: 50%;
+    padding-right: 10px;
+    width: 49.5%;
     vertical-align: top;
+    display: inline-block;
 }
 
 section.projects .projectContainer {
-    background-color: #F4F3F5;
+    /*    background-color: #F4F3F5;*/
     margin-bottom: 15px;
     padding: 15px;
+    /*    border: 1px solid #F89C6B;*/
 }
 
 section.projects .projectContainer h6 {
@@ -267,6 +289,7 @@ section.projects .projectContainer h6 {
     font-size: 19px;
     border-bottom: 2px solid #F89C6B;
     padding-bottom: 6px;
+    color: #325C8B;
 }
 
 section.projects .projectContainer ul {
@@ -284,7 +307,10 @@ section.projects .projectContainer li {
     padding-right: 6px;
     margin-bottom: 7px;
     border: 2px solid #4D75A2;
+    background-color: #D4E3F3;
     font-family: 'Libre Franklin', sans-serif;
+    font-weight: bold;
+    color: #325C8B;
 }
 
 section.projects .projectContainer a {
@@ -302,10 +328,13 @@ section.projects .projectContainer a {
 }
 
 section.projects .projectContainer div {
-    width: 50%;
+    width: 49.5%;
     vertical-align: top;
+    display: inline-block;
+    padding-left: 10px;
 }
 
+/*
 .col-1,
 .col-2,
 .col-3,
@@ -322,6 +351,12 @@ section.projects .projectContainer div {
     padding-left: 1.04166666%;
     padding-right: 1.04166666%;
     width: 100%;
+}
+*/
+
+section.projects .projectDescription p {
+    padding-top: 7px;
+    padding-bottom: 7px;
 }
 
 
