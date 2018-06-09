@@ -46,7 +46,7 @@
 /*header section */
 
 body {
-    /*    background-color: #FFF7DC;*/
+    background-color: #F4F3F5;
 }
 
 nav {
@@ -149,14 +149,15 @@ p {
     background-color: #A3BFDD;
     padding: 15px;
     border-radius: 10px 10px;
+    text-align: center;
 }
 
 /*header section */
 
 section h3 {
     font-family: 'Libre Franklin', sans-serif;
-    color: #F89C6B;
-    font-size: 1.7rem;
+    color: #325C8B;
+    font-size: 2rem;
     /*    margin-top: 100px;*/
     margin-bottom: 30px;
 }
@@ -165,6 +166,11 @@ section.aboutMe p {
     padding-top: 5px;
     font-size: 1.2rem;
     padding-bottom: 5px;
+}
+
+section.aboutMe .aboutMeContainer,
+.contactIconContainer {
+    border: 3px solid #F8D86B;
 }
 
 
@@ -177,6 +183,10 @@ section.aboutMe p {
     margin-right: auto;
     margin-top: 1rem;
     margin-bottom: 1rem;
+    /*
+    background-color: #FFCFB6;
+    border-radius: 10px 10px;
+*/
 }
 
 .skillIconsContainer {
@@ -188,6 +198,8 @@ section.aboutMe p {
     margin-top: 1rem;
     margin-bottom: 1rem;
     text-align: center;
+    background-color: #FFF7DC;
+    border-radius: 10px 10px;
 }
 
 section.skills .skills-container {
@@ -237,12 +249,6 @@ section.aboutMe img {
 /*contact section*/
 
 /*
-.contact {
-    text-align: center;
-}
-*/
-
-/*
 section.contact h3 {
     color: black;
     padding-bottom: 3rem;
@@ -266,6 +272,7 @@ section.contact i:hover {
     padding-top: 2rem;
     padding-bottom: 2rem;
     text-align: center;
+    background-color: #FFF7DC;
 }
 
 section.projects .projectContainer img {
@@ -281,13 +288,13 @@ section.projects .projectContainer {
     /*    background-color: #F4F3F5;*/
     margin-bottom: 15px;
     padding: 15px;
-    /*    border: 1px solid #F89C6B;*/
+    border: 3px solid #F8D86B;
 }
 
 section.projects .projectContainer h6 {
     font-family: 'Libre Franklin', sans-serifx;
     font-size: 19px;
-    border-bottom: 2px solid #F89C6B;
+    border-bottom: 2px solid #F8D86B;
     padding-bottom: 6px;
     color: #325C8B;
 }
