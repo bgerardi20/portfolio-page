@@ -47,27 +47,47 @@
 
 body {
     background-color: #F4F3F5;
+    font-family: 'Playfair Display', sans-serif;
 }
 
 nav {
     position: fixed;
     width: 100%;
-    background-color: #7498C1;
-    padding: 20px;
+    background-color: #AFAAE2;
+    background: linear-gradient(#AFAAE2, #837EC9);
+    padding: 5px;
     top: 0;
     z-index: 1000;
-    border-bottom: 4px solid #D57541;
+    border-bottom: 2px solid #433B94;
+    opacity: .6;
+}
+
+nav:hover {
+    opacity: 1;
 }
 
 header {
     background: url(./website-images/dallas-bridge-header-image.jpg) no-repeat;
     background-position: 50% 90%;
     background-size: cover;
-    opacity: 0.9;
+    opacity: 0.75;
     width: 100%;
-    height: 500px;
-    margin-top: 6rem;
+    height: -webkit-fill-available;
+    /* margin-top: 6rem; */
     position: relative;
+}
+
+header:hover {
+    opacity: 1;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: inline-block;
+    width: 100%;
 }
 
 img {
@@ -86,6 +106,11 @@ p {
     font-family: 'Libre Baskerville', serif;
 }
 
+li,
+li.dropDown {
+    display: inline-block;
+}
+
 .headerImage {
     width: 100%;
     height: 500px;
@@ -96,11 +121,13 @@ p {
 
 .headerTitle {
     color: white;
+    text-shadow: 2px 2px black;
     position: absolute;
-    font-size: 2rem;
-    text-align: left;
-    bottom: 1rem;
-    left: 1rem;
+    font-size: 5rem;
+    text-align: center;
+    width: 70%;
+    top: 17rem;
+    /* left: 0rem; */
     font-family: 'Libre Franklin', sans-serif;
 }
 
@@ -119,22 +146,53 @@ p {
 }
 
 .navList {
-    width: 49%;
+    width: 100%;
     text-align: right;
+    /*
     display: inline-block;
-    vertical-align: middle;
+    vertical-align: top;
+*/
 }
 
-.navOptions {
+/*.navOptions */
+
+li a,
+.dropDownButton {
     display: inline-block;
     margin: .5rem;
     margin-left: auto;
     margin-right: auto;
-    color: rgb(255, 247, 220);
-    padding-left: 1rem;
-    padding-right: 1rem;
+    color: #6058AC;
+    padding: 5px;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
     text-decoration: none;
     /*    border-right: 1px solid rgb(255, 247, 220);*/
+}
+
+.dropDownContent {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropDownContent a {
+    color: #AFAAE2;
+    padding: 6px 8px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+.dropDownContent a:hover {
+    background-color: #AFAAE2;
+}
+
+.dropDown:hover .dropDownContent {
+    display: block;
 }
 
 /*
@@ -148,7 +206,7 @@ p {
 .specialTitle {
     background-color: #A3BFDD;
     padding: 15px;
-    border-radius: 10px 10px;
+    /*    border-radius: 10px 10px;*/
     text-align: center;
 }
 
@@ -159,7 +217,7 @@ section h3 {
     color: #325C8B;
     font-size: 2rem;
     /*    margin-top: 100px;*/
-    margin-bottom: 30px;
+    /*    margin-bottom: 30px;*/
 }
 
 section.aboutMe p {
@@ -195,7 +253,7 @@ section.aboutMe .aboutMeContainer,
     padding: 0.5rem;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 1rem;
+    /*    margin-top: 1rem;*/
     margin-bottom: 1rem;
     text-align: center;
     background-color: #FFF7DC;
@@ -375,7 +433,8 @@ section.projects .projectDescription p {
 
 footer {
     text-align: center;
-    background-color: #FFCFB6;
+    /*    background-color: #FFCFB6;*/
+    background-color: #F8D86B;
     border-top: 2px solid #D57541;
     /*    height: 100px;*/
     padding: 1rem;
@@ -402,7 +461,11 @@ div.footerInfo p {
 
 /**/
 
-.navOptions:hover {
-    background-color: #325C8B;
+.navOptions:hover,
+#budget:hover,
+#recipe:hover,
+#pet:hover,
+#cowboys:hover {
+    background-color: #433B94;
     color: white;
 }
