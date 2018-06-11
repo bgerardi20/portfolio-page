@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Capstone</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
-<!--    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">-->
+    <!--    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">-->
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:500|Roboto:300i" rel="stylesheet">
 
     <!-- ADD GOOGLE FONT HERE    <link href="https://fonts.googleapis.com/css?family=Poppins|Roboto:700" rel="stylesheet"> -->
@@ -61,6 +61,43 @@
 
 </nav>
 -->
+    <div class="navigation navigationActive">
+
+        <a id="left-panel-link" href="#left-panel">
+            Open left panel
+        </a>
+        <div class="menuButton">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav class="nav sidenav">
+            <ul>
+                <li class="navItem">
+                    <a href="#about">About</a>
+                </li>
+                <li class="navItem">
+                    <a href="#skills">Skills</a>
+                </li>
+                <li class="navItem dropDown">
+                    <button class="dropDownBtn">Projects
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropDownContainer dropDownContent active">
+                        <a id="budget" href="">Budget Buddy</a>
+                        <a id="recipe" href="">My Recipe Finder</a>
+                        <a id="pet" href="">Pet Finder</a>
+                        <a id="cowboys" href="">Dallas Cowboys Quiz</a>
+                    </div>
+                </li>
+                <li class="navItem">
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <!--                        <a href="projects" class="navOptions jsGoalNav dropDownButton">Projects</a>-->
 
 
     <header class="headerContainer">
@@ -317,7 +354,7 @@
 
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
 
-    <script src="/client.js"></script>
+    <script src="../public/client.js"></script>
 </body>
 
 </html>
