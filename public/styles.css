@@ -46,8 +46,8 @@
 /*header section */
 
 body {
-    background-color: #F4F3F5;
-    font-family: 'Playfair Display', sans-serif;
+    background-color: #808089;
+    font-family: 'Roboto', sans-serif;
 }
 
 nav {
@@ -67,14 +67,15 @@ nav:hover {
 }
 
 header {
-    background: url(./website-images/dallas-bridge-header-image.jpg) no-repeat;
-    background-position: 50% 90%;
+    background: url(./website-images/light-bulb-header-image.jpg) no-repeat;
+    background-position: 0% 50%;
     background-size: cover;
-    opacity: 0.75;
+    opacity: 0.9;
     width: 100%;
     height: -webkit-fill-available;
     /* margin-top: 6rem; */
     position: relative;
+    filter: contrast(90%) brightness(70%);
 }
 
 header:hover {
@@ -104,6 +105,7 @@ h4 {
 
 p {
     font-family: 'Libre Baskerville', serif;
+    color: #D1D1D3;
 }
 
 li,
@@ -125,10 +127,10 @@ li.dropDown {
     position: absolute;
     font-size: 5rem;
     text-align: center;
-    width: 70%;
-    top: 17rem;
-    /* left: 0rem; */
-    font-family: 'Libre Franklin', sans-serif;
+    width: 75%;
+    bottom: 83px;
+    right: 8px;
+    font-family: 'Roboto Mono', monospace;
 }
 
 .navName {
@@ -204,9 +206,9 @@ li a,
 /* */
 
 .specialTitle {
-    background-color: #A3BFDD;
+    background-color: #D1D1D3;
     padding: 15px;
-    /*    border-radius: 10px 10px;*/
+    border-radius: 10px 10px;
     text-align: center;
 }
 
@@ -214,10 +216,11 @@ li a,
 
 section h3 {
     font-family: 'Libre Franklin', sans-serif;
-    color: #325C8B;
+    color: #484857;
+    text-shadow: 0.5px 0.5px black;
     font-size: 2rem;
-    /*    margin-top: 100px;*/
-    /*    margin-bottom: 30px;*/
+    /* margin-top: 100px; */
+    /* margin-bottom: 30px; */
 }
 
 section.aboutMe p {
