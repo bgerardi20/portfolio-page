@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Capstone</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
+    <!--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <!--    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">-->
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:500|Roboto:300i" rel="stylesheet">
 
@@ -63,25 +64,32 @@
 -->
     <div class="navigation navigationActive">
 
-        <a id="left-panel-link" href="#left-panel">
-            Open left panel
-        </a>
-        <div class="menuButton">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
+        <!--
+<div class="nameContainer">
+    <h1>Brendan</h1>
+    <h1>Gerardi</h1>
+</div>
+<div class="menuButton">
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+-->
         <nav class="nav sidenav">
+            <div class="nameContainer">
+                <h1>Brendan</h1>
+                <h1>Gerardi</h1>
+            </div>
             <ul>
                 <li class="navItem">
-                    <a href="#about">About</a>
+                    <a href="#about"><i class="fas fa-user-astronaut navIcon"></i> About</a>
                 </li>
                 <li class="navItem">
-                    <a href="#skills">Skills</a>
+                    <a href="#skills"><i class="far fa-keyboard navIcon"></i> Skills</a>
                 </li>
                 <li class="navItem dropDown">
-                    <button class="dropDownBtn">Projects
-                        <i class="fa fa-caret-down"></i>
+                    <button class="dropDownBtn"><i class="far fa-folder-open navIcon"></i> Projects
+                        <i class="fa fa-caret-down caret"></i>
                     </button>
                     <div class="dropDownContainer dropDownContent active">
                         <a id="budget" href="">Budget Buddy</a>
@@ -90,8 +98,16 @@
                         <a id="cowboys" href="">Dallas Cowboys Quiz</a>
                     </div>
                 </li>
-                <li class="navItem">
-                    <a href="#contact">Contact</a>
+                <li class="navItem dropDown">
+                    <button class="dropDownBtn"><i class="fab fa-rocketchat navIcon"></i> Contact
+                        <i class="fa fa-caret-down caret"></i>
+                    </button>
+                    <div class="dropDownContainer dropDownContent active">
+                        <a id="email" href="">Email</a>
+                        <a id="github" href="">Github</a>
+                        <a id="linkedin" href="">LinkedIn</a>
+                        <a id="angleslist" href="">Angels List</a>
+                    </div>
                 </li>
             </ul>
         </nav>
