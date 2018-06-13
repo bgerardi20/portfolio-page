@@ -120,6 +120,99 @@ div.nameContainer img {
     width: 33%;
 }
 
+#toggle {}
+
+.subIcons {
+    background: url(../public/website-images/close-menu-icon.png) top center no-repeat;
+    background-size: 3rem;
+    background-color: white;
+    cursor: pointer;
+    width: 68px;
+    height: 60px;
+    border: 3px solid #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    -moz-transition: all .6s;
+    -o-transition: all .6s;
+    -webkit-transition: all .6s;
+    transition: all .6s;
+}
+
+.sub-icons:before {
+    content: "";
+    display: block;
+    /*    background: url(../public/website-images/close-menu-icon.png) 0 -549px no-repeat;*/
+    width: 28px;
+    height: 18px;
+    position: absolute;
+    top: 20px;
+    left: 18px;
+    z-index: 2;
+    color: black;
+    background-color: white;
+}
+
+.subIcons::after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    -moz-transition: all .3s;
+    -o-transition: all .3s;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    /*    background: #fff;*/
+}
+
+/*
+div.subIcons i {
+    color: black;
+    position: absolute;
+    top: 8px;
+    left: 15px;
+    font-size: 35px;
+}
+*/
+
+.close {
+    background: url(../public/website-images/menu-icon.png) top center no-repeat;
+    position: absolute;
+    width: 74px;
+    height: 66px;
+    top: 50%;
+    margin-top: -33px;
+    left: 320px;
+    cursor: pointer;
+    display: none;
+    z-index: 1000;
+}
+
+.close:after {
+    display: block;
+    content: "";
+    position: absolute;
+    background: url(../public/website-images/menu-icon.png) 0 -333px no-repeat;
+    width: 24px;
+    height: 25px;
+    left: 50%;
+    top: 50%;
+    margin: -12px 0 0 -12px;
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -moz-transition: all, .5s;
+    -o-transition: all, .5s;
+    -webkit-transition: all, .5s;
+    transition: all, .5s;
+}
+
+
 /* Fixed sidenav, full height */
 
 .sidenav {

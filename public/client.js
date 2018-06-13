@@ -1,7 +1,5 @@
 $(function () {
 
-    //* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
-
     var dropDown = document.getElementsByClassName("dropDownBtn");
     var i;
 
@@ -17,3 +15,34 @@ $(function () {
         });
     }
 })
+
+
+
+
+
+$(document).ready(function () {
+    $("#toggle").hide();
+    $(".headerSection").show();
+    $(".aboutMe").show();
+    $(".skills").show();
+    $(".projects").show();
+    $(".contact").show();
+    $(".footerInfo").show();
+});
+
+$(document).on("click", ".subIcons", function () {
+    event.preventDefault();
+    $("#toggle").toggle("slide");
+});
+
+//LOGIN button
+$(document).on("click", ".close", function (event) {
+    event.preventDefault();
+    $("#toggle").hide();
+    $(".headerSection").show();
+    $(".aboutMe").show();
+    $(".skills").show();
+    $(".projects").show();
+    $(".contact").show();
+    $(".footerInfo").show();
+});
