@@ -97,7 +97,7 @@ p {
 }
 
 .nameContainer {
-    padding-top: 1rem;
+    padding-top: 5rem;
     padding-bottom: 3rem;
     width: 100%;
     text-align: center;
@@ -123,25 +123,35 @@ div.nameContainer img {
 #toggle {}
 
 .subIcons {
-    background: url(../public/website-images/close-menu-icon.png) top center no-repeat;
-    background-size: 3rem;
-    background-color: white;
+    background: url(../public/website-images/grey-menu-icon2.png) center center no-repeat;
+    background-size: 4rem;
+    background-color: #7F7B85;
+    border: 3px solid #7F7B85;
+    border-radius: 10px 10px;
+    box-shadow: 3px 3px white;
     cursor: pointer;
-    width: 68px;
-    height: 60px;
-    border: 3px solid #fff;
+    width: 76px;
+    height: 76px;
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 50%;
+    left: 0.1%;
+    filter: contrast(150%) brightness(70%);
     z-index: 99;
-    -moz-transition: all .6s;
-    -o-transition: all .6s;
-    -webkit-transition: all .6s;
-    transition: all .6s;
+    -moz-transition: all .2s;
+    -o-transition: all .2s;
+    -webkit-transition: all .2s;
+    transition: left .2s ease;
+}
+
+.subIcons:hover {
+    background-color: white;
+    filter: contrast(100%) brightness(100%);
+    border: 3px solid #7F7B85;
+    box-shadow: 3px 3px #7F7B85;
 }
 
 .sub-icons:before {
-    content: "";
+    /*    content: "";*/
     display: block;
     /*    background: url(../public/website-images/close-menu-icon.png) 0 -549px no-repeat;*/
     width: 28px;
@@ -151,11 +161,11 @@ div.nameContainer img {
     left: 18px;
     z-index: 2;
     color: black;
-    background-color: white;
+    /*    background-color: white;*/
 }
 
 .subIcons::after {
-    content: '';
+    /*    content: '';*/
     position: absolute;
     z-index: 1;
     -moz-transition: all .3s;
@@ -180,7 +190,7 @@ div.subIcons i {
 */
 
 .close {
-    background: url(../public/website-images/menu-icon.png) top center no-repeat;
+    background: url(../public/website-images/red-x-icon.png) top center no-repeat;
     position: absolute;
     width: 74px;
     height: 66px;
@@ -194,7 +204,7 @@ div.subIcons i {
 
 .close:after {
     display: block;
-    content: "";
+    /*    content: "";*/
     position: absolute;
     background: url(../public/website-images/menu-icon.png) 0 -333px no-repeat;
     width: 24px;
