@@ -58,7 +58,8 @@ header {
     width: 100%;
     height: -webkit-fill-available;
     /*    position: absolute;*/
-    filter: contrast(90%) brightness(70%);
+    /*    filter: contrast(90%) brightness(70%);*/
+    filter: brightness(80%);
 }
 
 /*
@@ -97,7 +98,7 @@ p {
 }
 
 .nameContainer {
-    padding-top: 5rem;
+    padding-top: 3rem;
     padding-bottom: 3rem;
     width: 100%;
     text-align: center;
@@ -125,122 +126,57 @@ div.nameContainer img {
 .subIcons {
     background: url(../public/website-images/grey-menu-icon2.png) center center no-repeat;
     background-size: 3rem;
-    background-color: #7F7B85;
-    /*    border: 3px solid #7F7B85;*/
-    /*    border-radius: 10px 10px;*/
-    box-shadow: 3px 3px white;
+    background-color: #f4511e;
+    border: none;
+    opacity: .6;
     cursor: pointer;
-    width: 48px;
-    height: 48px;
+    width: 3.5%;
+    height: 6.5%;
     position: fixed;
     top: 50%;
     left: 0.1%;
-    filter: contrast(150%) brightness(70%);
     z-index: 99;
-    /*
-    -moz-transition: all .2s;
-    -o-transition: all .2s;
-    -webkit-transition: all .2s;
-    transition: left .2s ease;
-*/
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    filter: none;
 }
 
 .subIcons:hover {
-    background-color: white;
-    filter: contrast(100%) brightness(100%);
-    /*    border: 3px solid #7F7B85;*/
-    box-shadow: 3px 3px #7F7B85;
+    opacity: 1;
+    filter: none;
+    transform: rotateZ(180deg);
 }
-
-/*
-.sub-icons:before {
-        content: "";
-    display: block;
-    background: url(../public/website-images/close-icon.png) center center no-repeat;
-    width: 28px;
-    height: 18px;
-    position: absolute;
-    top: 20px;
-    left: 18px;
-    z-index: 2;
-    color: black;
-        background-color: white;
-}
-
-.subIcons::after {
-        content: '';
-    position: absolute;
-    z-index: 1;
-    -moz-transition: all .3s;
-    -o-transition: all .3s;
-    -webkit-transition: all .3s;
-    transition: all .3s;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    right: 0;
-    visibility: hidden;
-        background: #fff;
-}
-*/
-
-/*
-div.subIcons i {
-    color: black;
-    position: absolute;
-    top: 8px;
-    left: 15px;
-    font-size: 35px;
-}
-*/
 
 .close {
     background: url(../public/website-images/cross-icon.png) center center no-repeat;
-    background-size: 3rem;
-    background-color: white;
+    background-size: 4rem;
+    background-color: #F45122;
+    border: none;
     cursor: pointer;
-    width: 48px;
-    height: 48px;
-    position: absolute;
+    width: 3%;
+    height: 6%;
+    position: fixed;
     top: 50%;
     left: 15.1%;
-    /*    filter: contrast(150%) brightness(80%);*/
     z-index: 99;
-    opacity: 1;
+    opacity: .6;
     -moz-transition: all .6s;
     -o-transition: all .6s;
     -webkit-transition: all .6s;
     transition: all .6s ease;
+    /*
     -ms-transform: rotate(180deg);
     -webkit-transform: rotate(180deg);
-    transform: rotate(270deg);
+    transform: rotate(180deg);
+*/
 }
 
 .close:hover {
-    transform: rotate(0deg);
+    transform: rotate(-180deg);
+    opacity: 1;
 }
-
-/*
-.close:after {
-    display: block;
-        content: "";
-    position: absolute;
-    background: url(../public/website-images/menu-icon.png) 0 -333px no-repeat;
-    width: 24px;
-    height: 25px;
-    left: 50%;
-    top: 50%;
-    margin: -12px 0 0 -12px;
-    -moz-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-    -moz-transition: all, .5s;
-    -o-transition: all, .5s;
-    -webkit-transition: all, .5s;
-    transition: all, .5s;
-}
-*/
 
 /* Fixed sidenav, full height */
 
@@ -300,7 +236,7 @@ div.subIcons i {
 }
 
 .dropDownContent a {
-    color: #636370;
+    color: #f1f1f1;
     padding: 10px 20px;
     text-decoration: none;
     display: block;
@@ -555,7 +491,9 @@ header:hover {
 }
 
 .dropDownContent a:hover {
-    background-color: #65606C;
+    /*    background-color: #65606C;*/
+    background-color: #EEE4E4;
+    color: black;
 }
 
 .dropDown:hover .dropDownContent {
@@ -564,9 +502,13 @@ header:hover {
 
 /* On mouse-over */
 
-.sidenav a:hover,
-.dropDownBtn:hover {
+.dropDownBtn:hover,
+.navLink:hover {
     color: #f1f1f1;
+}
+
+.dropDownBtn a:hover {
+    color: black;
 }
 
 section.contact i:hover {

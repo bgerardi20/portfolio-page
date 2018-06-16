@@ -20,29 +20,23 @@ $(function () {
 
 $(document).ready(function () {
     $("#toggle").hide();
+    $(".close").hide();
+    $(".welcomeHeader").hide();
     $(".headerSection").show();
     $(".aboutMe").show();
     $(".skills").show();
     $(".projects").show();
     $(".contact").show();
     $(".footerInfo").show();
-    $(".close").hide();
 });
-//
-//$(document).on("click", ".subIcons", function () {
-//    event.preventDefault();
-//
-//    $("#toggle").toggle("slide");
-//
-//
-//        let firstImage = $(".subIcons").css('background-image');
-//        $(".subIcons").css({
-//            'background-image': 'url(../public/website-images/close-icon.png) center center no-repeat',
-//            'background-size': '4rem',
-//            'background-color': 'red'
-//        });
-//
-//});
+
+
+$(".subIcons").on("mouseenter", function () {
+    $(".welcomeHeader").show();
+});
+$(".subIcons").on("mouseleave", function () {
+    $(".welcomeHeader").hide();
+});
 
 $(document).on("click", ".subIcons", function () {
     event.preventDefault();
