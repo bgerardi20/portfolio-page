@@ -18,8 +18,6 @@ $(function () {
 
 
 
-
-
 $(document).ready(function () {
     $("#toggle").hide();
     $(".headerSection").show();
@@ -28,21 +26,35 @@ $(document).ready(function () {
     $(".projects").show();
     $(".contact").show();
     $(".footerInfo").show();
+    $(".close").hide();
 });
+//
+//$(document).on("click", ".subIcons", function () {
+//    event.preventDefault();
+//
+//    $("#toggle").toggle("slide");
+//
+//
+//        let firstImage = $(".subIcons").css('background-image');
+//        $(".subIcons").css({
+//            'background-image': 'url(../public/website-images/close-icon.png) center center no-repeat',
+//            'background-size': '4rem',
+//            'background-color': 'red'
+//        });
+//
+//});
 
 $(document).on("click", ".subIcons", function () {
     event.preventDefault();
     $("#toggle").toggle("slide");
+    $(".subIcons").hide();
+    $(".close").show();
 });
 
-//LOGIN button
+
 $(document).on("click", ".close", function (event) {
     event.preventDefault();
-    $("#toggle").hide();
-    $(".headerSection").show();
-    $(".aboutMe").show();
-    $(".skills").show();
-    $(".projects").show();
-    $(".contact").show();
-    $(".footerInfo").show();
+    $("#toggle").toggle("slide");
+    $(".close").hide();
+    $(".subIcons").show();
 });
