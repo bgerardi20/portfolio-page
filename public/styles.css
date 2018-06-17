@@ -69,7 +69,7 @@ header {
 */
 
 img {
-    height: 125px;
+    height: 130px;
     padding-left: .5rem;
     padding-right: .5rem;
     padding-top: 1rem;
@@ -290,7 +290,9 @@ section.aboutMe p {
 
 section.aboutMe .aboutMeContainer,
 .contactIconContainer {
-    border: 3px solid #F8D86B;
+    /*    border: 3px solid #F8D86B;*/
+    padding-top: 1rem;
+    padding-bottom: 2rem;
 }
 
 
@@ -314,7 +316,7 @@ section.aboutMe .aboutMeContainer,
     /*    margin-top: 1rem;*/
     margin-bottom: 1rem;
     text-align: center;
-    background-color: #FFF7DC;
+    /*    background-color: #FFF7DC;*/
     border-radius: 10px 10px;
 }
 
@@ -350,8 +352,11 @@ section.skills .skills-container img {
 
 section.aboutMe img {
     float: right;
-    padding-bottom: 30px;
+    padding-right: 1rem;
     width: 33%;
+    height: auto;
+    margin-top: 4.5rem;
+    border-radius: 6%
 }
 
 .aboutMeContent {
