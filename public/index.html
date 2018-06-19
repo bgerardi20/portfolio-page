@@ -37,283 +37,337 @@
 
     </header>
 
-    <div class="navigation navigationActive" id="toggle">
+    <div class="imageContainer">
 
-        <!--        <div class="close"></div>-->
+        <div class="navigation navigationActive" id="toggle">
 
-        <nav class="nav sidenav">
+            <!--        <div class="close"></div>-->
 
-            <div class="nameContainer">
-                <img src="../public/website-images/bg-logo-2.png" alt="logo">
+            <nav class="nav sidenav">
+
+                <div class="nameContainer">
+                    <img src="../public/website-images/bg-logo-2.png" alt="logo">
+                </div>
+                <ul>
+                    <li class="navItem">
+                        <a class="navLink" href="#about"><i class="fas fa-user-astronaut navIcon"></i> About</a>
+                    </li>
+                    <li class="navItem">
+                        <a class="navLink" href="#skills"><i class="far fa-keyboard navIcon"></i> Skills</a>
+                    </li>
+                    <li class="navItem dropDown">
+                        <button class="dropDownBtn"><i class="far fa-folder-open navIcon"></i> Projects
+                            <i class="fa fa-caret-down caret"></i>
+                        </button>
+                        <div class="dropDownContainer dropDownContent active">
+                            <a id="budget" href="">Budget Buddy</a>
+                            <a id="recipe" href="">My Recipe Finder</a>
+                            <a id="pet" href="">Pet Finder</a>
+                            <a id="cowboys" href="">Dallas Cowboys Quiz</a>
+                        </div>
+                    </li>
+                    <li class="navItem dropDown">
+                        <button class="dropDownBtn"><i class="fab fa-rocketchat navIcon"></i> Contact
+                            <i class="fa fa-caret-down caret"></i>
+                        </button>
+                        <div class="dropDownContainer dropDownContent active">
+                            <a id="email" href="">Email</a>
+                            <a id="github" href="">Github</a>
+                            <a id="linkedin" href="">LinkedIn</a>
+                            <a id="angleslist" href="">Angels List</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+
+        <section class="aboutMe">
+
+            <div class="sectionContainer">
+
+                <h3 class="sectionTitle specialTitle">
+                    ABOUT ME
+                    <img src="../public/website-images/portfolio-headshot.jpg" alt="headshot" class="col-4">
+                </h3>
+
+                <div class="aboutMeContainer">
+                    <p class="aboutMeContent">Hi, I’m Ellie, a fullstack web developer and graduate of the Fullstack Web Development Program at Thinkful. As an avid learner, I love coding because it constantly challenges me to expand my skills and knowledge</p>
+                    <br>
+                    <br>
+                    <p class="aboutMeContent">With a background in art history with a focus in Roman architecture, I have spent years studying the ways in which a building's design can invoke desired behavior, convey specific messages, and direct a visitor’s movement pattern. As I build websites, I am always thinking of ways to merge functionality and messaging into elegant design.</p>
+                    <br>
+                    <br>
+                    <p class="aboutMeContent">Hi, I’m Ellie, a fullstack web developer and graduate of the Fullstack Web Development Program at Thinkful. As an avid learner, I love coding because</p>
+
+                    <div class="headShotContainer">
+
+                        <button><a href="" target="_blank">Resume</a></button>
+
+                    </div>
+
+                </div>
+
             </div>
-            <ul>
-                <li class="navItem">
-                    <a class="navLink" href="#about"><i class="fas fa-user-astronaut navIcon"></i> About</a>
-                </li>
-                <li class="navItem">
-                    <a class="navLink" href="#skills"><i class="far fa-keyboard navIcon"></i> Skills</a>
-                </li>
-                <li class="navItem dropDown">
-                    <button class="dropDownBtn"><i class="far fa-folder-open navIcon"></i> Projects
-                        <i class="fa fa-caret-down caret"></i>
-                    </button>
-                    <div class="dropDownContainer dropDownContent active">
-                        <a id="budget" href="">Budget Buddy</a>
-                        <a id="recipe" href="">My Recipe Finder</a>
-                        <a id="pet" href="">Pet Finder</a>
-                        <a id="cowboys" href="">Dallas Cowboys Quiz</a>
-                    </div>
-                </li>
-                <li class="navItem dropDown">
-                    <button class="dropDownBtn"><i class="fab fa-rocketchat navIcon"></i> Contact
-                        <i class="fa fa-caret-down caret"></i>
-                    </button>
-                    <div class="dropDownContainer dropDownContent active">
-                        <a id="email" href="">Email</a>
-                        <a id="github" href="">Github</a>
-                        <a id="linkedin" href="">LinkedIn</a>
-                        <a id="angleslist" href="">Angels List</a>
-                    </div>
-                </li>
-            </ul>
-        </nav>
 
+        </section>
+
+        <section class="skills">
+
+            <div class="sectionContainer">
+
+                <h3 class="sectionTitle specialTitle">SKILLS</h3>
+                <div class="skillIconsContainer">
+
+                    <div class="skillsInnerSection">
+                        <div class="name">
+                            <h4>Programming Languages</h4>
+                        </div>
+                        <div class="icons">
+                            <img src="../github-images/html5.png" alt="HTML">
+                            <img src="../github-images/css-logo.png" alt="CSS">
+                            <img src="../github-images/js-logo.png" alt="JavaScript">
+                        </div>
+                    </div>
+                    <div class="skillsInnerSection">
+                        <div class="name">
+                            <h4>Frontend</h4>
+                        </div>
+                        <div class="icons">
+                            <img src="../github-images/jquery-logo-new.png" alt="jQuery">
+                            <img src="../github-images/ajax-logo.png" alt="AJAX">
+                            <img src="../github-images/react-native-logo.png" alt="React">
+                            <img src="../github-images/redux.png" alt="Redux">
+                            <img src="../github-images/react-router-demo.png" alt="React Router">
+                            <!--                            <img src="../github-images/redux-from-logo.png" alt="Redux Form">-->
+                            <!--                            <img src="../github-images/webpack-icon2.png" alt="Webpack">-->
+                        </div>
+                    </div>
+                    <div class="skillsInnerSection">
+                        <div class="name">
+                            <h4>Backend</h4>
+                        </div>
+                        <div class="icons">
+                            <img src="../github-images/node-logo-2.png" alt="NodeJS">
+                            <img src="../github-images/expressjs.png" alt="Express">
+                            <img src="../github-images/restful-api.png" alt="Rest API">
+                            <!--                            <img src="../github-images/json-logo.png" alt="JSON">-->
+                            <img src="../github-images/heroku-logo.png" alt="Heroku">
+                        </div>
+                    </div>
+                    <div class="skillsInnerSection">
+                        <div class="name">
+                            <h4>Databases</h4>
+                        </div>
+                        <div class="icons">
+                            <img src="../github-images/mongodb-logo.png" alt="MongoDB">
+                            <img src="../github-images/mongoose-letters.png" alt="Mongoose">
+                            <img src="../github-images/robo-mongo-icon-nowords.png" alt="RoboMongo">
+                            <img src="../github-images/mlab-logo.png" alt="mLab">
+                        </div>
+                    </div>
+                    <div class="skillsInnerSection">
+                        <div class="name">
+                            <h4>Testing</h4>
+                        </div>
+                        <div class="icons">
+                            <img src="../github-images/mocha-logo.png" alt="Mocha">
+                            <img src="../github-images/chai-logo.png" alt="Chai">
+                            <img src="../github-images/travis-ci-logo.png" alt="TravisCI">
+                        </div>
+                    </div>
+                    <div class="skillsInnerSection">
+                        <div class="name">
+                            <h4>Development</h4>
+                        </div>
+                        <div class="icons">
+                            <img src="../github-images/brackets-logo.png" alt="Brackets">
+                            <img src="../github-images/sublime-text_logo.png" alt="Sublime Text">
+                            <img src="../github-images/atom.png" alt="Atom">
+                            <img src="../github-images/github-logo.png" alt="Github">
+                            <img src="../github-images/postman-logo.png" alt="Postman">
+                            <img src="../github-images/glitch.png" alt="Glitch">
+                        </div>
+                    </div>
+                    <div class="skillsInnerSection">
+                        <div class="name">
+                            <h4>Miscellaneous</h4>
+                        </div>
+                        <div class="icons">
+                            <img src="../github-images/slack-trans.png" alt="Slack">
+                            <img src="../github-images/trello.png" alt="Trello">
+                            <img src="../github-images/agile-logo.png" alt="Agile">
+                            <img src="../github-images/scrum-logo.png" alt="Scrum">
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="projects">
+
+            <div class="sectionContainer">
+
+
+                <h3 class="sectionTitle specialTitle">PROJECTS</h3>
+
+                <div class="projectContainer col-12">
+
+                    <img class="col-6" src="../github-images/budget-buddy-demo.jpg" alt="budget_buddy_demo" />
+
+                    <div class="projectDescription col-6">
+                        <h6>Budget Buddy</h6>
+                        <p>The purpose of this app is to make budgeting fun, by helping the user plan their financial goals, and track their expenses in order to meet those goals.</p>
+
+                        <ul class="projectSkills">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>jQuery</li>
+                            <li>AJAX</li>
+                            <li>React</li>
+                            <li>Redux</li>
+                            <li>NodeJS</li>
+                            <li>Express</li>
+                            <li>MongoDB</li>
+                            <li>Mongoose</li>
+                            <li>RoboMongo</li>
+                            <li>Mocha</li>
+                            <li>Chai</li>
+                            <li>Chai-HTTP</li>
+                            <li>Bcrypt</li>
+                            <li>CORS</li>
+                            <li>Passport</li>
+                            <li>Body-Parser</li>
+                            <li>Morgan</li>
+                            <li>Babel</li>
+                            <li>Webpack</li>
+                            <li>Enzyme</li>
+                        </ul>
+
+                        <a href="https://github.com/bgerardi20/budget-buddy-react-capstone-react" target="_blank">Code</a>
+                        <a href="https://budget-buddy-react-capstone.herokuapp.com/" target="_blank">Demo</a>
+
+                    </div>
+
+                </div>
+
+                <div class="projectContainer col-12">
+
+                    <img class="col-6" src="../github-images/my-recipe-finder-demo.jpg" alt="my_recipe_finder_demo" />
+
+                    <div class="projectDescription col-6">
+                        <h6>My Recipe Finder</h6>
+                        <p>The purpose of this app is to create an recipe book that you can have with you wherever you go.</p>
+
+                        <ul class="projectSkills">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>jQuery</li>
+                            <li>AJAX</li>
+                            <li>NodeJS</li>
+                            <li>Express</li>
+                            <li>MongoDB</li>
+                            <li>Mongoose</li>
+                            <li>RoboMongo</li>
+                            <li>Mocha</li>
+                            <li>Chai</li>
+                            <li>Chai-HTTP</li>
+                            <li>Bcrypt</li>
+                            <li>Passport</li>
+                            <li>Body-Parser</li>
+                            <li>Morgan</li>
+                            <li>Edamam API</li>
+                        </ul>
+
+                        <a href="https://github.com/bgerardi20/my-recipe-finder-node-capstone" target="_blank">Code</a>
+                        <a href="https://my-recipe-finder-node-capstone.herokuapp.com/" target="_blank">Demo</a>
+
+                    </div>
+
+                </div>
+
+                <div class="projectContainer col-12">
+
+                    <img class="col-6" src="../github-images/pet-adoption-demo.png" alt="pet_adoption_demo" />
+
+                    <div class="projectDescription col-6">
+                        <h6>Pet Finder</h6>
+                        <p>I have always had a hard time finding the perfect dog to adopt. With this app, that problem with cease to exist. You are able to search thousands of images, to help with picking out which animal is best for you. Once you found that perfect one, hop on over to the adoption section and find one close to you!</p>
+
+                        <ul class="projectSkills">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>jQuery</li>
+                            <li>AJAX</li>
+                            <li>JSON</li>
+                            <li>PetFinder API</li>
+                        </ul>
+
+                        <a href="https://github.com/bgerardi20/pet-adoption-api-capstone" target="_blank">Code</a>
+                        <a href="https://bgerardi20.github.io/pet-adoption-api-capstone" target="_blank">Demo</a>
+
+                    </div>
+
+                </div>
+
+                <div class="projectContainer col-12">
+
+                    <img class="col-6" src="../github-images/cowboy-quiz-app-demo.jpg" alt="cowboy_quiz_app_demo" />
+
+                    <div class="projectDescription col-6">
+                        <h6>Dallas Cowboy Quiz App</h6>
+                        <p>How well do you know the Dallas Cowboys? Take this quiz and find out.</p>
+
+                        <ul class="projectSkills">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>jQuery</li>
+                        </ul>
+
+                        <a href="https://github.com/bgerardi20/cowboy-quiz-app" target="_blank">Code</a>
+                        <a href="https://bgerardi20.github.io/cowboy-quiz-app/" target="_blank">Demo</a>
+
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+        </section>
+
+
+
+        <section class="contact">
+            <div class="sectionContainer">
+                <h3 class="sectionTitle specialTitle">CONTACT</h3>
+
+                <div class="contactIconContainer">
+                    <a class="footer" href="mailto:brendan.gerardi@gmail.com" target="_blank"><i class="fas fa-envelope footerIcon"></i></a>
+                    <a class="footer" href="https://github.com/bgerardi20" target="_blank"><i class="fab fa-github"></i></a>
+                    <a class="footer" href="https://www.linkedin.com/in/brendan-gerardi-45b11111b/" target="_blank"><i class="fab fa-linkedin footerIcon"></i></a>
+                    <a class="footer" href="https://angel.co/brendan-gerardi" target="_blank"><i class="fab fa-angellist"></i></a>
+                </div>
+            </div>
+        </section>
+
+
+        <footer>
+            <div class="footerInfo">
+                <p><i class="far fa-copyright"></i> 2018</p>
+                <p>Brendan Gerardi</p>
+            </div>
+        </footer>
     </div>
-
-    <section class="aboutMe">
-
-        <div class="sectionContainer">
-
-            <h3 class="sectionTitle specialTitle">
-                ABOUT ME
-                <img src="../public/website-images/portfolio-headshot.jpg" alt="headshot" class="col-4">
-            </h3>
-
-            <div class="aboutMeContainer">
-                <p class="aboutMeContent">Hi, I’m Ellie, a fullstack web developer and graduate of the Fullstack Web Development Program at Thinkful. As an avid learner, I love coding because it constantly challenges me to expand my skills and knowledge</p>
-                <br>
-                <br>
-                <p class="aboutMeContent">With a background in art history with a focus in Roman architecture, I have spent years studying the ways in which a building's design can invoke desired behavior, convey specific messages, and direct a visitor’s movement pattern. As I build websites, I am always thinking of ways to merge functionality and messaging into elegant design.</p>
-                <br>
-                <br>
-                <p class="aboutMeContent">Hi, I’m Ellie, a fullstack web developer and graduate of the Fullstack Web Development Program at Thinkful. As an avid learner, I love coding because</p>
-
-                <div class="headShotContainer">
-
-                    <button><a href="" target="_blank">Resume</a></button>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-    <section class="skills">
-
-        <div class="sectionContainer">
-
-            <h3 class="sectionTitle specialTitle">SKILLS</h3>
-            <div class="skillIconsContainer">
-                <img src="../github-images/html-logo-2.png" alt="HTML">
-                <img src="../github-images/css-logo.png" alt="CSS">
-                <img src="../github-images/js-logo.png" alt="JavaScript">
-                <img src="../github-images/jquery-logo-new.png" alt="jQuery">
-                <img src="../github-images/ajax-logo.png" alt="AJAX">
-                <img src="../github-images/react-native-logo.png" alt="React">
-                <img src="../github-images/redux.png" alt="Redux">
-                <img src="../github-images/react-router-demo.png" alt="React Router">
-                <img src="../github-images/redux-from-logo.png" alt="Redux Form">
-                <img src="../github-images/node-logo-2.png" alt="NodeJS">
-                <img src="../github-images/mongodb-logo.png" alt="MongoDB">
-                <img src="../github-images/mongoose-letters.png" alt="Mongoose">
-                <img src="../github-images/mlab-logo.png" alt="mLab">
-                <img src="../github-images/heroku-logo.png" alt="Heroku">
-                <img src="../github-images/robomongo-tea-2-1.png" alt="RoboMongo">
-                <img src="../github-images/mocha-logo.png" alt="Mocha">
-                <img src="../github-images/chai-logo.png" alt="Chai">
-                <img src="../github-images/travis-ci-logo.png" alt="TravisCI">
-                <img src="../github-images/expressjs.png" alt="Express">
-                <img src="../github-images/json-logo.png" alt="JSON">
-                <img src="../github-images/npm-logo.png" alt="npm">
-                <img src="../github-images/postman-logo.png" alt="Postman">
-                <img src="../github-images/glitch.png" alt="Glitch">
-                <img src="../github-images/restful-api.png" alt="Rest API">
-                <img src="../github-images/webpack-icon2.png" alt="Webpack">
-                <img src="../github-images/github-logo.png" alt="Github">
-                <img src="../github-images/slack-trans.png" alt="Slack">
-                <img src="../github-images/trello.png" alt="Trello">
-                <img src="../github-images/brackets-logo.png" alt="Brackets">
-                <img src="../github-images/sublime-text_logo.png" alt="Sublime Text">
-                <img src="../github-images/atom.png" alt="Atom">
-                <img src="../github-images/agile-logo.png" alt="Agile">
-                <img src="../github-images/scrum-logo.png" alt="Scrum">
-            </div>
-
-        </div>
-
-    </section>
-
-    <section class="projects">
-
-        <div class="sectionContainer">
-
-
-            <h3 class="sectionTitle specialTitle">PROJECTS</h3>
-
-            <div class="projectContainer col-12">
-
-                <img class="col-6" src="../github-images/budget-buddy-demo.jpg" alt="budget_buddy_demo" />
-
-                <div class="projectDescription col-6">
-                    <h6>Budget Buddy</h6>
-                    <p>The purpose of this app is to make budgeting fun, by helping the user plan their financial goals, and track their expenses in order to meet those goals.</p>
-
-                    <ul class="projectSkills">
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JavaScript</li>
-                        <li>jQuery</li>
-                        <li>AJAX</li>
-                        <li>React</li>
-                        <li>Redux</li>
-                        <li>NodeJS</li>
-                        <li>Express</li>
-                        <li>MongoDB</li>
-                        <li>Mongoose</li>
-                        <li>RoboMongo</li>
-                        <li>Mocha</li>
-                        <li>Chai</li>
-                        <li>Chai-HTTP</li>
-                        <li>Bcrypt</li>
-                        <li>CORS</li>
-                        <li>Passport</li>
-                        <li>Body-Parser</li>
-                        <li>Morgan</li>
-                        <li>Babel</li>
-                        <li>Webpack</li>
-                        <li>Enzyme</li>
-                    </ul>
-
-                    <a href="https://github.com/bgerardi20/budget-buddy-react-capstone-react" target="_blank">Code</a>
-                    <a href="https://budget-buddy-react-capstone.herokuapp.com/" target="_blank">Demo</a>
-
-                </div>
-
-            </div>
-
-            <div class="projectContainer col-12">
-
-                <img class="col-6" src="../github-images/my-recipe-finder-demo.jpg" alt="my_recipe_finder_demo" />
-
-                <div class="projectDescription col-6">
-                    <h6>My Recipe Finder</h6>
-                    <p>The purpose of this app is to create an recipe book that you can have with you wherever you go.</p>
-
-                    <ul class="projectSkills">
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JavaScript</li>
-                        <li>jQuery</li>
-                        <li>AJAX</li>
-                        <li>NodeJS</li>
-                        <li>Express</li>
-                        <li>MongoDB</li>
-                        <li>Mongoose</li>
-                        <li>RoboMongo</li>
-                        <li>Mocha</li>
-                        <li>Chai</li>
-                        <li>Chai-HTTP</li>
-                        <li>Bcrypt</li>
-                        <li>Passport</li>
-                        <li>Body-Parser</li>
-                        <li>Morgan</li>
-                        <li>Edamam API</li>
-                    </ul>
-
-                    <a href="https://github.com/bgerardi20/my-recipe-finder-node-capstone" target="_blank">Code</a>
-                    <a href="https://my-recipe-finder-node-capstone.herokuapp.com/" target="_blank">Demo</a>
-
-                </div>
-
-            </div>
-
-            <div class="projectContainer col-12">
-
-                <img class="col-6" src="../github-images/pet-adoption-demo.png" alt="pet_adoption_demo" />
-
-                <div class="projectDescription col-6">
-                    <h6>Pet Finder</h6>
-                    <p>I have always had a hard time finding the perfect dog to adopt. With this app, that problem with cease to exist. You are able to search thousands of images, to help with picking out which animal is best for you. Once you found that perfect one, hop on over to the adoption section and find one close to you!</p>
-
-                    <ul class="projectSkills">
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JavaScript</li>
-                        <li>jQuery</li>
-                        <li>AJAX</li>
-                        <li>JSON</li>
-                        <li>PetFinder API</li>
-                    </ul>
-
-                    <a href="https://github.com/bgerardi20/pet-adoption-api-capstone" target="_blank">Code</a>
-                    <a href="https://bgerardi20.github.io/pet-adoption-api-capstone" target="_blank">Demo</a>
-
-                </div>
-
-            </div>
-
-            <div class="projectContainer col-12">
-
-                <img class="col-6" src="../github-images/cowboy-quiz-app-demo.jpg" alt="cowboy_quiz_app_demo" />
-
-                <div class="projectDescription col-6">
-                    <h6>Dallas Cowboy Quiz App</h6>
-                    <p>How well do you know the Dallas Cowboys? Take this quiz and find out.</p>
-
-                    <ul class="projectSkills">
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JavaScript</li>
-                        <li>jQuery</li>
-                    </ul>
-
-                    <a href="https://github.com/bgerardi20/cowboy-quiz-app" target="_blank">Code</a>
-                    <a href="https://bgerardi20.github.io/cowboy-quiz-app/" target="_blank">Demo</a>
-
-                </div>
-
-            </div>
-
-
-
-        </div>
-
-    </section>
-
-
-    <section class="contact">
-        <div class="sectionContainer">
-            <h3 class="sectionTitle specialTitle">CONTACT</h3>
-
-            <div class="contactIconContainer">
-                <a class="footer" href="mailto:brendan.gerardi@gmail.com" target="_blank"><i class="fas fa-envelope footerIcon"></i></a>
-                <a class="footer" href="https://github.com/bgerardi20" target="_blank"><i class="fab fa-github"></i></a>
-                <a class="footer" href="https://www.linkedin.com/in/brendan-gerardi-45b11111b/" target="_blank"><i class="fab fa-linkedin footerIcon"></i></a>
-                <a class="footer" href="https://angel.co/brendan-gerardi" target="_blank"><i class="fab fa-angellist"></i></a>
-            </div>
-        </div>
-    </section>
-
-
-    <footer>
-        <div class="footerInfo">
-            <p><i class="far fa-copyright"></i> 2018</p>
-            <p>Brendan Gerardi</p>
-        </div>
-    </footer>
-
 
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
 
