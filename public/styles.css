@@ -99,11 +99,11 @@ section {
 */
 
 img {
-    height: 130px;
-    padding-left: .5rem;
-    padding-right: .5rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    height: 110px;
+    padding: 1rem;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 h4 {
@@ -331,8 +331,24 @@ section.aboutMe .aboutMeContainer,
 
 .icons {
     border: 1px dotted white;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    height: auto;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    /*
+    background-color: #828282;
+    opacity: .5;
+*/
+}
+
+.icons img {
+    height: 110px;
+    padding: .5rem;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .icons img:hover {
@@ -340,9 +356,16 @@ section.aboutMe .aboutMeContainer,
     opacity: .3;
 }
 
+#mLab {
+    height: 100px;
+}
+
 .skillsInnerSection {
-    width: 45%;
-    position: inline-block;
+    width: 100%;
+    display: inline-block;
+    padding: 15px 2px;
+    /*    vertical-align: top;*/
+    margin: 4px 3px;
 }
 
 .sectionContainer {
@@ -367,9 +390,26 @@ section.aboutMe .aboutMeContainer,
     opacity: 1;
 }
 
+.checked {
+    color: orange;
+}
+
+.skillContainer {
+    display: inline-block;
+    padding: 5px 15px;
+    margin: 10px 10px;
+}
+
+.skillName {
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    padding: 5px;
+    margin: 3px;
+}
+
 .skillIconsContainer {
     max-width: 1100px;
-    display: block;
+    display: inline-block;
     padding: 0.5rem;
     margin-left: auto;
     margin-right: auto;
