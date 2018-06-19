@@ -327,6 +327,7 @@ section.aboutMe .aboutMeContainer,
 
 .name {
     color: white;
+    background-color: red;
 }
 
 .icons {
@@ -405,6 +406,7 @@ section.aboutMe .aboutMeContainer,
     font-family: 'Raleway', sans-serif;
     padding: 5px;
     margin: 3px;
+    background-color: #363636;
 }
 
 .skillIconsContainer {
