@@ -325,15 +325,135 @@ section.aboutMe .aboutMeContainer,
     padding-bottom: 2rem;
 }
 
+
+
+/*collapse classes*/
+
+.collapsible {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 15px;
+}
+
+.active,
+.collapsible:hover {
+    background-color: #555;
+}
+
+.collapsible:after {
+    content: '\002B';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2212";
+}
+
+.content {
+    padding: 0px 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    /*    background-color: #f1f1f1;*/
+    opacity: .3;
+}
+
+.content:active {
+    /*
+    padding: 10px;
+    margin: 10px;
+*/
+}
+
+
+
+/**/
+
+/*fade*/
+
+.fadeContainer {
+    position: relative;
+    /*    width: 50%;*/
+}
+
+.image {
+    opacity: 0.3;
+    /*            display: block;*/
+    /*    width: 100%;*/
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    position: relative;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    /*    top: 50%;*/
+    left: 50%;
+    transform: translate(-55%, -175%);
+    -ms-transform: translate(-55%, -175%);
+    /*    display: none;*/
+}
+
+.image:hover {
+    border: 4px solid white;
+    border-radius: 50% 50%;
+    opacity: 1;
+}
+
+.image:active {
+    border: 4px solid white;
+    border-radius: 50% 50%;
+    opacity: 1;
+}
+
+
+.middle:hover {
+    opacity: 1;
+}
+
+.text {
+    /*    background-color: #4CAF50;*/
+    color: white;
+    font-size: 16px;
+    margin: 15px -30px;
+    /*    opacity: 0;*/
+    /*    display: none;*/
+}
+
+
+
+/**/
+
 .name {
     color: white;
-    background-color: red;
+    /*        background-color: red;*/
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    cursor: pointer;
 }
 
 .icons {
-    border: 1px dotted white;
+    /*    border: 1px dotted white;*/
+    /*
     padding-top: 15px;
     padding-bottom: 15px;
+
+*/
+    margin: 20px;
     height: auto;
     width: 80%;
     margin-left: auto;
@@ -352,21 +472,53 @@ section.aboutMe .aboutMeContainer,
     margin-right: auto;
 }
 
+/*
 .icons img:hover {
     background-color: #828282;
     opacity: .3;
 }
+*/
 
-#mLab {
-    height: 100px;
+#mLab,
+#javascript {
+    height: 105px;
+}
+
+.skillButtonContainer {
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    /*
+    margin-left: auto;
+    margin-right: auto;
+*/
+}
+
+.skillButtonContainer a {
+    margin: 3px;
+    padding: 3px;
+}
+
+/*
+.skillButtonContainer img:hover {
+    opacity: 0.1;
+}
+*/
+
+.skillButtonContainer img {
+    margin: 3px;
+    padding: 3px;
+    height: 110px;
+    /*    width: 15%;*/
 }
 
 .skillsInnerSection {
     width: 100%;
-    display: inline-block;
-    padding: 15px 2px;
+    display: none;
+
+    /*    padding: 15px 2px;*/
     /*    vertical-align: top;*/
-    margin: 4px 3px;
+    /*    margin: 4px 3px;*/
 }
 
 .sectionContainer {
@@ -397,7 +549,7 @@ section.aboutMe .aboutMeContainer,
 
 .skillContainer {
     display: inline-block;
-    padding: 5px 15px;
+    padding: 15px 15px;
     margin: 10px 10px;
 }
 
