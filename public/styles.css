@@ -151,6 +151,10 @@ div.nameContainer img {
     width: 33%;
 }
 
+a {
+    text-decoration: none;
+}
+
 #toggle {}
 
 .subIcons {
@@ -292,23 +296,30 @@ div.nameContainer img {
     display: block;
 }
 
-
+section.aboutMe div.resumeContainer {
+    /*    position: relative;*/
+    /*    width: 100%;*/
+    /*    display: block;*/
+    /*    margin: 0 auto;*/
+    /*    display: inline-block;*/
+}
 
 
 
 .specialTitle {
-    background-color: #D1D1D3;
+    background-color: #9D9494;
     padding: 15px;
     border-radius: 10px 10px;
     text-align: center;
+    margin-bottom: 1rem;
 }
 
 /*header section */
 
 section h3 {
     font-family: 'Libre Franklin', sans-serif;
-    color: #484857;
-    text-shadow: 0.5px 0.5px black;
+    color: #232223;
+    /*    text-shadow: 1px 1px black;*/
     font-size: 2rem;
 }
 
@@ -525,13 +536,13 @@ section.aboutMe .aboutMeContainer,
     width: 100%;
     max-width: 1100px;
     display: block;
-    padding: 20px;
+    padding: 0px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 1rem;
     margin-bottom: 1rem;
-    background-color: rgba(56, 53, 53, 0.8);
-    color: black;
+    /*    background-color: rgba(56, 53, 53, 0.8);*/
+    /*    color: black;*/
     /*    opacity: .4;*/
     /*    position: absolute;*/
     /*    bottom: 20px;*/
@@ -600,20 +611,74 @@ section.skills .skills-container {
     padding-left: 2rem;
 }
 
-section.aboutMe img {
-    float: right;
-    padding-right: 1rem;
-    width: 33%;
+div.headShotContainer img {
+    /*    float: right;*/
+    /*    padding-right: 1rem;*/
+    width: 100%;
     height: auto;
-    margin-top: 4.5rem;
-    border-radius: 6%
+    /*    margin-top: 4.5rem;*/
+    border: 1px solid #232223;
+    border-radius: 6%;
+    padding: 0;
+    /*        vertical-align: top;*/
+    /*
+    margin-left: auto;
+    margin-right: auto;
+*/
 }
 
 .aboutMeContent {
-    width: 66%;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    /*    width: 66%;*/
+    padding: 2rem;
+    /*    margin-top: 1rem;*/
+    /*    margin-bottom: 1rem;*/
 }
+
+
+section.aboutMe .headShotContainer {
+    width: 35%;
+    display: inline-block;
+    /*    height: 100%;*/
+    vertical-align: top;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+
+section.aboutMe .aboutMeContainer {
+    width: 63%;
+    display: inline-block;
+    /*    margin-top: 1rem;*/
+    /*    vertical-align: top;*/
+}
+
+div.resumeContainer button {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    /* text-align: center; */
+    background: none;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.resumeButton a {
+    border: 2px solid #232223;
+    border-radius: 5%;
+    background-color: #686363;
+    /*    line-height: 30px;*/
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: bold;
+    color: #140E0A;
+    padding: 10px 60px;
+}
+
+.resumeButton a:hover {
+    background-color: #0E0B0B;
+    border: 1px solid #9D9494;
+    color: #7E777B;
+}
+
 
 /* */
 
@@ -621,7 +686,7 @@ section.aboutMe img {
 
 section.contact i {
     font-size: 7rem;
-    color: #325C8B;
+    color: #686363;
     padding-left: 3rem;
     padding-right: 3rem;
 }
@@ -640,24 +705,43 @@ section.projects .projectContainer img {
     height: 307px;
     margin-top: -1rem;
     padding-right: 10px;
-    width: 49.5%;
+    width: 100%;
     vertical-align: top;
     display: inline-block;
+    opacity: .7;
+    /*    border: 2px solid #686363;*/
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+    -webkit-transition: -webkit-transform 400ms;
+    transition: transform 400ms;
 }
 
+/*
+div.projectContainer img:hover {
+    opacity: .3;
+}
+*/
+
 section.projects .projectContainer {
-    /*    background-color: #F4F3F5;*/
+    /*        background-color: #F4F3F5;*/
+    margin-top: 15px;
     margin-bottom: 15px;
     padding: 15px;
-    border: 3px solid white;
+    border-bottom: 1px dotted white;
+}
+
+
+
+div.projectContainer:last-child {
+    border-bottom: 0px;
 }
 
 section.projects .projectContainer h6 {
     font-family: 'Libre Franklin', sans-serifx;
-    font-size: 19px;
-    border-bottom: 2px solid #F8D86B;
+    font-size: 21px;
+    border-bottom: 2px solid #9D9894;
     padding-bottom: 6px;
-    color: #325C8B;
+    color: whitesmoke;
 }
 
 section.projects .projectContainer ul {
@@ -674,26 +758,64 @@ section.projects .projectContainer li {
     padding-left: 6px;
     padding-right: 6px;
     margin-bottom: 7px;
-    border: 2px solid #4D75A2;
-    background-color: #D4E3F3;
+    border: 2px solid #7E777B;
+    background-color: #2C2A2A;
     font-family: 'Libre Franklin', sans-serif;
-    font-weight: bold;
-    color: #325C8B;
+    /* font-weight: bold; */
+    color: white;
+    opacity: .8;
 }
 
-section.projects .projectContainer a {
+.codeButton {
+    position: relative;
+}
+
+.projectButtons {
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.code,
+.demo {
     text-decoration: none;
     padding-top: 5px;
     padding-bottom: 5px;
-    display: inline-block;
-    background-color: #325C8B;
+    position: relative;
+    display: none;
+    /*    display: inline-block;*/
+    background-color: #534F52;
+    border: 1px solid #0B090A;
     color: #F4F3F5;
     margin-top: 10px;
-    margin-right: 5px;
+    /*
+
+    margin-left: auto;
+    margin-right: auto;
+*/
+    /*    margin-right: 15px;*/
     width: 90px;
     text-align: center;
     font-family: 'Libre Franklin', sans-serif;
 }
+
+
+/*
+.demo {
+    top: 40%;
+    left: 42.5%;
+    margin-right: 0px;
+}
+
+.code {
+    top: 40%;
+    left: 42.5%;
+    margin-left: 60px;
+    margin-right: ;
+}
+*/
 
 section.projects .projectContainer div {
     width: 49.5%;
@@ -707,6 +829,9 @@ section.projects .projectDescription p {
     padding-bottom: 7px;
 }
 
+section.projects .projectContainer a:hover {
+    border: 1px solid #F4F3F5;
+}
 
 
 
@@ -716,13 +841,12 @@ section.projects .projectDescription p {
 
 footer {
     text-align: center;
-    /*    background-color: #FFCFB6;*/
-    /*    background-color: #F8D86B;*/
-    border-top: 2px solid #D57541;
-    /*    height: 100px;*/
+    /* background-color: #FFCFB6; */
+    /* background-color: #F8D86B; */
+    /* border-top: 2px solid black; */
+    /* height: 100px; */
     padding: 1rem;
 }
-
 
 div.footerInfo p {
     display: inline;
@@ -767,7 +891,7 @@ header:hover {
 }
 
 section.contact i:hover {
-    text-shadow: 4px 4px #F89C6B;
+    text-shadow: 1px 1px white;
 }
 
 

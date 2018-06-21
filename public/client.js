@@ -70,3 +70,107 @@ $(document).on("click", ".close", function (event) {
     $(".close").hide();
     $(".subIcons").show();
 });
+
+
+
+
+$("div.codeButton").mouseover(function (event) {
+        event.preventDefault();
+        $(".code", this).css("display", "inline-block");
+        $(".demo", this).css("display", "inline-block");
+        $("img", this).css("opacity", "0.3");
+    })
+    .mouseleave(function (event) {
+        event.preventDefault();
+        $(".code").css("display", "none");
+        $(".demo").css("display", "none");
+        $("img", this).css("opacity", "0.7");
+    });
+
+
+
+
+//triggers for skill buttons
+$(document).ready(function () {
+    $("#toggle").hide();
+    $(".close").hide();
+    $(".welcomeHeader").hide();
+    $(".headerSection").show();
+    $(".aboutMe").show();
+    $(".skills").show();
+    $(".projects").show();
+    $(".contact").show();
+    $(".footerInfo").show();
+});
+
+$(document).ready(function () {
+    $("#toggle").hide();
+    $(".close").hide();
+    $(".welcomeHeader").hide();
+    $(".headerSection").show();
+    $(".aboutMe").show();
+    $(".skills").show();
+    $(".projects").show();
+    $(".contact").show();
+    $(".footerInfo").show();
+});
+
+$(document).ready(function () {
+    $("#toggle").hide();
+    $(".close").hide();
+    $(".welcomeHeader").hide();
+    $(".headerSection").show();
+    $(".aboutMe").show();
+    $(".skills").show();
+    $(".projects").show();
+    $(".contact").show();
+    $(".footerInfo").show();
+});
+
+$(document).ready(function () {
+    $("#toggle").hide();
+    $(".close").hide();
+    $(".welcomeHeader").hide();
+    $(".headerSection").show();
+    $(".aboutMe").show();
+    $(".skills").show();
+    $(".projects").show();
+    $(".contact").show();
+    $(".footerInfo").show();
+});
+
+$(document).ready(function () {
+    $("#toggle").hide();
+    $(".close").hide();
+    $(".welcomeHeader").hide();
+    $(".headerSection").show();
+    $(".aboutMe").show();
+    $(".skills").show();
+    $(".projects").show();
+    $(".contact").show();
+    $(".footerInfo").show();
+});
+
+$(document).ready(function () {
+    $("#toggle").hide();
+    $(".close").hide();
+    $(".welcomeHeader").hide();
+    $(".headerSection").show();
+    $(".aboutMe").show();
+    $(".skills").show();
+    $(".projects").show();
+    $(".contact").show();
+    $(".footerInfo").show();
+});
+
+$(document).ready(function () {
+    $("#toggle").hide();
+    $(".close").hide();
+    $(".welcomeHeader").hide();
+    $(".headerSection").show();
+    $(".aboutMe").show();
+    $(".skills").show();
+    $(".projects").show();
+    $(".contact").show();
+    $(".footerInfo").show();
+});
