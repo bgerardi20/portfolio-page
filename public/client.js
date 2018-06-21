@@ -74,13 +74,18 @@ $(document).on("click", ".close", function (event) {
 
 
 //hover for project images
-$("div.codeButton").mouseover(function (event) {
+$("div.codeButton").mouseenter(function (event) {
         event.preventDefault();
         $(".code", this).css("display", "inline-block");
         $(".demo", this).css("display", "inline-block");
         $("img", this).css({
-            "opacity": "0.3",
-            "border": "2px solid white"
+            "opacity": "0.1",
+            "border": "2px solid white",
+            "-webkit-transform": "scale(1.1)",
+            "-moz-transform": "scale(1.1)",
+            "-ms-transform": "scale(1.1)",
+            "-o-transform": "scale(1.1)",
+            "transform": "scale(1.1)"
         });
     })
     .mouseleave(function (event) {
@@ -88,9 +93,14 @@ $("div.codeButton").mouseover(function (event) {
         $(".code").css("display", "none");
         $(".demo").css("display", "none");
         $("img", this).css({
-            "opacity": "0.7",
-            "border": "none"
-        })
+            "opacity": "0.8",
+            "border": "none",
+            "-webkit-transform": "scale(1)",
+            "-moz-transform": "scale(1)",
+            "-ms-transform": "scale(1)",
+            "-o-transform": "scale(1)",
+            "transform": "scale(1)"
+        });
     });
 
 
