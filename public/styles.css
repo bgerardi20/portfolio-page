@@ -249,9 +249,11 @@ a {
 
 /* Add an active class to the active dropdown button */
 
+/*
 .active {
     color: white;
 }
+*/
 
 /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
 
@@ -352,22 +354,27 @@ section.aboutMe .aboutMeContainer,
     font-size: 15px;
 }
 
+/*
 .active,
 .collapsible:hover {
     background-color: #555;
 }
+*/
 
 .collapsible:after {
-    content: '\002B';
+    /*    content: '\002B';*/
     color: white;
     font-weight: bold;
     float: right;
     margin-left: 5px;
 }
 
+/*
+
 .active:after {
     content: "\2212";
 }
+*/
 
 .content {
     padding: 0px 18px;
@@ -435,12 +442,9 @@ section.aboutMe .aboutMeContainer,
 }
 
 .text {
-    /*    background-color: #4CAF50;*/
     color: white;
     font-size: 16px;
     margin: 15px -30px;
-    /*    opacity: 0;*/
-    /*    display: none;*/
 }
 
 
@@ -449,7 +453,6 @@ section.aboutMe .aboutMeContainer,
 
 .name {
     color: white;
-    /*        background-color: red;*/
     width: 80%;
     margin-left: auto;
     margin-right: auto;
@@ -458,21 +461,11 @@ section.aboutMe .aboutMeContainer,
 }
 
 .icons {
-    /*    border: 1px dotted white;*/
-    /*
-    padding-top: 15px;
-    padding-bottom: 15px;
-
-*/
     margin: 20px;
     height: auto;
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-    /*
-    background-color: #828282;
-    opacity: .5;
-*/
 }
 
 .icons img {
@@ -483,13 +476,6 @@ section.aboutMe .aboutMeContainer,
     margin-right: auto;
 }
 
-/*
-.icons img:hover {
-    background-color: #828282;
-    opacity: .3;
-}
-*/
-
 #mLab,
 #javascript {
     height: 105px;
@@ -499,10 +485,6 @@ section.aboutMe .aboutMeContainer,
     width: 100%;
     text-align: center;
     margin-top: 30px;
-    /*
-    margin-left: auto;
-    margin-right: auto;
-*/
 }
 
 .skillButtonContainer a {
@@ -510,44 +492,24 @@ section.aboutMe .aboutMeContainer,
     padding: 3px;
 }
 
-/*
-.skillButtonContainer img:hover {
-    opacity: 0.1;
-}
-*/
-
 .skillButtonContainer img {
     margin: 3px;
     padding: 3px;
     height: 110px;
-    /*    width: 15%;*/
 }
 
 .skillsInnerSection {
     width: 100%;
     display: none;
-
-    /*    padding: 15px 2px;*/
-    /*    vertical-align: top;*/
-    /*    margin: 4px 3px;*/
 }
 
 .sectionContainer {
     width: 100%;
     max-width: 1100px;
     display: block;
-    padding: 0px;
-    margin-left: auto;
-    margin-right: auto;
     margin-top: 1rem;
     margin-bottom: 1rem;
-    /*    background-color: rgba(56, 53, 53, 0.8);*/
-    /*    color: black;*/
-    /*    opacity: .4;*/
-    /*    position: absolute;*/
-    /*    bottom: 20px;*/
-    /*    right: 20px;*/
-    /*    filter: grayscale(100%) brightness(100%);*/
+    background-color: rgba(56, 53, 53, 0.8);
 }
 
 .sectionContainer:hover {
@@ -585,19 +547,6 @@ section.aboutMe .aboutMeContainer,
     border-radius: 10px 10px;
 }
 
-/*
-section.skills .skills-container {
-    width: 100%;
-        background-color: #FFFFFF;
-    margin-bottom: 1rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    text-align: center;
-}
-*/
-
 .aboutMe,
 .skills,
 .contact,
@@ -612,26 +561,16 @@ section.skills .skills-container {
 }
 
 div.headShotContainer img {
-    /*    float: right;*/
-    /*    padding-right: 1rem;*/
     width: 100%;
     height: auto;
-    /*    margin-top: 4.5rem;*/
     border: 1px solid #232223;
     border-radius: 6%;
     padding: 0;
-    /*        vertical-align: top;*/
-    /*
-    margin-left: auto;
-    margin-right: auto;
-*/
+
 }
 
 .aboutMeContent {
-    /*    width: 66%;*/
     padding: 2rem;
-    /*    margin-top: 1rem;*/
-    /*    margin-bottom: 1rem;*/
 }
 
 
@@ -659,7 +598,7 @@ div.resumeContainer button {
     /* text-align: center; */
     background: none;
     margin-top: 2rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 .resumeButton a {
@@ -704,37 +643,38 @@ section.contact i {
 section.projects .projectContainer img {
     height: 307px;
     margin-top: -1rem;
-    padding-right: 10px;
+    /*    padding-right: 10px;*/
+    padding: 0rem;
     width: 100%;
     vertical-align: top;
     display: inline-block;
     opacity: .7;
     /*    border: 2px solid #686363;*/
+    /*
     -webkit-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1);
     -webkit-transition: -webkit-transform 400ms;
     transition: transform 400ms;
+*/
 }
 
 /*
 div.projectContainer img:hover {
-    opacity: .3;
+    border: 2px solid white;
 }
 */
 
 section.projects .projectContainer {
-    /*        background-color: #F4F3F5;*/
-    margin-top: 15px;
+    /* background-color: #F4F3F5; */
+    /* margin-top: 15px; */
     margin-bottom: 15px;
     padding: 15px;
-    border-bottom: 1px dotted white;
+    width: 49.8%;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
 }
 
-
-
-div.projectContainer:last-child {
-    border-bottom: 0px;
-}
 
 section.projects .projectContainer h6 {
     font-family: 'Libre Franklin', sans-serifx;
@@ -772,8 +712,8 @@ section.projects .projectContainer li {
 
 .projectButtons {
     position: absolute;
-    top: 40%;
-    left: 30%;
+    top: 30%;
+    left: 0;
     margin-left: auto;
     margin-right: auto;
 }
@@ -781,47 +721,27 @@ section.projects .projectContainer li {
 .code,
 .demo {
     text-decoration: none;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     position: relative;
     display: none;
-    /*    display: inline-block;*/
-    background-color: #534F52;
-    border: 1px solid #0B090A;
+    /* display: inline-block; */
+    background-color: #232223;
+    border: 1px solid #F4F3F5;
     color: #F4F3F5;
     margin-top: 10px;
-    /*
-
-    margin-left: auto;
-    margin-right: auto;
-*/
-    /*    margin-right: 15px;*/
+    /* margin-right: 15px; */
     width: 90px;
     text-align: center;
     font-family: 'Libre Franklin', sans-serif;
 }
 
-
-/*
-.demo {
-    top: 40%;
-    left: 42.5%;
-    margin-right: 0px;
-}
-
-.code {
-    top: 40%;
-    left: 42.5%;
-    margin-left: 60px;
-    margin-right: ;
-}
-*/
-
 section.projects .projectContainer div {
-    width: 49.5%;
-    vertical-align: top;
+    width: 100%;
+    /*    vertical-align: top;*/
     display: inline-block;
-    padding-left: 10px;
+    /*    padding-left: 10px;*/
+    margin-top: 2rem;
 }
 
 section.projects .projectDescription p {
@@ -831,6 +751,9 @@ section.projects .projectDescription p {
 
 section.projects .projectContainer a:hover {
     border: 1px solid #F4F3F5;
+    text-decoration: underline;
+    text-decoration-color: #F4F3F5;
+    text-decoration-style: double;
 }
 
 

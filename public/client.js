@@ -73,18 +73,24 @@ $(document).on("click", ".close", function (event) {
 
 
 
-
+//hover for project images
 $("div.codeButton").mouseover(function (event) {
         event.preventDefault();
         $(".code", this).css("display", "inline-block");
         $(".demo", this).css("display", "inline-block");
-        $("img", this).css("opacity", "0.3");
+        $("img", this).css({
+            "opacity": "0.3",
+            "border": "2px solid white"
+        });
     })
     .mouseleave(function (event) {
         event.preventDefault();
         $(".code").css("display", "none");
         $(".demo").css("display", "none");
-        $("img", this).css("opacity", "0.7");
+        $("img", this).css({
+            "opacity": "0.7",
+            "border": "none"
+        })
     });
 
 
