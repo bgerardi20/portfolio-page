@@ -7,9 +7,9 @@
     <title>Portfolio Capstone</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:500|Roboto:300i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:500" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway:700" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css?family=Roboto:900" rel="stylesheet">
     <!--
 <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
 -->
@@ -44,16 +44,16 @@
             <nav class="nav sidenav">
 
                 <div class="nameContainer">
-                    <img src="../public/website-images/bg-logo-2.png" alt="logo">
+                    <img src="../public/website-images/bg-logo-2.png" alt="logo" id="logo">
                 </div>
                 <ul>
-                    <li class="navItem">
+                    <li class="navItem" id="jsAboutNav">
                         <a class="navLink" href="#about"><i class="fas fa-user-astronaut navIcon"></i> About</a>
                     </li>
-                    <li class="navItem">
-                        <a class="navLink" href="#skills"><i class="far fa-keyboard navIcon"></i> Tools</a>
+                    <li class="navItem" id="jsToolNav">
+                        <a class="navLink" href="#skills"><i class="fas fa-wrench navIcon"></i> Toolbox</a>
                     </li>
-                    <li class="navItem dropDown">
+                    <li class="navItem dropDown" id="jsProjectNav">
                         <button class="dropDownBtn"><i class="far fa-folder-open navIcon"></i> Projects
                             <i class="fa fa-caret-down caret"></i>
                         </button>
@@ -64,7 +64,7 @@
                             <a id="cowboys" href="https://bgerardi20.github.io/cowboy-quiz-app/" target="_blank">Dallas Cowboys Quiz</a>
                         </div>
                     </li>
-                    <li class="navItem dropDown">
+                    <li class="navItem dropDown" id="jsContactNav">
                         <button class="dropDownBtn"><i class="fab fa-rocketchat navIcon"></i> Contact
                             <i class="fa fa-caret-down caret"></i>
                         </button>
@@ -106,12 +106,12 @@
 
         </section>
 
-        <section class="skills">
+        <section class="tools">
 
             <div class="sectionContainer">
 
                 <h3 class="sectionTitle specialTitle">TOOLBELT</h3>
-                <div class="skillButtonContainer">
+                <div class="toolButtonContainer">
                     <a href="" class="fadeContainer" id="languages">
                         <img src="../github-images/languages-icon.png" alt="d" class="image" >
                         <div class="middle">
@@ -121,13 +121,13 @@
                     <a href="" class="fadeContainer" id="frontend">
                         <img src="../github-images/front-end-trans.png" alt="d" class="image">
                         <div class="middle">
-                            <div class="text">Front-end</div>
+                            <div class="text">Frontend</div>
                         </div>
                     </a>
                     <a href="" class="fadeContainer" id="backend">
                         <img src="../github-images/backend-icon.png" alt="d" class="image">
                         <div class="middle">
-                            <div class="text">Back-end</div>
+                            <div class="text">Backend</div>
                         </div>
                     </a>
                     <a href="" class="fadeContainer" id="database">
@@ -155,15 +155,15 @@
                         </div>
                     </a>
                 </div>
-                <div class="skillIconsContainer">
+                <div class="toolIconsContainer">
 
-                    <div class="skillsInnerSection languages">
-                        <h2 class="skillHeader">Programming Languages</h2>
+                    <div class="toolsInnerSection languages">
+                        <h2 class="toolHeader">Programming Languages</h2>
                         <div class="content icons">
 
-                            <div class="skillContainer">
+                            <div class="toolContainer">
                                 <img src="../github-images/html-trans.png" alt="HTML">
-                                <h5 class="skillName">HTML</h5>
+                                <h5 class="toolName">HTML</h5>
                                 <div class="starContainer">
                                     <span class="fa fa-star checked"></span>
                                     <span class="fa fa-star checked"></span>
@@ -173,9 +173,9 @@
                                 </div>
                             </div>
 
-                            <div class="skillContainer">
+                            <div class="toolContainer">
                                 <img src="../github-images/css-trans.png" alt="CSS">
-                                <h5 class="skillName">CSS</h5>
+                                <h5 class="toolName">CSS</h5>
                                 <div class="starContainer">
                                     <span class="fa fa-star checked"></span>
                                     <span class="fa fa-star checked"></span>
@@ -185,9 +185,9 @@
                                 </div>
                             </div>
 
-                            <div class="skillContainer">
+                            <div class="toolContainer">
                                 <img src="../github-images/js-trans5.png" alt="JavaScript" id="javascript">
-                                <h5 class="skillName">JavaScript</h5>
+                                <h5 class="toolName">JavaScript</h5>
                                 <div class="starContainer">
                                     <span class="fa fa-star checked"></span>
                                     <span class="fa fa-star checked"></span>
@@ -199,13 +199,13 @@
 
                         </div>
                     </div>
-                    <div class="skillsInnerSection front">
-                        <h2 class="skillHeader">Front-End</h2>
+                    <div class="toolsInnerSection front">
+                        <h2 class="toolHeader">Frontend Technologies</h2>
                         <div class="content icons">
 
-                            <div class="skillContainer">
+                            <div class="toolContainer">
                                 <img src="../github-images/jquery-trans.png" alt="jQuery">
-                                <h5 class="skillName">JQUERY</h5>
+                                <h5 class="toolName">JQUERY</h5>
                                 <div class="starContainer">
                                     <span class="fa fa-star checked"></span>
                                     <span class="fa fa-star checked"></span>
@@ -215,9 +215,9 @@
                                 </div>
                             </div>
 
-                            <div class="skillContainer">
+                            <div class="toolContainer">
                                 <img src="../github-images/ajax-trans.png" alt="AJAX">
-                                <h5 class="skillName">AJAX</h5>
+                                <h5 class="toolName">AJAX</h5>
                                 <div class="starContainer">
                                     <span class="fa fa-star checked"></span>
                                     <span class="fa fa-star checked"></span>
@@ -227,9 +227,9 @@
                                 </div>
                             </div>
 
-                            <div class="skillContainer">
+                            <div class="toolContainer">
                                 <img src="../github-images/react-trans2.png" alt="React">
-                                <h5 class="skillName">REACT</h5>
+                                <h5 class="toolName">REACT</h5>
                                 <div class="starContainer">
                                     <span class="fa fa-star checked"></span>
                                     <span class="fa fa-star checked"></span>
@@ -239,9 +239,9 @@
                                 </div>
                             </div>
 
-                            <div class="skillContainer">
+                            <div class="toolContainer">
                                 <img src="../github-images/redux-trans.png" alt="Redux">
-                                <h5 class="skillName">REDUX</h5>
+                                <h5 class="toolName">REDUX</h5>
                                 <div class="starContainer">
                                     <span class="fa fa-star checked"></span>
                                     <span class="fa fa-star checked"></span>
@@ -250,9 +250,9 @@
                                     <span class="fa fa-star"></span>
                                 </div>
                             </div>
-                            <div class="skillContainer">
+                            <div class="toolContainer">
                                 <img src="../github-images/react-router-trans.png" alt="React Router">
-                                <h5 class="skillName">REACT-ROUTER</h5>
+                                <h5 class="toolName">REACT-ROUTER</h5>
                                 <div class="starContainer">
                                     <span class="fa fa-star checked"></span>
                                     <span class="fa fa-star checked"></span>
@@ -262,9 +262,9 @@
                                 </div>
                             </div>
 
-                            <div class="skillContainer">
+                            <div class="toolContainer">
                                 <img src="../github-images/redux-from-logo.png" alt="Redux Form" id="reduxForm">
-                                <h5 class="skillName">REDUX-FORM</h5>
+                                <h5 class="toolName">REDUX-FORM</h5>
                                 <div class="starContainer">
                                     <span class="fa fa-star checked"></span>
                                     <span class="fa fa-star checked"></span>
@@ -273,9 +273,9 @@
                                     <span class="fa fa-star"></span>
                                 </div>
                             </div>
-                            <div class="skillContainer">
+                            <div class="toolContainer">
                                 <img src="../github-images/webpack-trans.png" alt="Redux Form" id="reduxForm">
-                                <h5 class="skillName">WEBPACK</h5>
+                                <h5 class="toolName">WEBPACK</h5>
                                 <div class="starContainer">
                                     <span class="fa fa-star checked"></span>
                                     <span class="fa fa-star checked"></span>
@@ -287,13 +287,13 @@
 
                         </div>
                     </div>
-                    <div class="skillsInnerSection back">
-                        <h2 class="skillHeader">Back-End</h2>
+                    <div class="toolsInnerSection back">
+                        <h2 class="toolHeader">Backend Technologies</h2>
                         <div class="content icons">
 
-                            <div class="skillContainer">
+                            <div class="toolContainer">
                                 <img src="../github-images/node-logo-2.png" alt="NodeJS">
-                                <h5 class="skillName">NODE</h5>
+                                <h5 class="toolName">NODE</h5>
                                 <div class="starContainer">
                                     <span class="fa fa-star checked"></span>
                                     <span class="fa fa-star checked"></span>
@@ -303,9 +303,9 @@
                                 </div>
                             </div>
 
-                            <div class="skillContainer">
+                            <div class="toolContainer">
                                 <img src="../github-images/express-trans.png" alt="Express">
-                                <h5 class="skillName">EXPRESS</h5>
+                                <h5 class="toolName">EXPRESS</h5>
                                 <div class="starContainer">
                                     <span class="fa fa-star checked"></span>
                                     <span class="fa fa-star checked"></span>
@@ -315,9 +315,9 @@
                                 </div>
                             </div>
 
-                            <div class="skillContainer">
+                            <div class="toolContainer">
                                 <img src="../github-images/restful-api.png" alt="Rest API">
-                                <h5 class="skillName">REST-API's</h5>
+                                <h5 class="toolName">REST-API's</h5>
                                 <div class="starContainer">
                                     <span class="fa fa-star checked"></span>
                                     <span class="fa fa-star checked"></span>
@@ -326,9 +326,9 @@
                                     <span class="fa fa-star"></span>
                                 </div>
                             </div>
-                            <div class="skillContainer">
+                            <div class="toolContainer">
                                 <img src="../github-images/json-logo.png" alt="JSON">
-                                <h5 class="skillName">JSON</h5>
+                                <h5 class="toolName">JSON</h5>
                                 <div class="starContainer">
                                     <span class="fa fa-star checked"></span>
                                     <span class="fa fa-star checked"></span>
@@ -338,9 +338,9 @@
                                 </div>
                             </div>
 
-                            <div class="skillContainer">
+                            <div class="toolContainer">
                                 <img src="../github-images/heroku-trans.png" alt="Heroku">
-                                <h5 class="skillName">HEROKU</h5>
+                                <h5 class="toolName">HEROKU</h5>
                                 <div class="starContainer">
                                     <span class="fa fa-star checked"></span>
                                     <span class="fa fa-star checked"></span>
@@ -350,9 +350,9 @@
                                 </div>
                             </div>
 
-                            <div class="skillContainer">
+                            <div class="toolContainer">
                                 <img src="../github-images/netlify-trans.png" alt="Heroku">
-                                <h5 class="skillName">NETLIFY</h5>
+                                <h5 class="toolName">NETLIFY</h5>
                                 <div class="starContainer">
                                     <span class="fa fa-star checked"></span>
                                     <span class="fa fa-star checked"></span>
@@ -364,13 +364,13 @@
 
                         </div>
                     </div>
-                    <div class="skillsInnerSection dataB">
-                        <h2 class="skillHeader">Database</h2>
+                    <div class="toolsInnerSection dataB">
+                        <h2 class="toolHeader">Databases</h2>
                         <div class="content icons">
 
-                            <div class="skillContainer">
+                            <div class="toolContainer">
                                 <img src="../github-images/mongo-trans.png" alt="MongoDB">
-                                <h5 class="skillName">MONGODB</h5>
+                                <h5 class="toolName">MONGODB</h5>
                                 <div class="starContainer">
                                     <span class="fa fa-star checked"></span>
                                     <span class="fa fa-star checked"></span>
@@ -380,9 +380,9 @@
                                 </div>
                             </div>
 
-                            <div class="skillContainer">
+                            <div class="toolContainer">
                                 <img src="../github-images/mongoose-letters.png" alt="Mongoose">
-                                <h5 class="skillName">MONGOOSE</h5>
+                                <h5 class="toolName">MONGOOSE</h5>
                                 <div class="starContainer">
                                     <span class="fa fa-star checked"></span>
                                     <span class="fa fa-star checked"></span>
@@ -392,9 +392,9 @@
                                 </div>
                             </div>
 
-                            <div class="skillContainer">
+                            <div class="toolContainer">
                                 <img src="../github-images/robo-mongo-icon-nowords.png" alt="RoboMongo">
-                                <h5 class="skillName">ROBO-3T</h5>
+                                <h5 class="toolName">ROBO-3T</h5>
                                 <div class="starContainer">
                                     <span class="fa fa-star checked"></span>
                                     <span class="fa fa-star checked"></span>
@@ -404,9 +404,9 @@
                                 </div>
                             </div>
 
-                            <div class="skillContainer">
+                            <div class="toolContainer">
                                 <img src="../github-images/mlab-logo.png" alt="mLab" id="mLab">
-                                <h5 class="skillName">MLAB</h5>
+                                <h5 class="toolName">MLAB</h5>
                                 <div class="starContainer">
                                     <span class="fa fa-star checked"></span>
                                     <span class="fa fa-star checked"></span>
@@ -418,13 +418,13 @@
 
                         </div>
                     </div>
-                    <div class="skillsInnerSection testing">
-                        <h2 class="skillHeader">Testing</h2>
+                    <div class="toolsInnerSection testing">
+                        <h2 class="toolHeader">Testing Technologies</h2>
                         <div class="content icons">
 
-                            <div class="skillContainer">
+                            <div class="toolContainer">
                                 <img src="../github-images/mocha-logo.png" alt="Mocha">
-                                <h5 class="skillName">MOCHA</h5>
+                                <h5 class="toolName">MOCHA</h5>
                                 <div class="starContainer">
                                     <span class="fa fa-star checked"></span>
                                     <span class="fa fa-star checked"></span>
@@ -434,9 +434,9 @@
                                 </div>
                             </div>
 
-                            <div class="skillContainer">
+                            <div class="toolContainer">
                                 <img src="../github-images/chai-logo.png" alt="Chai">
-                                <h5 class="skillName">CHAI</h5>
+                                <h5 class="toolName">CHAI</h5>
                                 <div class="starContainer">
                                     <span class="fa fa-star checked"></span>
                                     <span class="fa fa-star checked"></span>
@@ -446,9 +446,9 @@
                                 </div>
                             </div>
 
-                            <div class="skillContainer">
+                            <div class="toolContainer">
                                 <img src="../github-images/travis-trans.png" alt="TravisCI">
-                                <h5 class="skillName">TRAVIS-CI</h5>
+                                <h5 class="toolName">TRAVIS-CI</h5>
                                 <div class="starContainer">
                                     <span class="fa fa-star checked"></span>
                                     <span class="fa fa-star checked"></span>
@@ -458,9 +458,9 @@
                                 </div>
                             </div>
 
-                            <div class="skillContainer">
+                            <div class="toolContainer">
                                 <img src="../github-images/postman-trans.png" alt="Postman">
-                                <h5 class="skillName">POSTMAN</h5>
+                                <h5 class="toolName">POSTMAN</h5>
                                 <div class="starContainer">
                                     <span class="fa fa-star checked"></span>
                                     <span class="fa fa-star checked"></span>
@@ -470,9 +470,9 @@
                                 </div>
                             </div>
 
-                            <div class="skillContainer">
+                            <div class="toolContainer">
                                 <img src="../github-images/enzyme-trans.png" alt="Postman">
-                                <h5 class="skillName">ENZYME</h5>
+                                <h5 class="toolName">ENZYME</h5>
                                 <div class="starContainer">
                                     <span class="fa fa-star checked"></span>
                                     <span class="fa fa-star checked"></span>
@@ -482,9 +482,9 @@
                                 </div>
                             </div>
 
-                            <div class="skillContainer">
+                            <div class="toolContainer">
                                 <img src="../github-images/jest-trans.png" alt="Postman">
-                                <h5 class="skillName">JEST</h5>
+                                <h5 class="toolName">JEST</h5>
                                 <div class="starContainer">
                                     <span class="fa fa-star checked"></span>
                                     <span class="fa fa-star checked"></span>
@@ -496,12 +496,12 @@
 
                         </div>
                     </div>
-                    <div class="skillsInnerSection development">
-                        <h2 class="skillHeader">Development</h2>
+                    <div class="toolsInnerSection development">
+                        <h2 class="toolHeader">Development Tools </h2>
                         <div class="content icons">
-                            <div class="skillContainer">
+                            <div class="toolContainer">
                                 <img src="../github-images/brackets-trans.png" alt="Brackets">
-                                <h5 class="skillName">BRACKETS</h5>
+                                <h5 class="toolName">BRACKETS</h5>
                                 <div class="starContainer">
                                     <span class="fa fa-star checked"></span>
                                     <span class="fa fa-star checked"></span>
@@ -510,9 +510,9 @@
                                     <span class="fa fa-star"></span>
                                 </div>
                             </div>
-                            <div class="skillContainer">
+                            <div class="toolContainer">
                                 <img src="../github-images/sublime-trans.png" alt="Sublime Text">
-                                <h5 class="skillName">SUBLIME</h5>
+                                <h5 class="toolName">SUBLIME</h5>
                                 <div class="starContainer">
                                     <span class="fa fa-star checked"></span>
                                     <span class="fa fa-star checked"></span>
@@ -521,9 +521,9 @@
                                     <span class="fa fa-star"></span>
                                 </div>
                             </div>
-                            <div class="skillContainer">
+                            <div class="toolContainer">
                                 <img src="../github-images/atom-trans.png" alt="Atom">
-                                <h5 class="skillName">ATOM</h5>
+                                <h5 class="toolName">ATOM</h5>
                                 <div class="starContainer">
                                     <span class="fa fa-star checked"></span>
                                     <span class="fa fa-star checked"></span>
@@ -532,9 +532,9 @@
                                     <span class="fa fa-star"></span>
                                 </div>
                             </div>
-                            <div class="skillContainer">
+                            <div class="toolContainer">
                                 <img src="../github-images/github-trans2.png" alt="Github">
-                                <h5 class="skillName">GITHUB</h5>
+                                <h5 class="toolName">GITHUB</h5>
                                 <div class="starContainer">
                                     <span class="fa fa-star checked"></span>
                                     <span class="fa fa-star checked"></span>
@@ -543,9 +543,9 @@
                                     <span class="fa fa-star"></span>
                                 </div>
                             </div>
-                            <div class="skillContainer">
+                            <div class="toolContainer">
                                 <img src="../github-images/git-trans.png" alt="Git">
-                                <h5 class="skillName">GIT</h5>
+                                <h5 class="toolName">GIT</h5>
                                 <div class="starContainer">
                                     <span class="fa fa-star checked"></span>
                                     <span class="fa fa-star checked"></span>
@@ -554,9 +554,9 @@
                                     <span class="fa fa-star"></span>
                                 </div>
                             </div>
-                            <div class="skillContainer">
+                            <div class="toolContainer">
                                 <img src="../github-images/glitch2.png" alt="Glitch">
-                                <h5 class="skillName">GLITCH</h5>
+                                <h5 class="toolName">GLITCH</h5>
                                 <div class="starContainer">
                                     <span class="fa fa-star checked"></span>
                                     <span class="fa fa-star checked"></span>
@@ -565,9 +565,9 @@
                                     <span class="fa fa-star"></span>
                                 </div>
                             </div>
-                            <div class="skillContainer">
+                            <div class="toolContainer">
                                 <img src="../github-images/replit-trans.png" alt="Glitch">
-                                <h5 class="skillName">REPL-IT</h5>
+                                <h5 class="toolName">REPL-IT</h5>
                                 <div class="starContainer">
                                     <span class="fa fa-star checked"></span>
                                     <span class="fa fa-star checked"></span>
@@ -578,12 +578,12 @@
                             </div>
                         </div>
                     </div>
-                    <div class="skillsInnerSection miscellaneous">
-                        <h2 class="skillHeader">Miscellaneous</h2>
+                    <div class="toolsInnerSection miscellaneous">
+                        <h2 class="toolHeader">Miscellaneous Tools</h2>
                         <div class="content icons">
-                            <div class="skillContainer">
+                            <div class="toolContainer">
                                 <img src="../github-images/slack-trans.png" alt="Slack">
-                                <h5 class="skillName">SLACK</h5>
+                                <h5 class="toolName">SLACK</h5>
                                 <div class="starContainer">
                                     <span class="fa fa-star checked"></span>
                                     <span class="fa fa-star checked"></span>
@@ -592,9 +592,9 @@
                                     <span class="fa fa-star"></span>
                                 </div>
                             </div>
-                            <div class="skillContainer">
+                            <div class="toolContainer">
                                 <img src="../github-images/trello-trans2.png" alt="Trello">
-                                <h5 class="skillName">TRELLO</h5>
+                                <h5 class="toolName">TRELLO</h5>
                                 <div class="starContainer">
                                     <span class="fa fa-star checked"></span>
                                     <span class="fa fa-star checked"></span>
@@ -603,9 +603,9 @@
                                     <span class="fa fa-star"></span>
                                 </div>
                             </div>
-                            <div class="skillContainer">
+                            <div class="toolContainer">
                                 <img src="../github-images/agile-trans.png" alt="Agile">
-                                <h5 class="skillName">AGILE</h5>
+                                <h5 class="toolName">AGILE</h5>
                                 <div class="starContainer">
                                     <span class="fa fa-star checked"></span>
                                     <span class="fa fa-star checked"></span>
@@ -614,9 +614,9 @@
                                     <span class="fa fa-star"></span>
                                 </div>
                             </div>
-                            <div class="skillContainer">
+                            <div class="toolContainer">
                                 <img src="../github-images/scrum-trans.png" alt="Scrum">
-                                <h5 class="skillName">SCRUM</h5>
+                                <h5 class="toolName">SCRUM</h5>
                                 <div class="starContainer">
                                     <span class="fa fa-star checked"></span>
                                     <span class="fa fa-star checked"></span>
@@ -641,7 +641,7 @@
 
                 <h3 class="sectionTitle specialTitle">PROJECTS</h3>
 
-                <div class="projectContainer col-12">
+                <div class="projectContainer col-12 budget">
 
                     <div class="codeButton">
                         <img class="col-6" src="../github-images/budget-buddy-demo.jpg" alt="budget_buddy_demo" />
@@ -692,7 +692,7 @@
 
                 </div>
 
-                <div class="projectContainer col-12">
+                <div class="projectContainer col-12 recipe">
 
                     <div class="codeButton">
                         <img class="col-6" src="../github-images/my-recipe-finder-demo.jpg" alt="my_recipe_finder_demo" />
@@ -741,7 +741,7 @@
 
                 </div>
 
-                <div class="projectContainer col-12">
+                <div class="projectContainer col-12 pet">
 
                     <div class="codeButton">
                         <img class="col-6" src="../github-images/pet-adoption-demo.png" alt="pet_adoption_demo" />
@@ -778,7 +778,7 @@
 
                 </div>
 
-                <div class="projectContainer col-12">
+                <div class="projectContainer col-12 cowboys">
 
 
                     <div class="codeButton">

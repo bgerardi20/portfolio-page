@@ -125,6 +125,7 @@ p {
     bottom: 83px;
     right: 8px;
     font-family: 'Roboto Mono', monospace;
+    letter-spacing: 1px;
 }
 
 .nameContainer {
@@ -138,6 +139,10 @@ div.nameContainer h1 {
     color: white;
     text-align: center;
     font-size: 45px;
+}
+
+#logo {
+    cursor: pointer;
 }
 
 div.nameContainer img {
@@ -311,11 +316,13 @@ section.aboutMe div.resumeContainer {
 
 
 .specialTitle {
-    background-color: #9D9494;
-    padding: 15px;
+    /* background-color: #9D9494; */
+    padding: 20px 0px 30px;
     border-radius: 10px 10px;
     text-align: center;
-    margin-bottom: 1rem;
+    margin: 15px;
+    letter-spacing: 15px;
+    color: white;
 }
 
 /*header section */
@@ -324,7 +331,7 @@ section h3 {
     font-family: 'Libre Franklin', sans-serif;
     color: #232223;
     /*    text-shadow: 1px 1px black;*/
-    font-size: 2rem;
+    font-size: 3rem;
 }
 
 section.aboutMe p {
@@ -442,7 +449,9 @@ content: "\2212";
 
 .text {
     color: white;
-    font-size: 16px;
+    font-size: 15px;
+    margin-left: auto;
+    margin-right: auto;
     margin: 15px -30px;
 }
 
@@ -480,7 +489,7 @@ content: "\2212";
     height: 105px;
 }
 
-.skillButtonContainer {
+.toolButtonContainer {
     width: 100%;
     text-align: center;
     margin-top: 30px;
@@ -491,25 +500,26 @@ content: "\2212";
 */
 }
 
-.skillButtonContainer a {
+.toolButtonContainer a {
     margin: 3px;
     padding: 3px;
 }
 
-.skillButtonContainer img {
+.toolButtonContainer img {
     margin: 3px;
     padding: 3px;
     height: 110px;
 }
 
-.skillHeader {
+.toolHeader {
     color: whitesmoke;
     font-size: 30px;
     margin-top: 15px;
-    font-family: 'Libre Franklin', sans-serifx;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 2px;
 }
 
-.skillsInnerSection {
+.toolsInnerSection {
     border: 3px solid whitesmoke;
     border-radius: 3px 3px;
     /*    box-shadow: 5px 5px black;*/
@@ -533,7 +543,7 @@ content: "\2212";
     opacity: 1;
 }
 
-section.skills .sectionContainer {
+section.tools .sectionContainer {
     position: relative;
 }
 
@@ -541,22 +551,24 @@ section.skills .sectionContainer {
     color: orange;
 }
 
-.skillContainer {
+.toolContainer {
     display: inline-block;
     padding: 10px 15px;
     margin: 15px 20px;
 }
 
-.skillName {
+.toolName {
     color: white;
-    font-family: 'Raleway', sans-serif;
-    padding: 5px;
-    margin: 3px;
+    margin: 5px;
+    padding: 6px 15px;
     background-color: #363636;
-
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    letter-spacing: 1px;
 }
 
-.skillIconsContainer {
+.toolIconsContainer {
     max-width: 1100px;
     width: 100%;
     display: inline-block;
@@ -573,7 +585,7 @@ section.skills .sectionContainer {
 }
 
 .aboutMe,
-.skills,
+.tools,
 .contact,
 .projects {
     width: 85%;
@@ -643,12 +655,17 @@ div.resumeContainer button {
     color: #7E777B;
 }
 
+.resumeButton a:active {
+    background-color: #0E0B0B;
+    border: 3px solid white;
+    color: #7E777B;
+}
 
 /* */
 
 /*contact section*/
 
-.contact i {
+.contact a {
     font-size: 7rem;
     color: #686363;
     padding-left: 3rem;
@@ -784,7 +801,6 @@ div.resumeContainer button {
     width: 90px;
     text-align: center;
     font-family: 'Libre Franklin', sans-serif;
-
 }
 
 .projectDescription p {
@@ -799,6 +815,9 @@ div.resumeContainer button {
     text-decoration-style: double;
 }
 
+.projectContainer a:active {
+    border: 1px solid yellow;
+}
 
 
 /**/
@@ -856,8 +875,25 @@ header:hover {
     color: black;
 }
 
-section.contact i:hover {
+
+/* visited link */
+
+/*
+.footer:visited {
+    color: #0B090A;
+}*/
+
+/* mouse over link */
+
+.footer:hover {
     text-shadow: 1px 1px white;
+}
+
+/* selected link */
+
+.footer:active {
+    color: #686363;
+    text-shadow: 5px 5px black;
 }
 
 
