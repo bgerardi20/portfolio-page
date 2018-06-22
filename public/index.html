@@ -13,7 +13,7 @@
     <!--
 <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
 -->
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+    <!--<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">-->
 
     <link rel="stylesheet" href="./styles.css">
 </head>
@@ -29,9 +29,7 @@
         </div>
 
         <div class="subIconContainer">
-            <div class="subIcons">
-                <!--                <h5 class="welcomeHeader">Check Me Out!</h5>-->
-            </div>
+            <div class="subIcons"></div>
         </div>
         <div class="subIconContainer">
             <div class="close"></div>
@@ -43,8 +41,6 @@
 
         <div class="navigation navigationActive" id="toggle">
 
-            <!--        <div class="close"></div>-->
-
             <nav class="nav sidenav">
 
                 <div class="nameContainer">
@@ -55,7 +51,7 @@
                         <a class="navLink" href="#about"><i class="fas fa-user-astronaut navIcon"></i> About</a>
                     </li>
                     <li class="navItem">
-                        <a class="navLink" href="#skills"><i class="far fa-keyboard navIcon"></i> Skills</a>
+                        <a class="navLink" href="#skills"><i class="far fa-keyboard navIcon"></i> Tools</a>
                     </li>
                     <li class="navItem dropDown">
                         <button class="dropDownBtn"><i class="far fa-folder-open navIcon"></i> Projects
@@ -83,11 +79,6 @@
             </nav>
 
         </div>
-
-
-
-
-
 
         <section class="aboutMe">
 
@@ -119,45 +110,45 @@
 
             <div class="sectionContainer">
 
-                <h3 class="sectionTitle specialTitle">SKILLS</h3>
-                <div class="skillButtonContainer fadeContainer">
-                    <a href="" class="fadeContainer">
-                        <img src="../github-images/languages-icon.png" alt="d" class="image">
+                <h3 class="sectionTitle specialTitle">TOOLBELT</h3>
+                <div class="skillButtonContainer">
+                    <a href="" class="fadeContainer" id="languages">
+                        <img src="../github-images/languages-icon.png" alt="d" class="image" >
                         <div class="middle">
                             <div class="text">Languages</div>
                         </div>
                     </a>
-                    <a href="" class="fadeContainer">
+                    <a href="" class="fadeContainer" id="frontend">
                         <img src="../github-images/front-end-trans.png" alt="d" class="image">
                         <div class="middle">
-                            <div class="text">Frontend</div>
+                            <div class="text">Front-end</div>
                         </div>
                     </a>
-                    <a href="" class="fadeContainer">
+                    <a href="" class="fadeContainer" id="backend">
                         <img src="../github-images/backend-icon.png" alt="d" class="image">
                         <div class="middle">
-                            <div class="text">Backend</div>
+                            <div class="text">Back-end</div>
                         </div>
                     </a>
-                    <a href="" class="fadeContainer">
+                    <a href="" class="fadeContainer" id="database">
                         <img src="../github-images/database-icon.png" alt="d" class="image">
                         <div class="middle">
                             <div class="text">Database</div>
                         </div>
                     </a>
-                    <a href="" class="fadeContainer">
+                    <a href="" class="fadeContainer" id="testing">
                         <img src="../github-images/testing-skills-icon.png" alt="d" class="image">
                         <div class="middle">
                             <div class="text">Testing</div>
                         </div>
                     </a>
-                    <a href="" class="fadeContainer">
+                    <a href="" class="fadeContainer" id="development">
                         <img src="../github-images/testing-trans.png" alt="d" class="image">
                         <div class="middle">
                             <div class="text">Development</div>
                         </div>
                     </a>
-                    <a href="" class="fadeContainer">
+                    <a href="" class="fadeContainer" id="miscellaneous">
                         <img src="../github-images/other-skills-trans.png" alt="d" class="image">
                         <div class="middle">
                             <div class="text">Miscellaneous</div>
@@ -166,11 +157,10 @@
                 </div>
                 <div class="skillIconsContainer">
 
-                    <div class="skillsInnerSection">
-                        <button class="collapsible name">
-                        <img src="../github-images/languages-icon.png" alt="languages">
-                        </button>
+                    <div class="skillsInnerSection languages">
+                        <h2 class="skillHeader">Programming Languages</h2>
                         <div class="content icons">
+
                             <div class="skillContainer">
                                 <img src="../github-images/html-trans.png" alt="HTML">
                                 <h5 class="skillName">HTML</h5>
@@ -182,6 +172,7 @@
                                     <span class="fa fa-star"></span>
                                 </div>
                             </div>
+
                             <div class="skillContainer">
                                 <img src="../github-images/css-trans.png" alt="CSS">
                                 <h5 class="skillName">CSS</h5>
@@ -193,6 +184,7 @@
                                     <span class="fa fa-star"></span>
                                 </div>
                             </div>
+
                             <div class="skillContainer">
                                 <img src="../github-images/js-trans5.png" alt="JavaScript" id="javascript">
                                 <h5 class="skillName">JavaScript</h5>
@@ -204,11 +196,13 @@
                                     <span class="fa fa-star"></span>
                                 </div>
                             </div>
+
                         </div>
                     </div>
-                    <div class="skillsInnerSection">
-                        <button class="collapsible name"><img src="../github-images/frontend-icon.png" alt="frontend"></button>
+                    <div class="skillsInnerSection front">
+                        <h2 class="skillHeader">Front-End</h2>
                         <div class="content icons">
+
                             <div class="skillContainer">
                                 <img src="../github-images/jquery-trans.png" alt="jQuery">
                                 <h5 class="skillName">JQUERY</h5>
@@ -220,6 +214,7 @@
                                     <span class="fa fa-star"></span>
                                 </div>
                             </div>
+
                             <div class="skillContainer">
                                 <img src="../github-images/ajax-trans.png" alt="AJAX">
                                 <h5 class="skillName">AJAX</h5>
@@ -231,6 +226,7 @@
                                     <span class="fa fa-star"></span>
                                 </div>
                             </div>
+
                             <div class="skillContainer">
                                 <img src="../github-images/react-trans2.png" alt="React">
                                 <h5 class="skillName">REACT</h5>
@@ -242,6 +238,7 @@
                                     <span class="fa fa-star"></span>
                                 </div>
                             </div>
+
                             <div class="skillContainer">
                                 <img src="../github-images/redux-trans.png" alt="Redux">
                                 <h5 class="skillName">REDUX</h5>
@@ -264,6 +261,7 @@
                                     <span class="fa fa-star"></span>
                                 </div>
                             </div>
+
                             <div class="skillContainer">
                                 <img src="../github-images/redux-from-logo.png" alt="Redux Form" id="reduxForm">
                                 <h5 class="skillName">REDUX-FORM</h5>
@@ -286,11 +284,13 @@
                                     <span class="fa fa-star"></span>
                                 </div>
                             </div>
+
                         </div>
                     </div>
-                    <div class="skillsInnerSection">
-                        <button class="collapsible name"><img src="../github-images//backend-icon.png" alt="backend"></button>
+                    <div class="skillsInnerSection back">
+                        <h2 class="skillHeader">Back-End</h2>
                         <div class="content icons">
+
                             <div class="skillContainer">
                                 <img src="../github-images/node-logo-2.png" alt="NodeJS">
                                 <h5 class="skillName">NODE</h5>
@@ -302,6 +302,7 @@
                                     <span class="fa fa-star"></span>
                                 </div>
                             </div>
+
                             <div class="skillContainer">
                                 <img src="../github-images/express-trans.png" alt="Express">
                                 <h5 class="skillName">EXPRESS</h5>
@@ -313,6 +314,7 @@
                                     <span class="fa fa-star"></span>
                                 </div>
                             </div>
+
                             <div class="skillContainer">
                                 <img src="../github-images/restful-api.png" alt="Rest API">
                                 <h5 class="skillName">REST-API's</h5>
@@ -335,6 +337,7 @@
                                     <span class="fa fa-star"></span>
                                 </div>
                             </div>
+
                             <div class="skillContainer">
                                 <img src="../github-images/heroku-trans.png" alt="Heroku">
                                 <h5 class="skillName">HEROKU</h5>
@@ -346,6 +349,7 @@
                                     <span class="fa fa-star"></span>
                                 </div>
                             </div>
+
                             <div class="skillContainer">
                                 <img src="../github-images/netlify-trans.png" alt="Heroku">
                                 <h5 class="skillName">NETLIFY</h5>
@@ -357,11 +361,13 @@
                                     <span class="fa fa-star"></span>
                                 </div>
                             </div>
+
                         </div>
                     </div>
-                    <div class="skillsInnerSection">
-                        <button class="collapsible name"><img src="../github-images/database-icon.png" alt="databases"></button>
+                    <div class="skillsInnerSection dataB">
+                        <h2 class="skillHeader">Database</h2>
                         <div class="content icons">
+
                             <div class="skillContainer">
                                 <img src="../github-images/mongo-trans.png" alt="MongoDB">
                                 <h5 class="skillName">MONGODB</h5>
@@ -373,6 +379,7 @@
                                     <span class="fa fa-star"></span>
                                 </div>
                             </div>
+
                             <div class="skillContainer">
                                 <img src="../github-images/mongoose-letters.png" alt="Mongoose">
                                 <h5 class="skillName">MONGOOSE</h5>
@@ -384,6 +391,7 @@
                                     <span class="fa fa-star"></span>
                                 </div>
                             </div>
+
                             <div class="skillContainer">
                                 <img src="../github-images/robo-mongo-icon-nowords.png" alt="RoboMongo">
                                 <h5 class="skillName">ROBO-3T</h5>
@@ -395,6 +403,7 @@
                                     <span class="fa fa-star"></span>
                                 </div>
                             </div>
+
                             <div class="skillContainer">
                                 <img src="../github-images/mlab-logo.png" alt="mLab" id="mLab">
                                 <h5 class="skillName">MLAB</h5>
@@ -406,11 +415,13 @@
                                     <span class="fa fa-star"></span>
                                 </div>
                             </div>
+
                         </div>
                     </div>
-                    <div class="skillsInnerSection">
-                        <button class="collapsible name"><img src="../github-images/testing-skills-icon.png" alt="testing"></button>
+                    <div class="skillsInnerSection testing">
+                        <h2 class="skillHeader">Testing</h2>
                         <div class="content icons">
+
                             <div class="skillContainer">
                                 <img src="../github-images/mocha-logo.png" alt="Mocha">
                                 <h5 class="skillName">MOCHA</h5>
@@ -422,6 +433,7 @@
                                     <span class="fa fa-star"></span>
                                 </div>
                             </div>
+
                             <div class="skillContainer">
                                 <img src="../github-images/chai-logo.png" alt="Chai">
                                 <h5 class="skillName">CHAI</h5>
@@ -433,6 +445,7 @@
                                     <span class="fa fa-star"></span>
                                 </div>
                             </div>
+
                             <div class="skillContainer">
                                 <img src="../github-images/travis-trans.png" alt="TravisCI">
                                 <h5 class="skillName">TRAVIS-CI</h5>
@@ -444,6 +457,7 @@
                                     <span class="fa fa-star"></span>
                                 </div>
                             </div>
+
                             <div class="skillContainer">
                                 <img src="../github-images/postman-trans.png" alt="Postman">
                                 <h5 class="skillName">POSTMAN</h5>
@@ -455,6 +469,7 @@
                                     <span class="fa fa-star"></span>
                                 </div>
                             </div>
+
                             <div class="skillContainer">
                                 <img src="../github-images/enzyme-trans.png" alt="Postman">
                                 <h5 class="skillName">ENZYME</h5>
@@ -466,6 +481,7 @@
                                     <span class="fa fa-star"></span>
                                 </div>
                             </div>
+
                             <div class="skillContainer">
                                 <img src="../github-images/jest-trans.png" alt="Postman">
                                 <h5 class="skillName">JEST</h5>
@@ -477,10 +493,11 @@
                                     <span class="fa fa-star"></span>
                                 </div>
                             </div>
+
                         </div>
                     </div>
-                    <div class="skillsInnerSection">
-                        <button class="collapsible name"><img src="../github-images/text-editor-skills-icon.png" alt="development"></button>
+                    <div class="skillsInnerSection development">
+                        <h2 class="skillHeader">Development</h2>
                         <div class="content icons">
                             <div class="skillContainer">
                                 <img src="../github-images/brackets-trans.png" alt="Brackets">
@@ -561,8 +578,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="skillsInnerSection">
-                        <button class="collapsible name"><img src="../github-images/other-skills-icon.png" alt="Miscellaneous"></button>
+                    <div class="skillsInnerSection miscellaneous">
+                        <h2 class="skillHeader">Miscellaneous</h2>
                         <div class="content icons">
                             <div class="skillContainer">
                                 <img src="../github-images/slack-trans.png" alt="Slack">
