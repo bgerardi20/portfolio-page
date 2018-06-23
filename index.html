@@ -20,7 +20,7 @@
 
 <body>
 
-    <header class="headerSection">
+    <header class="headerSection main">
 
         <div class="headerContainer">
             <h1 class="headerTitle">
@@ -29,10 +29,10 @@
         </div>
 
         <div class="subIconContainer">
-            <div class="subIcons"></div>
+            <div class="subIcons" onclick="openNav()"></div>
         </div>
         <div class="subIconContainer">
-            <div class="close"></div>
+            <div class="close" onclick="closeNav()"></div>
         </div>
 
     </header>
@@ -41,7 +41,7 @@
 
         <div class="navigation navigationActive" id="toggle">
 
-            <nav class="nav sidenav">
+            <nav class="nav sidenav" id="mySidenav">
 
                 <div class="nameContainer">
                     <img src="../public/website-images/bg-logo-2.png" alt="logo" id="logo">
@@ -80,19 +80,20 @@
 
         </div>
 
-        <section class="aboutMe">
+        <section class="aboutMe main">
 
             <div class="sectionContainer resumeContainer">
 
                 <h3 class="sectionTitle specialTitle ">ABOUT ME</h3>
 
                 <div class="aboutMeContainer">
-                    <p class="aboutMeContent">Hello, I’m Brendan, a fullstack web developer and graduate of the Fullstack Web Development Program at Thinkful. I currently reside in the Dallas/Ft.Worth area in North Texas. I was introduced to the technology world during my first internship while working in the IT department, at Trend Micro.</p>
+                    <p class="aboutMeContent">Hello, I’m Brendan, a fullstack web developer and graduate of the Fullstack Web Development Program at Thinkful. I currently reside in the Dallas/Ft.Worth area in North Texas. I was introduced to the tech world during my first internship at Trend Micro, while working in the IT department.</p>
                     <br>
-                    <p class="aboutMeContent">As an avid learner, I have cherished every day of my career with web development. As a hobby, i love solving puzzles of all sorts, and fortunately that is how my brain views code. I love the tingling sensation(high?) i feel from total creation, or destroying a headache by finally solving that bug that has broken your app. I chase this high, day after day, with a simple desire of wanting to know a little more than the previous day. </p>
+                    <p class="aboutMeContent">As an avid learner, I have cherished every day of my career with web development. In my free time, I like to solve puzzles. Of any type. Fortunately for me, my brain anaylzes code, like its a puzzle. I love the high one gets from creating something from nothing. Or destroying a headache by finally solving that bug that has broken your app. I chase this high, day after day, with a simple desire of wanting to know a little more than I did the day before. </p>
                     <br>
-                    <p class="aboutMeContent">With a background in art history with a focus in Roman architecture, I have spent years studying the ways in which a building's design can invoke desired behavior, convey specific messages, and direct a visitor’s movement pattern. As I build websites, I am always thinking of ways to merge functionality and messaging into elegant design.</p>
+                    <p class="aboutMeContent">I love this field because the future is so unpredictable..in a good way! It drives my passion, knowing i could be apart of
 
+                    </p>
                 </div>
 
                 <div class="headShotContainer">
@@ -107,7 +108,7 @@
 
         </section>
 
-        <section class="tools">
+        <section class="tools main">
 
             <div class="sectionContainer">
 
@@ -656,7 +657,7 @@
 
         </section>
 
-        <section class="projects">
+        <section class="projects main">
 
             <div class="sectionContainer">
 
@@ -841,7 +842,7 @@
 
         </section>
 
-        <section class="contact">
+        <section class="contact main">
             <div class="sectionContainer">
                 <h3 class="sectionTitle specialTitle">CONTACT</h3>
 
