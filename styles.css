@@ -163,7 +163,7 @@ a {
 #toggle {}
 
 .subIcons {
-    background: url(../public/website-images/grey-menu-icon2.png) center center no-repeat;
+    background: url(./website-images/grey-menu-icon2.png) center center no-repeat;
     background-size: 3rem;
     background-color: #4A497C;
     border: 2px solid #9493B2;
@@ -189,7 +189,7 @@ a {
 }
 
 .close {
-    background: url(../public/website-images/cross-icon.png) center center no-repeat;
+    background: url(./website-images/cross-icon.png) center center no-repeat;
     background-size: 4rem;
     background-color: #4A497C;
     border: 2px solid #9493B2;
