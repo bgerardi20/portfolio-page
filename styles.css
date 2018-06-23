@@ -78,7 +78,8 @@ header {
     /*    filter: grayscale(100%) brightness(50%);*/
     /*        position: absolute;*/
     /*    filter: contrast(90%) brightness(70%);*/
-    width: 100%;
+    /*    width: 100%;*/
+    width: -webkit-fill-available;
 }
 
 /*
