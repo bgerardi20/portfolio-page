@@ -48,11 +48,21 @@
 body {
     background-color: #808089;
     font-family: 'Roboto', sans-serif;
+    background-image: url(./website-images/background4.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    /*    filter: grayscale(100%) brightness(50%);*/
+    /*        position: absolute;*/
+    /*    filter: contrast(90%) brightness(70%);*/
+    /*    width: 100%;*/
+    width: -webkit-fill-available;
 }
 
 body,
 html {
-    height: 100%;
+    height: auto;
     width: 100%;
 }
 
@@ -69,18 +79,22 @@ header {
     box-shadow: 0px 3px #383535;
 }
 
+/*
 .imageContainer {
     background-image: url(./website-images/background4.jpg);
     background-position: bottom;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    /*    filter: grayscale(100%) brightness(50%);*/
-    /*        position: absolute;*/
-    /*    filter: contrast(90%) brightness(70%);*/
-    /*    width: 100%;*/
     width: -webkit-fill-available;
 }
+*/
+
+.imageContainer {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
 
 /*
 .headerSection {
@@ -164,49 +178,57 @@ a {
 
 #toggle {}
 
+.subIconContainer {
+    margin: 0 auto;
+}
+
 .subIcons {
-    background: url(./website-images/grey-menu-icon2.png) center center no-repeat;
-    background-size: 3rem;
-    background-color: #4A497C;
-    border: 2px solid #9493B2;
+    color: black;
     opacity: .7;
     cursor: pointer;
-    width: 3.5%;
-    height: 6.5%;
     position: fixed;
     top: 50%;
     left: 0.1%;
     z-index: 99;
-    -moz-transition: 0.3s;
-    -o-transition: 0.3s;
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
     filter: none;
+    font-size: 1.7rem;
+    text-align: center;
+    padding-bottom: 3px;
+    padding-left: 7px;
+    padding-right: 7px;
+    border-right: 2px solid white;
 }
 
 .subIcons:hover {
     opacity: 1;
     filter: none;
-    transform: rotateZ(180deg);
+    -ms-transform: rotateZ(270deg);
+    -webkit-transform: rotateZ(270deg);
+    transform: rotateZ(270deg);
+    background-color: white;
+    border: 1px solid white;
 }
 
 .close {
-    background: url(./website-images/cross-icon.png) center center no-repeat;
-    background-size: 4rem;
-    background-color: #4A497C;
-    border: 2px solid #9493B2;
     cursor: pointer;
-    width: 3%;
-    height: 6%;
-    position: fixed;
-    top: 50%;
-    left: 18.2%;
+    font-size: 3rem;
+    color: white;
+    /*    border-bottom: none;*/
+    position: absolute;
+    right: 0;
+    /*    text-align: right;*/
     z-index: 99;
     opacity: .6;
-    -moz-transition: all .6s;
-    -o-transition: all .6s;
-    -webkit-transition: all .6s;
-    transition: all .6s ease;
+    -moz-transition: all .4s;
+    -o-transition: all .4s;
+    -webkit-transition: all .4s;
+    transition: all .4s;
+    margin-right: 15px;
+
     /*
     -ms-transform: rotate(180deg);
     -webkit-transform: rotate(180deg);
@@ -215,6 +237,8 @@ a {
 }
 
 .close:hover {
+    -ms-transform: rotate(-180deg);
+    -webkit-transform: rotate(-180deg);
     transform: rotate(-180deg);
     opacity: 1;
 }
@@ -223,7 +247,8 @@ a {
 
 .sidenav {
     height: 100%;
-    width: 18%;
+    /*    width: 18%;*/
+    width: 0;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -233,7 +258,8 @@ a {
     /* padding-top: 20px; */
     font-family: 'Lato', sans-serif;
     opacity: .8;
-    border-right: 5px solid #f1f1f1;
+    border-right: 1px solid #f1f1f1;
+    transition: 0.5s;
 }
 
 /* Style the sidenav links and the dropdown button */
@@ -878,6 +904,11 @@ header:hover {
 }
 
 /* On mouse-over */
+
+.navLink {
+    display: block;
+    transition: 0.3s;
+}
 
 .dropDownBtn:hover,
 .navLink:hover {

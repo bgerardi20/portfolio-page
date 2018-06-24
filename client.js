@@ -34,17 +34,20 @@ $(function () {
 //    }
 //})
 
-function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-    document.getElementsByClassName("main").style.marginLeft = "250px";
-}
-
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-    document.getElementsByClassName("main").style.marginLeft = "0";
-}
 
 
+//open nav
+$(".subIcons").on("click", function () {
+    $("#mySidenav").css("width", "250px");
+    $("body").css("margin-left", "250px");
+});
+
+
+//close nav
+$(".close").on("click", function () {
+    $("#mySidenav").css("width", "0px");
+    $("body").css("margin-left", "0px");
+});
 
 
 $(document).ready(function () {
