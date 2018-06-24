@@ -474,6 +474,10 @@ section.tools .sectionContainer {
     color: orange;
 }
 
+.fa-star-half-alt {
+    color: orange;
+}
+
 .toolContainer {
     display: inline-block;
     padding: 10px 15px;
@@ -636,7 +640,7 @@ div.resumeContainer button {
 }
 
 .projectContainer ul {
-    width: 95%;
+    width: 99%;
     margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
@@ -645,7 +649,7 @@ div.resumeContainer button {
 
 .projectContainer li {
     display: inline-block;
-    padding: 3px 6px;
+    padding: 2px 3px;
     margin-bottom: 5px;
     border: 2px solid #232223;
     background-color: #C7C3BF;
