@@ -17,29 +17,11 @@ $(function () {
     }
 })
 
-//$(function () {
-//    var coll = document.getElementsByClassName("collapsible");
-//    var i;
-//
-//    for (i = 0; i < coll.length; i++) {
-//        coll[i].addEventListener("click", function () {
-//            this.classList.toggle("active");
-//            var content = this.nextElementSibling;
-//            if (content.style.maxHeight) {
-//                content.style.maxHeight = null;
-//            } else {
-//                content.style.maxHeight = content.scrollHeight + "px";
-//            }
-//        });
-//    }
-//})
-
-
-
 //open nav
 $(".subIcons").on("click", function () {
-    $("#mySidenav").css("width", "250px");
-    $("body").css("margin-left", "250px");
+    $("#mySidenav").css("width", "220px");
+    $("body").css("margin-left", "220px");
+    //    $("headerSection").css("margin-left", "0px");
 });
 
 
@@ -48,172 +30,6 @@ $(".close").on("click", function () {
     $("#mySidenav").css("width", "0px");
     $("body").css("margin-left", "0px");
 });
-
-
-$(document).ready(function () {
-    $("#toggle").hide();
-    $(".close").hide();
-    $(".welcomeHeader").hide();
-    $(".headerSection").show();
-    $(".aboutMe").show();
-    $(".tools").show();
-    $(".projects").show();
-    $(".contact").show();
-    $(".footerInfo").show();
-    $(".toolsInnerSection").hide();
-});
-
-//
-//$(".subIcons").on("mouseenter", function () {
-//    $(".welcomeHeader").show();
-//});
-//$(".subIcons").on("mouseleave", function () {
-//    $(".welcomeHeader").hide();
-//});
-
-//menu icon to open sidenav
-$(document).on("click", ".subIcons", function () {
-    event.preventDefault();
-    $("#toggle").toggle("slide");
-    $(".subIcons").hide();
-    $(".close").show();
-    $('header, section').scrollLeft(1000);
-});
-
-//close menu icon to close sidenav
-$(document).on("click", ".close", function (event) {
-    event.preventDefault();
-    $("#toggle").toggle("slide");
-    $(".close").hide();
-    $(".subIcons").show();
-});
-
-
-//hover for project images, and showing code/demo buttons
-$("div.codeButton").mouseenter(function (event) {
-        event.preventDefault();
-        $(".code", this).css("display", "inline-block");
-        $(".demo", this).css("display", "inline-block");
-        $("img", this).css({
-            "opacity": "0.1",
-            "border": "2px solid white",
-            "-webkit-transform": "scale(1.1)",
-            "-moz-transform": "scale(1.1)",
-            "-ms-transform": "scale(1.1)",
-            "-o-transform": "scale(1.1)",
-            "transform": "scale(1.1)"
-        });
-    })
-    //    .mouseup(function (event) {
-    //        event.preventDefault();
-    //        $(".code", this).css("display", "inline-block");
-    //        $(".demo", this).css("display", "inline-block");
-    //        $("img", this).css({
-    //            "opacity": "0.1",
-    //            "border": "2px solid white",
-    //            "-webkit-transform": "scale(1.1)",
-    //            "-moz-transform": "scale(1.1)",
-    //            "-ms-transform": "scale(1.1)",
-    //            "-o-transform": "scale(1.1)",
-    //            "transform": "scale(1.1)"
-    //        });
-    //    })
-    .mouseleave(function (event) {
-        event.preventDefault();
-        $(".code").css("display", "none");
-        $(".demo").css("display", "none");
-        $("img", this).css({
-            "opacity": "0.8",
-            "border": "none",
-            "-webkit-transform": "scale(1)",
-            "-moz-transform": "scale(1)",
-            "-ms-transform": "scale(1)",
-            "-o-transform": "scale(1)",
-            "transform": "scale(1)"
-        });
-    })
-
-
-//triggers for tool icon buttons
-$(document).on("click", "#languages", function () {
-    event.preventDefault();
-    $(".languages").show();
-    $(".front").hide();
-    $(".back").hide();
-    $(".dataB").hide();
-    $(".testing").hide();
-    $(".development").hide();
-    $(".miscellaneous").hide();
-});
-
-$(document).on("click", "#frontend", function () {
-    event.preventDefault();
-    $(".languages").hide();
-    $(".front").show();
-    $(".back").hide();
-    $(".dataB").hide();
-    $(".testing").hide();
-    $(".development").hide();
-    $(".miscellaneous").hide();
-});
-
-$(document).on("click", "#backend", function () {
-    event.preventDefault();
-    $(".languages").hide();
-    $(".front").hide();
-    $(".back").show();
-    $(".dataB").hide();
-    $(".testing").hide();
-    $(".development").hide();
-    $(".miscellaneous").hide();
-});
-
-$(document).on("click", "#database", function () {
-    event.preventDefault();
-    $(".languages").hide();
-    $(".front").hide();
-    $(".back").hide();
-    $(".dataB").show();
-    $(".testing").hide();
-    $(".development").hide();
-    $(".miscellaneous").hide();
-});
-
-$(document).on("click", "#testing", function () {
-    event.preventDefault();
-    $(".languages").hide();
-    $(".front").hide();
-    $(".back").hide();
-    $(".dataB").hide();
-    $(".testing").show();
-    $(".development").hide();
-    $(".miscellaneous").hide();
-});
-
-$(document).on("click", "#development", function () {
-    event.preventDefault();
-    $(".languages").hide();
-    $(".front").hide();
-    $(".back").hide();
-    $(".dataB").hide();
-    $(".testing").hide();
-    $(".development").show();
-    $(".miscellaneous").hide();
-});
-
-$(document).on("click", "#miscellaneous", function () {
-    event.preventDefault();
-    $(".languages").hide();
-    $(".front").hide();
-    $(".back").hide();
-    $(".dataB").hide();
-    $(".testing").hide();
-    $(".development").hide();
-    $(".miscellaneous").show();
-});
-//end of triggers for tool icon buttons
-
-
 
 //return home
 $('#logo').on('click', function (event) {
@@ -244,4 +60,146 @@ $('#jsContactNav').on('click', function (event) {
     $('html, body').animate({
         scrollTop: $("section.contact").offset().top
     });
+});
+
+
+
+//hover for project images, and showing code/demo buttons
+$("div.codeButton").mouseenter(function (event) {
+        event.preventDefault();
+        $(".code", this).css("display", "inline-block");
+        $(".demo", this).css("display", "inline-block");
+        $("img", this).css({
+            "opacity": "0.1",
+            "border": "2px solid white",
+            "-webkit-transform": "scale(1.1)",
+            "-moz-transform": "scale(1.1)",
+            "-ms-transform": "scale(1.1)",
+            "-o-transform": "scale(1.1)",
+            "transform": "scale(1.1)"
+        });
+    })
+    .mouseleave(function (event) {
+        event.preventDefault();
+        $(".code").css("display", "none");
+        $(".demo").css("display", "none");
+        $("img", this).css({
+            "opacity": "0.8",
+            "border": "none",
+            "-webkit-transform": "scale(1)",
+            "-moz-transform": "scale(1)",
+            "-ms-transform": "scale(1)",
+            "-o-transform": "scale(1)",
+            "transform": "scale(1)"
+        });
+    })
+
+
+
+$(document).ready(function () {
+    $("#toggle").hide();
+    $(".close").hide();
+    $(".welcomeHeader").hide();
+    $(".headerSection").show();
+    $(".aboutMe").show();
+    $(".tools").show();
+    $(".projects").show();
+    $(".contact").show();
+    $(".footerInfo").show();
+    $(".toolsInnerSection").hide();
+});
+
+//menu icon to open sidenav
+$(document).on("click", ".subIcons", function () {
+    event.preventDefault();
+    $("#toggle").toggle("slide");
+    $(".subIcons").hide();
+    $(".close").show();
+    $('header, section').scrollLeft(1000);
+});
+
+//close menu icon to close sidenav
+$(document).on("click", ".close", function (event) {
+    event.preventDefault();
+    $("#toggle").toggle("slide");
+    $(".close").hide();
+    $(".subIcons").show();
+});
+
+//trigger for tool icon buttons
+$(document).on("click", "#languages", function () {
+    event.preventDefault();
+    $(".languages").show();
+    $(".front").hide();
+    $(".back").hide();
+    $(".dataB").hide();
+    $(".testing").hide();
+    $(".development").hide();
+    $(".miscellaneous").hide();
+});
+//trigger for tool icon buttons
+$(document).on("click", "#frontend", function () {
+    event.preventDefault();
+    $(".languages").hide();
+    $(".front").show();
+    $(".back").hide();
+    $(".dataB").hide();
+    $(".testing").hide();
+    $(".development").hide();
+    $(".miscellaneous").hide();
+});
+//trigger for tool icon buttons
+$(document).on("click", "#backend", function () {
+    event.preventDefault();
+    $(".languages").hide();
+    $(".front").hide();
+    $(".back").show();
+    $(".dataB").hide();
+    $(".testing").hide();
+    $(".development").hide();
+    $(".miscellaneous").hide();
+});
+//trigger for tool icon buttons
+$(document).on("click", "#database", function () {
+    event.preventDefault();
+    $(".languages").hide();
+    $(".front").hide();
+    $(".back").hide();
+    $(".dataB").show();
+    $(".testing").hide();
+    $(".development").hide();
+    $(".miscellaneous").hide();
+});
+//trigger for tool icon buttons
+$(document).on("click", "#testing", function () {
+    event.preventDefault();
+    $(".languages").hide();
+    $(".front").hide();
+    $(".back").hide();
+    $(".dataB").hide();
+    $(".testing").show();
+    $(".development").hide();
+    $(".miscellaneous").hide();
+});
+//trigger for tool icon buttons
+$(document).on("click", "#development", function () {
+    event.preventDefault();
+    $(".languages").hide();
+    $(".front").hide();
+    $(".back").hide();
+    $(".dataB").hide();
+    $(".testing").hide();
+    $(".development").show();
+    $(".miscellaneous").hide();
+});
+//trigger for tool icon buttons
+$(document).on("click", "#miscellaneous", function () {
+    event.preventDefault();
+    $(".languages").hide();
+    $(".front").hide();
+    $(".back").hide();
+    $(".dataB").hide();
+    $(".testing").hide();
+    $(".development").hide();
+    $(".miscellaneous").show();
 });
