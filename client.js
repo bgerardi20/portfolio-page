@@ -89,7 +89,7 @@ $("div.codeButton").mouseenter(function (event) {
         event.preventDefault();
         $(".code", this).css("display", "inline-block");
         $(".demo", this).css("display", "inline-block");
-        $(".img", this).css({
+        $("img", this).css({
             "opacity": "0.1",
             "border": "2px solid white",
             "-webkit-transform": "scale(1.1)",
@@ -104,7 +104,7 @@ $("div.codeButton").mouseenter(function (event) {
         $(".code").css("display", "none");
         $(".demo").css("display", "none");
         $("img", this).css({
-            "opacity": "0.1",
+            "opacity": "0.9",
             "border": "none",
             "-webkit-transform": "scale(1)",
             "-moz-transform": "scale(1)",
