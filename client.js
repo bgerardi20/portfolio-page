@@ -41,14 +41,22 @@ $(".fadeContainer").on("mouseover", function () {
 $(".subIcons").on("click", function () {
     $("#mySidenav").css("width", "220px");
     $("body").css("margin-left", "220px");
+    $("section").css({
+        "margin-right": "225px",
+        "width": "80%"
+    });
+
     //    $("headerSection").css("margin-left", "0px");
 });
-
 
 //close nav
 $(".close").on("click", function () {
     $("#mySidenav").css("width", "0px");
     $("body").css("margin-left", "0px");
+    $("section").css({
+        "margin-left": "auto",
+        "margin-right": "auto"
+    });
 });
 
 //return home
