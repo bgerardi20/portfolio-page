@@ -17,6 +17,26 @@ $(function () {
     }
 })
 
+$(".fadeContainer").on("mouseover", function () {
+        $(".text", this).css("opacity", "1.0");
+        $(".image", this).css({
+            "border": "4px solid rgba(255,255,255, 1.0)",
+            "border-radius": "50% 50%",
+            "opacity": "0.1"
+        });
+        //        $("img", this).css("filter", "brightness(50%)");
+
+    })
+    .mouseleave(function () {
+        $(".text", this).css("opacity", "0.01");
+        $(".image", this).css({
+            "opacity": "1.0",
+            "border": "4px solid rgba(255,255,255, 0.01)",
+            "border-radius": "50% 50%"
+
+        });
+    })
+
 //open nav
 $(".subIcons").on("click", function () {
     $("#mySidenav").css("width", "220px");
@@ -69,7 +89,7 @@ $("div.codeButton").mouseenter(function (event) {
         event.preventDefault();
         $(".code", this).css("display", "inline-block");
         $(".demo", this).css("display", "inline-block");
-        $("img", this).css({
+        $(".img", this).css({
             "opacity": "0.1",
             "border": "2px solid white",
             "-webkit-transform": "scale(1.1)",
@@ -84,7 +104,7 @@ $("div.codeButton").mouseenter(function (event) {
         $(".code").css("display", "none");
         $(".demo").css("display", "none");
         $("img", this).css({
-            "opacity": "0.8",
+            "opacity": "0.1",
             "border": "none",
             "-webkit-transform": "scale(1)",
             "-moz-transform": "scale(1)",
