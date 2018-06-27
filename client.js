@@ -41,10 +41,11 @@ $(".fadeContainer").on("mouseover", function () {
 $(".subIcons").on("click", function () {
     $(".sidenav").css("width", "220px");
     $("body").css("margin-left", "220px");
-    $("section").css({
+    $("section, footer").css({
         "margin-right": "225px",
         "width": "80%"
     });
+    $(".headerTitle").css('margin-right', '165px');
     $(".close").show();
 
     //    $("headerSection").css("margin-left", "0px");
@@ -54,10 +55,11 @@ $(".subIcons").on("click", function () {
 $(".close").on("click", function () {
     $(".sidenav").css("width", "60px");
     $("body").css("margin-left", "0px");
-    $("section").css({
+    $("section, footer").css({
         "margin-left": "auto",
         "margin-right": "auto"
     });
+    $(".headerTitle").css('margin-right', '0px');
 });
 
 //return home

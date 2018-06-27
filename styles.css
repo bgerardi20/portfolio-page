@@ -114,9 +114,11 @@ footer {
     margin-left: auto;
     margin-right: auto;
     left: 0;
-    right: 0;
-    font-size: 5.7rem;
-    bottom: 95px;
+    /*    right: 0;*/
+    font-size: 5.6rem;
+    width: 83%;
+    bottom: 150px;
+    right: 50px;
     font-family: 'Roboto', sans-serif;
     letter-spacing: 2px;
 }
