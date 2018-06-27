@@ -507,7 +507,7 @@ section.aboutMe p {
 }
 
 section.tools .sectionContainer {
-    display: inline-block;
+    /*    display: inline-block;*/
 }
 
 
