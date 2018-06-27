@@ -46,7 +46,7 @@
 /*header section */
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     background-image: url(./website-images/background4.jpg);
     background-attachment: fixed;
     width: -webkit-fill-available;
@@ -92,7 +92,7 @@ h4 {
 }
 
 p {
-    font-family: 'Libre Baskerville', serif;
+    /*    font-family: 'Libre Baskerville', serif;*/
     color: #D1D1D3;
 }
 
@@ -113,11 +113,8 @@ footer {
     left: 0;
     right: 0;
     font-size: 5.7rem;
-    /*    text-align: left;*/
-    /*    width: 86%;*/
     bottom: 95px;
-    /*    left: 10px;*/
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'Roboto', sans-serif;
     letter-spacing: 2px;
 }
 
@@ -130,10 +127,14 @@ footer {
 }
 
 .nameContainer {
-    padding: 3rem 0rem;
+    /*    padding: 3rem 0rem;*/
     display: none;
 }
 
+.nameContainer img {
+    filter: contrast(360%);
+    padding: 0;
+}
 
 .subIconContainer {
     /*
@@ -152,21 +153,26 @@ footer {
 }
 
 .navIcon {
-    font-size: 28px;
-    /*
-    padding-right: 25px;
-    padding-left: 5px;
-*/
-    /*    width: 33%;*/
+    font-size: 25px;
+    width: 23%;
+    vertical-align: middle;
+    color: white;
+    display: inline-block;
+    padding: 20px 0px;
 }
 
 
 div.navigation ul {
+    /*    color: white;*/
     margin: 0;
     position: absolute;
     top: 50%;
     left: 50%;
+    right: 0;
     transform: translate(-50%, -50%);
+    display: block;
+    width: 100%;
+    padding-right: 15px;
 }
 
 .subIcons {
@@ -251,12 +257,13 @@ div.navigation ul {
     left: 0;
     background-color: #1e1e1e;
     overflow-x: hidden;
-    font-family: 'Lato', sans-serif;
+    /*    font-family: 'Lato', sans-serif;*/
+    font-family: 'Raleway', sans-serif;
     /*
     filter: alpha(opacity=80);
     opacity: .8;
 */
-    border-right: 1px solid #f1f1f1;
+    /*    border-right: 1px solid #f1f1f1;*/
     transition: 0.5s;
 }
 
@@ -264,18 +271,20 @@ div.navigation ul {
 
 .sidenav a,
 .dropDownBtn {
-    padding: 20px 15px;
+    padding: 20px 0px;
     text-decoration: none;
-    font-size: 16px;
-    font-weight: bold;
-    color: #818181;
-    display: block;
-    border-bottom: 2px solid;
-    background: none;
-    width: 100%;
+    font-size: 20px;
+    /*    font-weight: bold;*/
+    text-transform: uppercase;
+    /*    color: #818181;*/
+    display: inline-block;
+    /* border-bottom: 2px solid; */
+    /* background: none; */
+    width: 70%;
     text-align: left;
     cursor: pointer;
     outline: none;
+    letter-spacing: 2px;
 }
 
 /*
@@ -306,7 +315,9 @@ div.navigation ul {
 }
 
 .nav li {
-    display: block;
+    display: inline-block;
+    width: 100%;
+    cursor: pointer;
 }
 
 .specialTitle {
@@ -324,10 +335,8 @@ div.navigation ul {
     display: block;
 }
 
-.dropDownBtn:hover,
-.navLink:hover {
-    color: #f1f1f1;
-}
+
+
 
 .dropDownBtn a:hover {
     color: black;
@@ -335,28 +344,50 @@ div.navigation ul {
 
 
 .navLink {
-    display: block;
+    display: inline-block;
     transition: 0.3s;
+    padding: 10px 0px;
+    color: white;
+    /*    opacity: 1;*/
 }
 
+.navLink:hover {
+    text-decoration: underline;
+    text-decoration-color: #f1f1f1;
+}
+
+/*
+.navLink a {
+    display: none;
+}
+*/
+
 .navContact {
-    padding-top: 5rem;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding-bottom: 20px;
     display: none;
 }
 
 .navContact p {
     margin: 5px;
+    font-size: 15px;
+    font-weight: bold;
 }
 
 section h3 {
-    font-family: 'Libre Franklin', sans-serif;
+    font-family: 'Raleway', sans-serif;
     color: #232223;
     font-size: 3rem;
 }
 
 section.aboutMe p {
-    padding: 5px 16px;
-    font-size: 1.2rem;
+    padding: 5px;
+    font-size: 18px;
     text-align: left;
 }
 
@@ -532,7 +563,7 @@ div.resumeContainer button {
     border-radius: 4%;
     background-color: #686363;
     line-height: 30px;
-    font-family: 'Libre Franklin', sans-serif;
+    /*    font-family: 'Libre Franklin', sans-serif;*/
     font-weight: bold;
     color: #140E0A;
     padding: 10px 60px;
@@ -566,7 +597,7 @@ div.resumeContainer button {
     width: 48%;
     display: inline-block;
     vertical-align: top;
-    font-family: 'Libre Franklin', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 .projectContainer img {
@@ -629,7 +660,7 @@ div.resumeContainer button {
     color: #F4F3F5;
     margin-top: 5px;
     width: 90px;
-    font-family: 'Libre Franklin', sans-serif;
+    /*    font-family: 'Libre Franklin', sans-serif;*/
     display: none;
 }
 

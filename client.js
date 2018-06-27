@@ -136,6 +136,7 @@ $(document).ready(function () {
     $(".contact").show();
     $(".footerInfo").show();
     $(".toolsInnerSection").hide();
+    $(".navLink").hide();
 });
 
 //menu icon to open sidenav
@@ -146,6 +147,7 @@ $(document).on("click", ".subIcons", function () {
     $(".close").show();
     $(".nameContainer").show();
     $(".navContact").show();
+    $(".navLink").show();
 
     $('header, section').scrollLeft(1000);
 });
@@ -158,6 +160,7 @@ $(document).on("click", ".close", function (event) {
     $(".subIcons").show();
     $(".nameContainer").hide();
     $(".navContact").hide();
+    $(".navLink").hide();
 });
 
 //trigger for tool icon buttons
