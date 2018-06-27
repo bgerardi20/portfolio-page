@@ -1,21 +1,21 @@
 //drop down buttons in nav container
-$(function () {
-
-    var dropDown = document.getElementsByClassName("dropDownBtn");
-    var i;
-
-    for (i = 0; i < dropDown.length; i++) {
-        dropDown[i].addEventListener("click", function () {
-            this.classList.toggle("active");
-            var dropDownContent = this.nextElementSibling;
-            if (dropDownContent.style.display === "block") {
-                dropDownContent.style.display = "none";
-            } else {
-                dropDownContent.style.display = "block";
-            }
-        });
-    }
-})
+//$(function () {
+//
+//    var dropDown = document.getElementsByClassName("dropDownBtn");
+//    var i;
+//
+//    for (i = 0; i < dropDown.length; i++) {
+//        dropDown[i].addEventListener("click", function () {
+//            this.classList.toggle("active");
+//            var dropDownContent = this.nextElementSibling;
+//            if (dropDownContent.style.display === "block") {
+//                dropDownContent.style.display = "none";
+//            } else {
+//                dropDownContent.style.display = "block";
+//            }
+//        });
+//    }
+//})
 
 $(".fadeContainer").on("mouseover", function () {
         $(".text", this).css("opacity", "1.0");
@@ -51,7 +51,7 @@ $(".subIcons").on("click", function () {
 
 //close nav
 $(".close").on("click", function () {
-    $("#mySidenav").css("width", "0px");
+    $("#mySidenav").css("width", "60px");
     $("body").css("margin-left", "0px");
     $("section").css({
         "margin-left": "auto",
@@ -125,9 +125,9 @@ $("div.codeButton").mouseenter(function (event) {
 
 
 $(document).ready(function () {
-    $("#toggle").hide();
-    $(".close").hide();
-    $(".welcomeHeader").hide();
+//    $("#toggle").hide();
+//    $(".close").hide();
+//    $(".welcomeHeader").hide();
     $(".headerSection").show();
     $(".aboutMe").show();
     $(".tools").show();

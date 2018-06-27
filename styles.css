@@ -110,7 +110,7 @@ footer {
     position: absolute;
     font-size: 5.7rem;
     text-align: left;
-    width: 86%;
+    /*    width: 86%;*/
     bottom: 95px;
     left: 10px;
     font-family: 'Roboto Mono', monospace;
@@ -136,8 +136,10 @@ footer {
 
 .navIcon {
     font-size: 35px;
+    /*
     padding-right: 25px;
     padding-left: 5px;
+*/
     width: 33%;
 }
 
@@ -200,7 +202,7 @@ footer {
 
 .sidenav {
     height: 100%;
-    width: 0;
+    width: 60px;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -232,17 +234,21 @@ footer {
     outline: none;
 }
 
+/*
 .dropDownContainer {
     display: none;
     padding-top: 10px;
     width: 100%;
 }
+*/
 
+/*
 .fa-caret-down {
     float: right;
     padding-right: 8px;
     padding-top: 8%;
 }
+*/
 
 .dropDownContent a {
     color: #f1f1f1;
@@ -286,6 +292,14 @@ footer {
 .navLink {
     display: block;
     transition: 0.3s;
+}
+
+.navContact {
+    padding-top: 5rem;
+}
+
+.navContact p {
+    margin: 5px;
 }
 
 section h3 {
@@ -366,7 +380,7 @@ section.aboutMe p {
 .toolButtonContainer img {
     margin: 3px;
     padding: 3px;
-    height: 120px;
+    /*    height: 120px;*/
 }
 
 .toolHeader {
@@ -504,7 +518,8 @@ div.resumeContainer button {
 }
 
 .projectContainer img {
-    height: 307px;
+    /*    height: 307px;*/
+    height: auto;
     width: 100%;
     -webkit-transition: -webkit-transform .6s;
     transition: transform .6s;
@@ -605,26 +620,15 @@ div.footerInfo p {
 
 
 @media screen and (min-width: 701px) {
-    .navigation {
-        overflow: visible;
-    }
-}
-
-@media screen and (min-width: 701px) {
-    /*
-    .navigation-active .nav li {
-        width: 230px;
-    }
-*/
-}
-
-@media screen and (min-width: 701px) {
     .nav li {
-        /*        width: 70px;*/
         overflow: hidden;
         background: #1e1e1e;
         -webkit-transition: width 0.3s ease;
         transition: width 0.3s ease;
+    }
+
+    .navigation {
+        overflow: visible;
     }
 }
 
@@ -632,7 +636,72 @@ div.footerInfo p {
 
 /*MEDIA QUERIES*/
 
-@media only screen and (max-width: 1024px) {}
+@media only screen and (max-width: 1024px) {
+    img {
+        height: 100px;
+    }
+
+    .headerTitle {
+        font-size: 4.3rem;
+    }
+
+    .navIcon {
+        font-size: 25px;
+        width: 22%;
+    }
+
+
+    section.aboutMe p {
+        padding: 5px 12px;
+        font-size: 1rem;
+    }
+
+    .projectContainer li {
+        font-size: 12px;
+    }
+
+    .projectButtons {
+        left: 25%;
+    }
+
+    .toolButtonContainer img {
+        padding: 0px;
+    }
+
+    .text h5 {
+        font-size: 13px;
+    }
+
+    .text h6 {
+        font-size: 8px;
+    }
+
+    .icons img {
+        padding: 0px;
+        height: 60px;
+    }
+
+    .toolName {
+        font-size: 12px;
+    }
+
+    .dropDownContent a {
+        font-size: 13px;
+        padding: 7px 18px;
+    }
+
+
+    .fa-caret-down {
+        float: right;
+        padding-right: 8px;
+        padding-top: 8px;
+    }
+
+    .close,
+    .subIcons {
+        font-size: 2rem;
+    }
+}
 
 
 /*ipad potrait*/
