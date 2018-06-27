@@ -39,19 +39,20 @@ $(".fadeContainer").on("mouseover", function () {
 
 //open nav
 $(".subIcons").on("click", function () {
-    $("#mySidenav").css("width", "220px");
+    $(".sidenav").css("width", "220px");
     $("body").css("margin-left", "220px");
     $("section").css({
         "margin-right": "225px",
         "width": "80%"
     });
+    $(".close").show();
 
     //    $("headerSection").css("margin-left", "0px");
 });
 
 //close nav
 $(".close").on("click", function () {
-    $("#mySidenav").css("width", "60px");
+    $(".sidenav").css("width", "60px");
     $("body").css("margin-left", "0px");
     $("section").css({
         "margin-left": "auto",
@@ -125,9 +126,9 @@ $("div.codeButton").mouseenter(function (event) {
 
 
 $(document).ready(function () {
-//    $("#toggle").hide();
-//    $(".close").hide();
-//    $(".welcomeHeader").hide();
+    //    $("#toggle").hide();
+    //    $(".close").hide();
+    $(".welcomeHeader").hide();
     $(".headerSection").show();
     $(".aboutMe").show();
     $(".tools").show();
@@ -140,18 +141,23 @@ $(document).ready(function () {
 //menu icon to open sidenav
 $(document).on("click", ".subIcons", function () {
     event.preventDefault();
-    $("#toggle").toggle("slide");
+    //    $("#toggle").toggle("slide");
     $(".subIcons").hide();
     $(".close").show();
+    $(".nameContainer").show();
+    $(".navContact").show();
+
     $('header, section').scrollLeft(1000);
 });
 
 //close menu icon to close sidenav
 $(document).on("click", ".close", function (event) {
     event.preventDefault();
-    $("#toggle").toggle("slide");
+    //    $("#toggle").toggle("slide");
     $(".close").hide();
     $(".subIcons").show();
+    $(".nameContainer").hide();
+    $(".navContact").hide();
 });
 
 //trigger for tool icon buttons

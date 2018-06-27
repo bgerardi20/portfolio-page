@@ -108,11 +108,15 @@ footer {
     color: seashell;
     text-shadow: 4px 4px black;
     position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
     font-size: 5.7rem;
-    text-align: left;
+    /*    text-align: left;*/
     /*    width: 86%;*/
     bottom: 95px;
-    left: 10px;
+    /*    left: 10px;*/
     font-family: 'Roboto Mono', monospace;
     letter-spacing: 2px;
 }
@@ -127,67 +131,105 @@ footer {
 
 .nameContainer {
     padding: 3rem 0rem;
+    display: none;
 }
 
+
+.subIconContainer {
+    /*
+
+    margin-left: auto;
+    margin-right: auto;
+*/
+    /*    text-align: center;*/
+    width: 100%;
+    margin: 0 auto;
+    display: inline-block;
+}
 
 #logo {
     cursor: pointer;
 }
 
 .navIcon {
-    font-size: 35px;
+    font-size: 28px;
     /*
     padding-right: 25px;
     padding-left: 5px;
 */
-    width: 33%;
+    /*    width: 33%;*/
+}
+
+
+div.navigation ul {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .subIcons {
     color: white;
+    /*
+    text-align: left;
+
     filter: alpha(opacity=70);
     opacity: .7;
+*/
     cursor: pointer;
-    position: fixed;
-    left: 0.1%;
+    position: absolute;
+    /*    left: 12px;*/
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
     z-index: 99;
     -moz-transition: 0.5s;
     -o-transition: 0.5s;
     -webkit-transition: 0.5s;
     transition: 0.5s;
     filter: none;
-    font-size: 1.7rem;
-    padding-bottom: 3px;
+    font-size: 2rem;
+    /*    width: 90%;*/
+    /*
+    padding-bottom: 30px;
     padding-left: 7px;
     padding-right: 7px;
+*/
 }
 
 .subIcons:hover {
+    /*
+
     filter: alpha(opacity=100);
     opacity: 1;
+*/
     filter: none;
     -ms-transform: rotateZ(270deg);
     -webkit-transform: rotateZ(270deg);
     transform: rotateZ(270deg);
-    background-color: white;
-    color: black;
-    border: 1px solid white;
+    /*    background-color: white;*/
+    /*    color: black;*/
+    /*    border: 1px solid white;*/
 }
 
 .close {
     cursor: pointer;
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: white;
     position: absolute;
+    top: 1px;
     right: 0;
     z-index: 99;
-    filter: alpha(opacity=60);
-    opacity: .6;
+    /*    filter: alpha(opacity=60);*/
+    /*    opacity: .6;*/
     -moz-transition: all .4s;
     -o-transition: all .4s;
     -webkit-transition: all .4s;
     transition: all .4s;
     margin-right: 15px;
+    display: none;
 }
 
 .close:hover {
@@ -195,7 +237,7 @@ footer {
     -webkit-transform: rotate(-180deg);
     transform: rotate(-180deg);
     filter: alpha(opacity=100);
-    opacity: 1;
+    /*    opacity: 1;*/
 }
 
 /* Fixed sidenav, full height */
@@ -210,8 +252,10 @@ footer {
     background-color: #1e1e1e;
     overflow-x: hidden;
     font-family: 'Lato', sans-serif;
+    /*
     filter: alpha(opacity=80);
     opacity: .8;
+*/
     border-right: 1px solid #f1f1f1;
     transition: 0.5s;
 }
@@ -235,6 +279,7 @@ footer {
 }
 
 /*
+
 .dropDownContainer {
     display: none;
     padding-top: 10px;
@@ -296,6 +341,7 @@ footer {
 
 .navContact {
     padding-top: 5rem;
+    display: none;
 }
 
 .navContact p {
@@ -316,12 +362,13 @@ section.aboutMe p {
 
 .fadeContainer {
     position: relative;
+    height: auto;
 }
 
 .image {
     height: auto;
     transition: .5s ease;
-    backface-visibility: hidden;
+    /*    backface-visibility: hidden;*/
     display: inline-block;
     width: 13%;
 }
@@ -329,10 +376,15 @@ section.aboutMe p {
 .middle {
     transition: .5s ease;
     position: absolute;
-    top: 50%;
-    left: 49%;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 50px;
+    left: 0;
+    right: 0;
+    /*
     transform: translate(-50%, -150%);
     -ms-transform: translate(-50%, -150%);
+*/
 }
 
 .text {
@@ -560,8 +612,11 @@ div.resumeContainer button {
 
 .projectButtons {
     position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
     top: 40%;
-    left: 30%;
 }
 
 .code,
