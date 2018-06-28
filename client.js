@@ -42,8 +42,9 @@ $(".subIcons").on("click", function () {
     $(".sidenav").css("width", "220px");
     $("body").css("margin-left", "220px");
     $("section, footer").css({
-        "margin-right": "225px",
-        "width": "80%"
+        "margin-left": "auto",
+        "margin-right": "auto",
+        "width": "100%"
     });
     $(".headerTitle").css('margin-right', '165px');
     $(".close").show();
@@ -57,7 +58,8 @@ $(".close").on("click", function () {
     $("body").css("margin-left", "0px");
     $("section, footer").css({
         "margin-left": "auto",
-        "margin-right": "auto"
+        "margin-right": "auto",
+        "width": "95%"
     });
     $(".headerTitle").css('margin-right', '0px');
 });
