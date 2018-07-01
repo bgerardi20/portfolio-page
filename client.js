@@ -39,14 +39,25 @@ $(".fadeContainer").on("mouseover", function () {
 
 //open nav
 $(".subIcons").on("click", function () {
-    $("body").css("margin-left", "220px");
+    $("body").css({
+        "margin-left": "220px",
+        "transition": "all 1s"
+    });
     $("main").css({
         "margin-left": "auto",
         "margin-right": "auto",
         "width": "100%"
     });
-    $("section").css("width", "auto");
-    $(".sidenav").css("width", "220px");
+    //    $("section").css("width", "auto");
+    $(".nav ul").css({
+        "margin-left": "10px",
+        "transition": "margin-left .2s",
+        "transition-timing-function": "ease-in"
+    });
+    $(".sidenav").css({
+        "width": "220px",
+        "transition": "all 1s"
+    });
     $(".headerTitle").css('margin-right', '165px');
     $(".close").show();
 });
@@ -55,15 +66,23 @@ $(".subIcons").on("click", function () {
 $(".close").on("click", function () {
     $("body").css({
         "margin-left": "0px",
-        "width": "100%"
+        "transition": "all .5s"
     });
     $("main").css({
         "margin-left": "auto",
-        "margin-right": "auto",
-        "width": "100%"
+        "margin-right": "auto"
+        //        "transition": "all 1s"
     });
-    $("section").css("width", "90%");
-    $(".sidenav").css("width", "60px");
+    //    $("section").css("width", "90%");
+    $(".nav ul").css({
+        "margin-left": "2.5px",
+        "transition": "margin-left .2s",
+        "transition-timing-function": "ease-in"
+    });
+    $(".sidenav").css({
+        "width": "60px",
+        "transition": "all 1s"
+    });
     $(".headerTitle").css('margin-right', 'auto');
 
 });

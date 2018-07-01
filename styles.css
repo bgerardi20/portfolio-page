@@ -91,8 +91,8 @@ img {
 }
 
 section {
-    width: 90%;
-    margin-left: auto;
+    /*    width: 90%;*/
+    margin-left: 25px;
     margin-right: auto;
     padding: 5rem 0rem;
 }
@@ -135,8 +135,8 @@ footer {
 }
 
 .imageContainer {
-    transition: margin-left .5s;
-    padding: 15px;
+    transition: all .5s;
+    /*    padding: 25px;*/
     width: 100%;
     /*        margin: 0 auto;*/
     display: inline-block;
@@ -149,7 +149,7 @@ footer {
 }
 
 .nameContainer img {
-    filter: contrast(360%);
+    filter: contrast(160%);
     padding: 0;
 }
 
@@ -376,6 +376,7 @@ main.navigation ul {
     display: inline-block;
     width: 100%;
     cursor: pointer;
+    margin-left: 2.5px;
 }
 
 .specialTitle {
@@ -549,7 +550,8 @@ section.aboutMe p {
 }
 
 .sectionContainer {
-    min-width: 1180px;
+    /* max-width: 100%; */
+    margin-left: 70px;
     background-color: rgba(56, 53, 53, 0.8);
 }
 
@@ -605,15 +607,15 @@ div.headShotContainer img {
 }
 
 .headShotContainer {
-    width: 26%;
+    width: 28%;
     display: inline-block;
     vertical-align: middle;
-    padding-top: 1rem;
+    /*    padding-top: 1rem;*/
     margin-right: 12px;
 }
 
 .aboutMeContainer {
-    width: 63%;
+    width: 67%;
     display: inline-block;
     vertical-align: middle;
 }
