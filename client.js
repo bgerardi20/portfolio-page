@@ -39,22 +39,20 @@ $(".fadeContainer").on("mouseover", function () {
 
 //open nav
 $(".subIcons").on("click", function () {
-    $(".sidenav").css("width", "220px");
     $("body").css("margin-left", "220px");
     $("main").css({
         "margin-left": "auto",
         "margin-right": "auto",
         "width": "100%"
     });
+    $("section").css("width", "auto");
+    $(".sidenav").css("width", "220px");
     $(".headerTitle").css('margin-right', '165px');
     $(".close").show();
-
-    //    $("headerSection").css("margin-left", "0px");
 });
 
 //close nav
 $(".close").on("click", function () {
-    $(".sidenav").css("width", "60px");
     $("body").css({
         "margin-left": "0px",
         "width": "100%"
@@ -64,7 +62,10 @@ $(".close").on("click", function () {
         "margin-right": "auto",
         "width": "100%"
     });
+    $("section").css("width", "90%");
+    $(".sidenav").css("width", "60px");
     $(".headerTitle").css('margin-right', 'auto');
+
 });
 
 //return home
