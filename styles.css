@@ -552,6 +552,7 @@ section.aboutMe p {
 .sectionContainer {
     /* max-width: 100%; */
     margin-left: 70px;
+    margin-right: 70px;
     background-color: rgba(56, 53, 53, 0.8);
 }
 
@@ -773,22 +774,58 @@ div.footerInfo p {
 
 
 
-@media screen and (min-width: 701px) {
-    .nav li {
-        overflow: hidden;
-        background: #1e1e1e;
-        -webkit-transition: width 0.3s ease;
-        transition: width 0.3s ease;
-    }
 
-    .navigation {
-        overflow: visible;
-    }
-}
 
 
 
 /*MEDIA QUERIES*/
+
+/*monitor screen*/
+
+@media screen and (min-width: 1600px) {
+    section.aboutMe p {
+        font-size: 25px;
+    }
+
+    section h3 {
+        font-size: 4rem;
+    }
+
+    .navContact p {
+        font-size: 14px;
+    }
+
+    .headerTitle {
+        font-size: 7rem;
+    }
+
+    div.resumeContainer button {
+        font-size: 20px
+    }
+
+    .resumeButton a {
+        padding: 20px 125px;
+    }
+
+    .middle {
+        bottom: 75px;
+    }
+
+    .projectContainer li {
+        font-size: 19px;
+    }
+
+    .projectContainer h6 {
+        font-size: 25px;
+        padding-bottom: 15px;
+    }
+
+    .contact a {
+        font-size: 11rem;
+    }
+}
+
+/*laptop*/
 
 @media only screen and (max-width: 1024px) {
 
@@ -851,12 +888,73 @@ div.footerInfo p {
 
 /*ipad potrait*/
 
-@media only screen and (max-width: 768px) {}
+@media only screen and (max-width: 768px) {
+
+    section {
+        width: 100%;
+    }
+
+    .headerTitle {
+        font-size: 3.1rem;
+    }
+
+    .sectionContainer {
+        width: 100%;
+    }
+
+    .toolButtonContainer {
+        padding: 2px 10px;
+    }
+
+    .middle {
+        bottom: 25px;
+    }
+
+    .projectContainer h6 {
+        font-size: 19px;
+    }
+
+    .projectContainer li {
+        padding: 3px 4px;
+        margin: 2px 0px;
+        font-size: 13px;
+        border: 1px solid #232223;
+    }
+}
+
+
+@media screen and (min-width: 701px) {
+    .nav li {
+        overflow: hidden;
+        background: #1e1e1e;
+        -webkit-transition: width 0.3s ease;
+        transition: width 0.3s ease;
+    }
+
+    .navigation {
+        overflow: visible;
+    }
+}
 
 
 /*iPhone landscape*/
 
-@media only screen and (max-width: 480px) {}
+@media only screen and (max-width: 480px) {
+    body, html {
+        overflow-x: hidden;
+    }
+
+    .sidenav {
+        height: 80px;
+        width: 100%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #1e1e1e;
+        font-family: 'Raleway', sans-serif;
+    }
+}
 
 
 /*iPhone portrait*/

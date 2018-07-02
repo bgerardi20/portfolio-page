@@ -58,7 +58,13 @@ $(".subIcons").on("click", function () {
         "width": "220px",
         "transition": "all 1s"
     });
-    $(".headerTitle").css('margin-right', '165px');
+    $(".headerTitle").css({
+        'margin-right': '165px',
+        'transition': "all 1s"
+    });
+    if (window.matchMedia('(min-width: 768px)').matches) {
+        $(".headerTitle").css('margin-right', 'auto');
+    };
     $(".close").show();
 });
 
@@ -83,7 +89,10 @@ $(".close").on("click", function () {
         "width": "60px",
         "transition": "all 1s"
     });
-    $(".headerTitle").css('margin-right', 'auto');
+    $(".headerTitle").css({
+        'margin-right': 'auto',
+        'transition': "margin-right 3s"
+    });
 
 });
 
