@@ -959,6 +959,13 @@ div.footerInfo p {
         overflow-x: hidden;
     }
 
+    .nav li {
+        width: auto;
+        margin: 5px;
+        padding: 5px;
+        /*        margin-left: 0px;*/
+    }
+
     .sidenav {
         height: 80px;
         width: 100%;
@@ -970,13 +977,92 @@ div.footerInfo p {
         font-family: 'Raleway', sans-serif;
     }
 
-    section {}
-
     .sectionContainer {
         width: 90%;
         margin-left: 0px;
         margin-right: 0px;
     }
+
+    .headerTitle {
+        top: 280px;
+        font-size: 3rem;
+        width: 90%;
+        letter-spacing: 9px;
+    }
+
+    .nameContainer,
+    .navContact {
+        padding-top: 0;
+        display: inline-block;
+        /*        vertical-align: bottom;*/
+        position: absolute;
+        margin-top: 10px;
+    }
+
+    .subIcons,
+    .subIcons:hover,
+    nav,
+    .close,
+    .close:hover {
+        transition: none;
+    }
+
+    .nameContainer {
+        top: 0px;
+        left: 0px;
+        margin-left: 15px;
+    }
+
+    .sidenav a {
+        font-size: 16px;
+        letter-spacing: 1px;
+    }
+
+    main.navigation ul {
+        /* color: white; */
+        margin: 30px auto;
+        position: static;
+        top: 0;
+        left: 0;
+        right: 0;
+        transform: none;
+        display: inline-block;
+        width: 100%;
+        padding-top: 0px;
+        /* padding-right: 15px; */
+        /* max-height: 60%; */
+    }
+
+    .navContact {
+        top: 0px;
+        left: 0;
+        right: 0;
+    }
+
+    #logo {
+        height: 50px;
+    }
+
+    .navIcon {
+        font-size: 16px;
+        vertical-align: text-top;
+        padding: 0;
+        width: auto;
+    }
+
+    .navItem i {
+        font-weight: 900;
+        margin-right: 1px;
+    }
+
+    .headShotContainer {
+        width: 45%;
+    }
+
+    div.resumeContainer button {
+        margin-top: 1rem;
+    }
+
 
     .projectContainer {
         display: block;
@@ -1003,6 +1089,10 @@ div.footerInfo p {
         display: inline-block;
         /*        width: 90%;*/
         padding: 1px 1px;
+    }
+
+    .toolHeader {
+        margin-bottom: 10px;
     }
 
     .toolButtonContainer img {

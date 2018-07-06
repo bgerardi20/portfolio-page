@@ -39,10 +39,17 @@ $(".fadeContainer").on("mouseover", function () {
 
 //open nav
 $(".subIcons").on("click", function () {
+
     $("body").css({
         "margin-left": "220px",
         "transition": "all 1s"
     });
+    if (window.matchMedia('(max-width: 480px)').matches) {
+        $("body").css({
+            'margin-left': '0px',
+            "transition": "height 1s"
+        });
+    }
     $("main").css({
         "margin-left": "auto",
         "margin-right": "auto",
@@ -54,17 +61,40 @@ $(".subIcons").on("click", function () {
         "transition": "margin-left .2s",
         "transition-timing-function": "ease-in"
     });
-    $(".sidenav").css({
-        "width": "220px",
-        "transition": "all 1s"
-    });
-    $(".headerTitle").css({
-        'margin-right': '165px',
-        'transition': "all 1s"
-    });
+
+    if (window.matchMedia('(max-width: 480px)').matches) {
+        $(".nav ul").css({
+            'margin-left': '0px',
+            'transition': 'none'
+        });
+    };
+
+    if (window.matchMedia('(max-width: 480px)').matches) {
+        $(".sidenav").css({
+            'width': '100%',
+            'height': '130px',
+            'overflow': 'hidden',
+            "transition": "none"
+
+        });
+    } else {
+        $(".sidenav").css({
+            "width": "220px",
+            "transition": "all 1s"
+        });
+    };
+
     if (window.matchMedia('(min-width: 768px)').matches) {
         $(".headerTitle").css('margin-right', 'auto');
+    } else if (window.matchMedia('(min-width: 480px)').matches) {
+        $(".headerTitle").css('margin-right', 'auto');
+    } else {
+        $(".headerTitle").css({
+            'margin-right': '165px',
+            'transition': "all 1s"
+        });
     };
+
     $(".close").show();
 });
 
@@ -89,6 +119,13 @@ $(".close").on("click", function () {
         "width": "60px",
         "transition": "all 1s"
     });
+    if (window.matchMedia('(max-width: 480px)').matches) {
+        $(".sidenav").css({
+            'width': '100%',
+            'height': '80px',
+            "transition": "none"
+        });
+    }
     $(".headerTitle").css({
         'margin-right': 'auto',
         'transition': "margin-right 3s"
@@ -173,6 +210,12 @@ $(document).ready(function () {
     $(".footerInfo").show();
     $(".toolsInnerSection").hide();
     $(".navLink").hide();
+    $(".nameContainer").hide();
+    $(".navContact").hide();
+
+    if (window.matchMedia('(max-width: 480px)').matches) {
+        $(".sidenav ul").hide();
+    };
 });
 
 //menu icon to open sidenav
@@ -186,6 +229,11 @@ $(document).on("click", ".subIcons", function () {
     $(".navLink").show();
 
     $('header, section').scrollLeft(1000);
+
+
+    if (window.matchMedia('(max-width: 480px)').matches) {
+        $(".sidenav ul").show();
+    };
 });
 
 //close menu icon to close sidenav
@@ -197,6 +245,10 @@ $(document).on("click", ".close", function (event) {
     $(".nameContainer").hide();
     $(".navContact").hide();
     $(".navLink").hide();
+
+    if (window.matchMedia('(max-width: 480px)').matches) {
+        $(".sidenav ul").hide();
+    };
 });
 
 //trigger for tool icon buttons
