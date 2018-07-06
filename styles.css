@@ -975,6 +975,7 @@ div.footerInfo p {
         left: 0;
         background-color: #1e1e1e;
         font-family: 'Raleway', sans-serif;
+        border-bottom: 4px solid black;
     }
 
     .sectionContainer {
