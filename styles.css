@@ -449,8 +449,9 @@ section h3 {
 }
 
 section.aboutMe p {
-    padding: 5px;
-    font-size: 18px;
+    padding: 18px;
+    margin: 5px;
+    font-size: 19px;
     text-align: left;
 }
 
@@ -554,6 +555,7 @@ section.aboutMe p {
     margin-left: 70px;
     margin-right: 70px;
     background-color: rgba(56, 53, 53, 0.8);
+    padding-bottom: 25px;
 }
 
 .sectionContainer:hover {
@@ -609,21 +611,28 @@ div.headShotContainer img {
 
 .headShotContainer {
     width: 28%;
-    display: inline-block;
-    vertical-align: middle;
-    /*    padding-top: 1rem;*/
-    margin-right: 12px;
+    float: right;
+    /* display: inline-block; */
+    /* vertical-align: middle; */
+    padding-top: 1rem;
+    /* margin-right: 0px; */
+    margin-left: 15px;
 }
 
 .aboutMeContainer {
-    width: 67%;
+    width: 95%;
     display: inline-block;
     vertical-align: middle;
 }
 
 div.resumeContainer button {
     margin-top: 3rem;
-    margin-bottom: 2rem;
+    /* margin-bottom: -8rem; */
+    display: block;
+    /* text-align: center; */
+    margin-left: auto;
+    margin-right: auto;
+    /* padding-bottom: 10px; */
 }
 
 .resumeButton a {
@@ -682,6 +691,7 @@ div.resumeContainer button {
     border-bottom: 2px solid #9D9894;
     padding-bottom: 6px;
     color: whitesmoke;
+    text-shadow: 3px 3px black;
     margin-top: 10px;
     letter-spacing: .5px;
 }
@@ -765,6 +775,10 @@ div.resumeContainer button {
 .footer:active {
     color: #686363;
     text-shadow: 5px 5px black;
+}
+
+.footerInfo {
+    font-size: 20px;
 }
 
 div.footerInfo p {
@@ -940,7 +954,8 @@ div.footerInfo p {
 /*iPhone landscape*/
 
 @media only screen and (max-width: 480px) {
-    body, html {
+    body,
+    html {
         overflow-x: hidden;
     }
 
@@ -954,6 +969,75 @@ div.footerInfo p {
         background-color: #1e1e1e;
         font-family: 'Raleway', sans-serif;
     }
+
+    section {}
+
+    .sectionContainer {
+        width: 90%;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .projectContainer {
+        display: block;
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+    }
+
+    .projectContainer ul {
+        margin: 10px 0px;
+    }
+
+    .projectContainer li {
+        font-size: 14px;
+        border: 2px solid #232223;
+    }
+
+    .projectContainer h6 {
+        font-size: 20px;
+    }
+
+    .toolButtonContainer {
+        display: inline-block;
+        /*        width: 90%;*/
+        padding: 1px 1px;
+    }
+
+    .toolButtonContainer img {
+        margin: 8px;
+    }
+
+    .image {
+        width: 25%;
+    }
+
+    .middle {
+        bottom: 40px;
+    }
+
+    .text h5 {
+        font-size: 12px;
+    }
+
+    .text h6 {
+        font-size: 9px;
+    }
+
+    .icons img {
+        height: 80px;
+    }
+
+
+    .contact a {
+        font-size: 4.5rem;
+    }
+
+    div.footerInfo p {
+        font-size: 13px;
+    }
+
 }
 
 
