@@ -691,7 +691,7 @@ div.resumeContainer button {
     border-bottom: 2px solid #9D9894;
     padding-bottom: 6px;
     color: whitesmoke;
-    text-shadow: 3px 3px black;
+    text-shadow: 2px 2px black;
     margin-top: 10px;
     letter-spacing: .5px;
 }
@@ -1134,4 +1134,145 @@ div.footerInfo p {
 
 /*iPhone portrait*/
 
-@media only screen and (max-width: 320px) {}
+@media only screen and (max-width: 320px) {
+
+
+    main.navigation ul {
+        padding-right: 0px;
+    }
+
+    section {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .sectionContainer {
+        width: 93%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .navContact p {
+        margin: 1px;
+    }
+
+    .nav li {
+        width: auto;
+        margin: 5px;
+        padding: 2px;
+    }
+
+    .close {
+        font-size: 2.5rem;
+        margin-right: 10px;
+        margin-top: -8px;
+    }
+
+    .sidenav a {
+        font-size: 11.2px;
+        letter-spacing: 0px;
+        width: auto;
+        padding: 30px 0px;
+    }
+
+    .navIcon {
+        vertical-align: middle;
+        font-size: 13px;
+    }
+
+    .navItem i {
+        margin-right: 0px;
+    }
+
+    #logo {
+        height: 35px;
+    }
+
+    .headShotContainer {
+        width: 50%;
+    }
+
+    .nameContainer,
+    .navContact {
+        margin-top: 10px;
+    }
+
+    .navContact {
+        width: 49%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    .nameContainer {
+        margin-left: 5px;
+
+    }
+
+    .headerTitle {
+        letter-spacing: 2px;
+        width: 91%;
+    }
+
+    .headerContainer {
+        min-width: 700px;
+        min-height: 700px;
+    }
+
+    .projectContainer h6 {
+        font-size: 18px;
+    }
+
+    .middle {
+        bottom: 45px;
+    }
+
+    .image {
+        width: 42%;
+    }
+
+    .text h5 {
+        font-size: 15px;
+    }
+
+    .projectContainer ul {
+        margin: 10px 0px;
+        width: 100%;
+        margin: 5px auto;
+        /* display: block; */
+    }
+
+    .projectContainer li {
+        font-size: 14px;
+        border: 0px solid #232223;
+        padding: 1px 4px;
+        margin: 2px 0px;
+    }
+
+    .specialTitle {
+        letter-spacing: 3px;
+        padding-bottom: 25px;
+        font-size: 2.7rem;
+    }
+
+    .toolContainer {
+        /* width: auto; */
+        display: inline-block;
+        padding: 10px 10px;
+        margin: 15px 1px;
+    }
+
+    .icons img {
+        height: 70px;
+    }
+
+    .contact a {
+        font-size: 7rem;
+        padding: 5px;
+        margin: 5px 0px;
+    }
+
+    .footer {
+        width: 49%;
+    }
+}

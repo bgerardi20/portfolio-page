@@ -88,6 +88,8 @@ $(".subIcons").on("click", function () {
         $(".headerTitle").css('margin-right', 'auto');
     } else if (window.matchMedia('(min-width: 480px)').matches) {
         $(".headerTitle").css('margin-right', 'auto');
+    } else if (window.matchMedia('(min-width: 320px)').matches) {
+        $(".headerTitle").css('margin-right', 'auto');
     } else {
         $(".headerTitle").css({
             'margin-right': '165px',
