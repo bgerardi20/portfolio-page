@@ -316,7 +316,7 @@ main.navigation ul {
     background-color: #1e1e1e;
     overflow-x: hidden;
     /*    font-family: 'Lato', sans-serif;*/
-    font-family: 'Raleway', sans-serif;
+    /*    font-family: 'Raleway', sans-serif;*/
     /*
     filter: alpha(opacity=80);
     opacity: .8;
@@ -974,7 +974,7 @@ div.footerInfo p {
         top: 0;
         left: 0;
         background-color: #1e1e1e;
-        font-family: 'Raleway', sans-serif;
+        /*        font-family: 'Raleway', sans-serif;*/
         border-bottom: 4px solid black;
     }
 
@@ -1158,8 +1158,8 @@ div.footerInfo p {
 
     .nav li {
         width: auto;
-        margin: 5px;
-        padding: 2px;
+        margin: 3px;
+        padding: 1px;
     }
 
     .close {
@@ -1169,7 +1169,7 @@ div.footerInfo p {
     }
 
     .sidenav a {
-        font-size: 11.2px;
+        font-size: 12px;
         letter-spacing: 0px;
         width: auto;
         padding: 30px 0px;
@@ -1190,6 +1190,8 @@ div.footerInfo p {
 
     .headShotContainer {
         width: 50%;
+        padding-top: 9px;
+        margin-right: 10px;
     }
 
     .nameContainer,
