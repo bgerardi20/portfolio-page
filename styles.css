@@ -123,14 +123,14 @@ footer {
     left: 0;
     right: 0;
     font-size: 5rem;
-    width: 82%;
-    top: 270px;
+    width: auto;
+    top: 250px;
     /* right: 50px; */
     /* font-family: 'Signika', sans-serif; */
     font-family: 'Cinzel', serif;
     /* font-family: 'Permanent Marker', cursive; */
     letter-spacing: 2px;
-    text-align: left;
+    /*    text-align: left;*/
     /* margin-top: 20rem; */
 }
 
@@ -383,6 +383,7 @@ main.navigation ul {
     padding: 20px 0px 20px;
     letter-spacing: 15px;
     color: white;
+    margin: 5px;
 }
 
 .dropDownContent a:hover {
@@ -450,7 +451,7 @@ section h3 {
 
 section.aboutMe p {
     padding: 18px;
-    margin: 5px;
+    margin: 30px;
     font-size: 19px;
     text-align: left;
 }
@@ -520,7 +521,7 @@ section.aboutMe p {
 
 .toolButtonContainer {
     margin-top: 30px;
-    display: block;
+    display: inline-block;
 }
 
 
@@ -556,6 +557,7 @@ section.aboutMe p {
     margin-right: 70px;
     background-color: rgba(56, 53, 53, 0.8);
     padding-bottom: 25px;
+    width: 100%;
 }
 
 .sectionContainer:hover {
@@ -844,13 +846,13 @@ div.footerInfo p {
 @media only screen and (max-width: 1024px) {
 
     .headerTitle {
-        font-size: 4rem;
-        width: 80%;
+        /*        font-size: 4rem;*/
+        /*        width: 80%;*/
     }
 
     section.aboutMe p {
         padding: 5px 12px;
-        font-size: 14px;
+        font-size: 17px;
     }
 
     .projectContainer li {
@@ -959,6 +961,10 @@ div.footerInfo p {
         overflow-x: hidden;
     }
 
+    section h3 {
+        font-size: 2.5rem;
+    }
+
     .nav li {
         width: auto;
         margin: 5px;
@@ -985,10 +991,15 @@ div.footerInfo p {
     }
 
     .headerTitle {
-        top: 280px;
+        top: 210px;
         font-size: 3rem;
-        width: 90%;
-        letter-spacing: 9px;
+        /*        width: 100%;*/
+        letter-spacing: 5px;
+    }
+
+    .headerContainer {
+        min-width: 700px;
+        min-height: 700px;
     }
 
     .nameContainer,
@@ -1014,8 +1025,12 @@ div.footerInfo p {
         margin-left: 15px;
     }
 
+    .specialTitle {
+        letter-spacing: 10px;
+    }
+
     .sidenav a {
-        font-size: 16px;
+        font-size: 14px;
         letter-spacing: 1px;
     }
 
@@ -1030,6 +1045,7 @@ div.footerInfo p {
         display: inline-block;
         width: 100%;
         padding-top: 0px;
+        overflow: scroll;
         /* padding-right: 15px; */
         /* max-height: 60%; */
     }
@@ -1147,7 +1163,7 @@ div.footerInfo p {
     }
 
     .sectionContainer {
-        width: 93%;
+        width: 91%;
         margin-left: auto;
         margin-right: auto;
     }
@@ -1205,22 +1221,22 @@ div.footerInfo p {
         margin-right: auto;
     }
 
-
     .nameContainer {
         margin-left: 5px;
-
     }
 
     .headerTitle {
         letter-spacing: 2px;
-        width: 91%;
+        /*        width: 91%;*/
+        /*        top: 230px;*/
     }
 
+    /*
     .headerContainer {
         min-width: 700px;
         min-height: 700px;
     }
-
+*/
     .projectContainer h6 {
         font-size: 18px;
     }

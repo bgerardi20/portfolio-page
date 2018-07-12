@@ -84,11 +84,11 @@ $(".subIcons").on("click", function () {
         });
     };
 
-    if (window.matchMedia('(min-width: 768px)').matches) {
+    if (window.matchMedia('(min-width: 481px)').matches) {
         $(".headerTitle").css('margin-right', 'auto');
     } else if (window.matchMedia('(min-width: 480px)').matches) {
         $(".headerTitle").css('margin-right', 'auto');
-    } else if (window.matchMedia('(min-width: 320px)').matches) {
+    } else if (window.matchMedia('(min-width: 1px)').matches) {
         $(".headerTitle").css('margin-right', 'auto');
     } else {
         $(".headerTitle").css({
