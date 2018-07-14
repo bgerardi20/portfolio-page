@@ -116,7 +116,7 @@ footer {
 
 .headerTitle {
     color: white;
-    text-shadow: 4px 4px darkcyan;
+    text-shadow: 2px 2px darkslategrey;
     position: absolute;
     margin-left: auto;
     margin-right: auto;
@@ -451,7 +451,7 @@ section h3 {
 
 section.aboutMe p {
     padding: 18px;
-    margin: 30px;
+    margin: 5px;
     font-size: 19px;
     text-align: left;
 }
@@ -641,11 +641,11 @@ div.resumeContainer button {
     border: 2px solid #232223;
     border-radius: 4%;
     background-color: #686363;
-    line-height: 30px;
+    line-height: 40px;
     /*    font-family: 'Libre Franklin', sans-serif;*/
     font-weight: bold;
     color: #140E0A;
-    padding: 10px 60px;
+    padding: 13px 60px;
 }
 
 .resumeButton a:hover {
@@ -666,9 +666,11 @@ div.resumeContainer button {
     color: #686363;
 }
 
+/*
 .contactIconContainer {
     padding: 1rem;
 }
+*/
 
 .projectContainer {
     margin-bottom: 15px;
@@ -763,7 +765,7 @@ div.resumeContainer button {
 
 .footer {
     width: 24%;
-    display: inline-block;
+    /*    display: inline-block;*/
 }
 
 /* mouse over link */
@@ -931,8 +933,8 @@ div.footerInfo p {
     }
 
     .projectContainer li {
-        padding: 3px 4px;
-        margin: 2px 0px;
+        padding: 2px 4px;
+        margin: 2px -1px;
         font-size: 13px;
         border: 1px solid #232223;
     }
@@ -961,6 +963,10 @@ div.footerInfo p {
         overflow-x: hidden;
     }
 
+    section {
+        margin-left: auto;
+        margin-right: auto;
+    }
     section h3 {
         font-size: 2.5rem;
     }
@@ -986,8 +992,8 @@ div.footerInfo p {
 
     .sectionContainer {
         width: 90%;
-        margin-left: 0px;
-        margin-right: 0px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .headerTitle {
@@ -1095,7 +1101,6 @@ div.footerInfo p {
 
     .projectContainer li {
         font-size: 14px;
-        border: 2px solid #232223;
     }
 
     .projectContainer h6 {
@@ -1113,11 +1118,11 @@ div.footerInfo p {
     }
 
     .toolButtonContainer img {
-        margin: 8px;
+        margin: 5px 10px;
     }
 
     .image {
-        width: 25%;
+        width: 40%;
     }
 
     .middle {
