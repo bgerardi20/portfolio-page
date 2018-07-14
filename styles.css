@@ -91,7 +91,7 @@ img {
 }
 
 section {
-    /*    width: 90%;*/
+    width: 90%;
     margin-left: 25px;
     margin-right: auto;
     padding: 5rem 0rem;
@@ -763,7 +763,7 @@ div.resumeContainer button {
     border: 1px solid yellow;
 }
 
-.footer {
+a.footer i {
     width: 24%;
     /*    display: inline-block;*/
 }
@@ -903,6 +903,12 @@ div.footerInfo p {
 
 }
 
+@media only screen and (max-width: 829px) {
+    .image {
+        width: 20%;
+    }
+}
+
 
 /*ipad potrait*/
 
@@ -991,7 +997,7 @@ div.footerInfo p {
     }
 
     .sectionContainer {
-        width: 90%;
+        width: 95%;
         margin-left: auto;
         margin-right: auto;
     }
@@ -1144,6 +1150,8 @@ div.footerInfo p {
 
     .contact a {
         font-size: 4.5rem;
+        margin: 2px 5px;
+        padding: 2px 5px;
     }
 
     div.footerInfo p {
