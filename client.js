@@ -74,31 +74,40 @@ $(".subIcons").on("click", function () {
             'width': '100%',
             'height': '130px',
             'overflow': 'hidden',
-            "transition": "none"
+            "transition": "all 0.5s"
 
         });
-    } else {
+    } else if (window.matchMedia('(min-width: 481px)').matches) {
         $(".sidenav").css({
-            "width": "220px",
+            'width': '220px',
+            'height': '100%',
+            'overflow': 'hidden',
             "transition": "all 1s"
-        });
-    };
 
-    if (window.matchMedia('(min-width: 481px)').matches) {
-        $(".headerTitle").css('margin-right', 'auto');
-    } else if (window.matchMedia('(min-width: 480px)').matches) {
-        $(".headerTitle").css('margin-right', 'auto');
-    } else if (window.matchMedia('(min-width: 1px)').matches) {
-        $(".headerTitle").css('margin-right', 'auto');
-    } else {
-        $(".headerTitle").css({
-            'margin-right': '165px',
-            'transition': "all 1s"
         });
-    };
+    }
 
+
+    $(".nameContainer").show();
+    $(".navContact").show();
     $(".close").show();
+
 });
+
+if (window.matchMedia('(min-width: 481px)').matches) {
+    $(".headerTitle").css('margin-right', 'auto');
+} else if (window.matchMedia('(min-width: 480px)').matches) {
+    $(".headerTitle").css('margin-right', 'auto');
+} else if (window.matchMedia('(min-width: 1px)').matches) {
+    $(".headerTitle").css('margin-right', 'auto');
+} else {
+    $(".headerTitle").css({
+        'margin-right': '165px',
+        'transition': "all 1s"
+    });
+};
+
+
 
 //close nav
 $(".close").on("click", function () {
@@ -118,6 +127,7 @@ $(".close").on("click", function () {
         "transition-timing-function": "ease-in"
     });
     $(".sidenav").css({
+        "height": "100%",
         "width": "60px",
         "transition": "all 1s"
     });
@@ -235,6 +245,7 @@ $(document).on("click", ".subIcons", function () {
 
     if (window.matchMedia('(max-width: 480px)').matches) {
         $(".sidenav ul").show();
+        //        $(".sidenav ul").css('width': '100%');
     };
 });
 
