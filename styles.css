@@ -125,7 +125,7 @@ footer {
     left: 0;
     right: 0;
     top: 250px;
-    font-size: 5rem;
+    font-size: 7rem;
     width: auto;
     font-family: 'Cinzel', serif;
     letter-spacing: 2px;
@@ -608,7 +608,7 @@ div.headShotContainer img {
 div.resumeContainer button {
     margin-top: 3rem;
     /* margin-bottom: -8rem; */
-    display: block;
+    display: contents;
     /* text-align: center; */
     margin-left: auto;
     margin-right: auto;
@@ -640,7 +640,7 @@ div.resumeContainer button {
 
 
 .contact a {
-    font-size: 7rem;
+    font-size: 10rem;
     color: #686363;
 }
 
@@ -719,6 +719,7 @@ div.resumeContainer button {
     background-color: #232223;
     border: 1px solid #F4F3F5;
     color: #F4F3F5;
+    margin: 2px;
     margin-top: 5px;
     width: 90px;
     /*    font-family: 'Libre Franklin', sans-serif;*/
@@ -792,7 +793,8 @@ div.footerInfo p {
     }
 
     .headerTitle {
-        font-size: 7rem;
+        /*        font-size: 7rem;*/
+        width: 90%;
     }
 
     div.resumeContainer button {
@@ -821,7 +823,57 @@ div.footerInfo p {
     }
 }
 
+@media screen and (max-width: 1450px) {
+    .headerTitle {
+        margin-left: 60px;
+    }
+
+    .navContact p {
+        margin: 10px;
+        font-size: 14px;
+    }
+
+    .text h5 {
+        margin: 10px;
+        font-size: 20px;
+    }
+
+    .text h6 {
+        font-size: 11.5px
+    }
+
+    .code,
+    .demo {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        width: 140px;
+    }
+
+    .projectContainer li {
+        padding: 4px 6px;
+        margin-bottom: 4px;
+        border: 1px solid #232223;
+        font-size: 17px;
+    }
+
+    .nav li {
+        margin: 10px auto;
+    }
+
+}
+
+@media only screen and (max-width: 1313px) {
+    .headerTitle {
+        font-size: 6rem;
+    }
+
+}
+
 @media only screen and (max-width: 1180px) {
+    .headerTitle {
+        font-size: 5.5rem;
+    }
+
     .text h5 {
         font-size: 12px;
     }
