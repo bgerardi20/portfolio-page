@@ -40,11 +40,24 @@ $(".fadeContainer").on("mouseover", function () {
 //open nav
 $(".subIcons").on("click", function () {
 
-    $("body").css({
-        "margin-left": "220px",
-        "transition": "all 1s"
-    });
-    if (window.matchMedia('(max-width: 480px)').matches) {
+    //    $("body").css({
+    //        "margin-left": "200px",
+    //        "overflow-x": "scroll",
+    //        "transition": "left 2s ease-in-out"
+    //    });
+    if (window.matchMedia('(min-width: 1025px)').matches) {
+        $("body").css({
+            "margin-left": "160px",
+            "overflow-x": "visible",
+            "transition": "left 2s ease-in-out"
+        });
+    } else if (window.matchMedia('(max-width: 1024px)').matches) {
+        $("body").css({
+            "margin-left": "200px",
+            "overflow-x": "scroll",
+            "transition": "left 2s ease-in-out"
+        });
+    } else if (window.matchMedia('(max-width: 480px)').matches) {
         $("body").css({
             'margin-left': '0px',
             "transition": "height 1s"
@@ -55,7 +68,11 @@ $(".subIcons").on("click", function () {
         "margin-right": "auto",
         "width": "100%"
     });
-    //    $("section").css("width", "auto");
+    //    $("section").css("margin-left", "auto");
+    if (window.matchMedia('(max-width: 1024px)').matches) {
+        $("section").css('margin-left', '50px');
+    };
+
     $(".nav ul").css({
         "margin-left": "10px",
         "transition": "margin-left .2s",
@@ -82,7 +99,8 @@ $(".subIcons").on("click", function () {
             'width': '220px',
             'height': '100%',
             'overflow': 'hidden',
-            "transition": "all 1s"
+            "transition": "left 0.2s ease-in-out"
+            //            "transition": "all 1s"
 
         });
     }
@@ -111,16 +129,33 @@ if (window.matchMedia('(min-width: 481px)').matches) {
 
 //close nav
 $(".close").on("click", function () {
-    $("body").css({
-        "margin-left": "0px",
-        "transition": "all .5s"
-    });
+    //    $("body").css({
+    //        "margin-left": "0px",
+    //        "overflow-x": "hidden",
+    //        "transition": "left 2s ease-in-out"
+    //    });
+    if (window.matchMedia('(min-width: 1025px)').matches) {
+        $("body").css({
+            "margin-left": "0px",
+            "overflow-x": "visible",
+            "transition": "left 2s ease-in-out"
+        });
+    } else if (window.matchMedia('(max-width: 1024px)').matches) {
+        $("body").css({
+            "margin-left": "0px",
+            "overflow-x": "hidden",
+            "transition": "left 2s ease-in-out"
+        });
+    };
     $("main").css({
         "margin-left": "auto",
         "margin-right": "auto"
         //        "transition": "all 1s"
     });
     //    $("section").css("width", "90%");
+    if (window.matchMedia('(max-width: 1024px)').matches) {
+        $("section").css('margin-left', '80px');
+    };
     $(".nav ul").css({
         "margin-left": "2.5px",
         "transition": "margin-left .2s",
@@ -129,7 +164,7 @@ $(".close").on("click", function () {
     $(".sidenav").css({
         "height": "100%",
         "width": "60px",
-        "transition": "all 1s"
+        "transition": "right 0.2s ease-in-out"
     });
     if (window.matchMedia('(max-width: 480px)').matches) {
         $(".sidenav").css({
