@@ -286,7 +286,7 @@ main.navigation ul {
 
 .sidenav {
     height: 100%;
-    width: 60px;
+    width: 70px;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -354,8 +354,7 @@ main.navigation ul {
     display: inline-block;
     width: 100%;
     cursor: pointer;
-    margin-right: auto;
-    margin-left: auto;
+    margin: 10px auto;
 }
 
 .specialTitle {
@@ -848,11 +847,6 @@ div.footerInfo p {
         margin-left: 60px;
     }
 
-    .navContact p {
-        margin: 10px;
-        font-size: 14px;
-    }
-
     .text h5 {
         margin: 10px;
         font-size: 20px;
@@ -898,7 +892,12 @@ div.footerInfo p {
     .demo {
         padding-top: 15px;
         padding-bottom: 15px;
-        width: 140px;
+        width: 180px;
+    }
+
+    .navContact p {
+        margin: 10px;
+        font-size: 14px;
     }
 }
 
@@ -936,7 +935,7 @@ div.footerInfo p {
     }
 
     section {
-        margin-left: 80px;
+        margin-left: 85px;
         margin-right: auto;
     }
 

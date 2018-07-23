@@ -71,7 +71,10 @@ $(".subIcons").on("click", function () {
     //    $("section").css("margin-left", "auto");
     if (window.matchMedia('(max-width: 1024px)').matches) {
         $("section").css('margin-left', '50px');
-    };
+    } else if (window.matchMedia('(min-width: 1500px)').matches) {
+        $("section").css('margin', '85px');
+    }
+
 
     $(".nav ul").css({
         "margin-left": "10px",
@@ -94,7 +97,7 @@ $(".subIcons").on("click", function () {
             "transition": "all 0.5s"
 
         });
-    } else if (window.matchMedia('(min-width: 481px)').matches) {
+    } else if (window.matchMedia('(max-width: 1200px)').matches) {
         $(".sidenav").css({
             'width': '220px',
             'height': '100%',
@@ -103,7 +106,26 @@ $(".subIcons").on("click", function () {
             //            "transition": "all 1s"
 
         });
-    }
+    } else if (window.matchMedia('(max-width: 1499px)').matches) {
+        $(".sidenav").css({
+            'width': '250px',
+            'height': '100%',
+            'overflow': 'hidden',
+            "transition": "left 0.2s ease-in-out"
+            //            "transition": "all 1s"
+
+        });
+    } else if (window.matchMedia('(min-width: 1500px)').matches) {
+        $(".sidenav").css({
+            'width': '280px',
+            'height': '100%',
+            'overflow': 'hidden',
+            "transition": "left 0.2s ease-in-out"
+            //            "transition": "all 1s"
+
+        });
+    };
+
 
 
     $(".nameContainer").show();
@@ -163,7 +185,7 @@ $(".close").on("click", function () {
     });
     $(".sidenav").css({
         "height": "100%",
-        "width": "60px",
+        "width": "70px",
         "transition": "right 0.2s ease-in-out"
     });
     if (window.matchMedia('(max-width: 480px)').matches) {
