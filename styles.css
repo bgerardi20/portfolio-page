@@ -1153,12 +1153,13 @@ div.footerInfo p {
     }
 
     .nav li {
-        overflow: hidden;
-        width: auto;
-        /*        width: 22.1%;*/
-        margin: 5px 15px;
-        padding: 10px 20px;
+        overflow: visible;
+        width: 25%;
+        /* width: 22.1%; */
+        /* margin: 5px 15px; */
+        /* padding: 10px 20px; */
         margin-left: 0px;
+        float: left;
     }
 
     .navContact p {
@@ -1318,6 +1319,10 @@ div.footerInfo p {
         margin-left: auto;
         margin-right: auto;
     }
+
+    section.aboutMe p {
+        font-size: 18px;
+    }
     /*
     section h3 {
         font-size: 2.5rem;
@@ -1372,6 +1377,11 @@ div.footerInfo p {
         margin-top: 10px;
     }
 
+    .close,
+    .subIcons {
+        font-size: 2rem;
+    }
+
     .subIcons,
     .subIcons:hover,
     nav,
@@ -1418,6 +1428,11 @@ div.footerInfo p {
         right: 0;
     }
 
+    .navContact p {
+        margin: 5px;
+        font-size: 13px;
+    }
+
     #logo {
         height: 50px;
     }
@@ -1435,15 +1450,23 @@ div.footerInfo p {
     }
 
     .headShotContainer {
-        width: 50%;
-        margin-left: 6px;
+        width: 55%;
+        margin-left: 4px;
         margin-right: 10px;
+        padding-right: 5px;
     }
 
     div.resumeContainer button {
         margin-top: 1rem;
     }
 
+
+    .code,
+    .demo {
+        padding-top: 9px;
+        padding-bottom: 9px;
+        width: 110px;
+    }
 
     .projectContainer {
         display: block;
@@ -1488,17 +1511,16 @@ div.footerInfo p {
         height: 75px;
     }
 
-    /*
     .middle {
-        bottom: 85px;
+        bottom: 60px;
     }
-*/
+
     .text h5 {
-        font-size: 16px;
+        font-size: 17px;
     }
 
     .text h6 {
-        font-size: 9px;
+        font-size: 10px;
     }
 
     .icons img {
@@ -1512,25 +1534,36 @@ div.footerInfo p {
         padding: 6px;
     }
 
+    a.footer i {
+        width: 40%;
+    }
+
     div.footerInfo p {
-        font-size: 13px;
+        font-size: 14px;
     }
 
 }
 
 
 @media only screen and (max-width: 420px) {
-    /*
+
     .middle {
-        bottom: 80px;
-    }*/
+        bottom: 55px;
+    }
+
     .text h5 {
         font-size: 15px;
     }
 
+    .code,
+    .demo {
+        width: 90px;
+        font-size: 13px;
+    }
+
     .contact a {
-        font-size: 6.5rem;
-        padding: 8px;
+        /*        font-size: 6.5rem;*/
+        /*        padding: 8px;*/
         /* margin-bottom: 18px; */
     }
 
@@ -1580,6 +1613,7 @@ div.footerInfo p {
 
     main.navigation ul {
         padding-right: 0px;
+        margin-top: 55px;
     }
 
     /*
@@ -1588,6 +1622,11 @@ div.footerInfo p {
         margin-right: auto;
     }
 */
+    .headerContainer {
+        min-width: 650px;
+        min-height: 650px;
+    }
+
     .sectionContainer {
         width: 91%;
         margin-left: auto;
@@ -1599,9 +1638,14 @@ div.footerInfo p {
     }
 
     .nav li {
-        width: auto;
-        margin: 3px;
-        padding: 1px;
+        width: 24%;
+        margin: 0px;
+        padding: 0px;
+        padding-right: 20px;
+    }
+
+    .navIcon {
+        vertical-align: baseline;
     }
 
     .close {
@@ -1611,19 +1655,20 @@ div.footerInfo p {
     }
 
     .sidenav a {
-        font-size: 10.5px;
-        letter-spacing: 0px;
+        font-size: 12.5px;
+        letter-spacing: 1px;
         width: auto;
-        padding: 30px 0px;
+        padding: 2px 0px;
     }
 
     .navIcon {
         vertical-align: middle;
-        font-size: 13px;
+        font-size: 16px;
     }
 
     .navItem i {
         margin-right: 0px;
+        display: block;
     }
 
     #logo {
@@ -1652,17 +1697,11 @@ div.footerInfo p {
     }
 
     .headerTitle {
-        letter-spacing: 2px;
-        /*        width: 91%;*/
-        /*        top: 230px;*/
+        letter-spacing: 1px;
+        /* width: 91%; */
+        top: 190px;
     }
 
-    /*
-    .headerContainer {
-        min-width: 700px;
-        min-height: 700px;
-    }
-*/
     .projectContainer h6 {
         font-size: 18px;
     }
