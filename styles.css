@@ -430,13 +430,13 @@ section h3 {
 section.aboutMe p {
     padding: 13px;
     margin: 15px 5px;
-    font-size: 20px;
+    font-size: 23px;
     text-align: left;
 }
 
 .fadeContainer {
     position: relative;
-    height: auto;
+    /*    height: auto;*/
 }
 
 .image {
@@ -452,7 +452,7 @@ section.aboutMe p {
     position: absolute;
     margin-left: auto;
     margin-right: auto;
-    bottom: 60px;
+    bottom: 70px;
     left: 0;
     right: 0;
     /*
@@ -536,6 +536,7 @@ section.aboutMe p {
     margin-right: 70px;
     background-color: rgba(56, 53, 53, 0.8);
     padding-bottom: 25px;
+    display: inline-block;
 }
 
 .sectionContainer:hover {
@@ -782,7 +783,7 @@ div.footerInfo p {
 
 /*monitor screen*/
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1500px) {
     section.aboutMe p {
         padding: 11px;
         margin: 12px 5px;
@@ -794,7 +795,8 @@ div.footerInfo p {
     }
 
     .navContact p {
-        font-size: 14px;
+        margin: 12px;
+        font-size: 16px;
     }
 
     .headerTitle {
@@ -819,7 +821,7 @@ div.footerInfo p {
     }
 
     .middle {
-        bottom: 75px;
+        bottom: 85px;
     }
 
     .projectContainer li {
@@ -834,13 +836,29 @@ div.footerInfo p {
     .contact a {
         font-size: 11rem;
     }
+
+    .icons img {
+        height: 130px;
+    }
+
+    .code,
+    .demo {
+        padding-top: 17px;
+        padding-bottom: 17px;
+        width: 220px;
+    }
 }
 
 
-@media screen and (max-width: 1450px) {
+@media screen and (max-width: 1499px) {
 
     section.aboutMe p {
-        font-size: 23px;
+        font-size: 22px;
+    }
+
+    .navContact p {
+        margin: 10px;
+        font-size: 15px;
     }
 
     .headerTitle {
@@ -849,21 +867,20 @@ div.footerInfo p {
 
     .text h5 {
         margin: 10px;
-        font-size: 20px;
+        font-size: 19px;
     }
 
     .text h6 {
         font-size: 11.5px
     }
 
-    /*
     .code,
     .demo {
         padding-top: 15px;
         padding-bottom: 15px;
-        width: 140px;
+        width: 180px;
     }
-*/
+
     .projectContainer li {
         padding: 4px 6px;
         margin-bottom: 4px;
@@ -887,19 +904,6 @@ div.footerInfo p {
     }
 }
 
-@media screen and (min-width: 1350px) {
-    .code,
-    .demo {
-        padding-top: 15px;
-        padding-bottom: 15px;
-        width: 180px;
-    }
-
-    .navContact p {
-        margin: 10px;
-        font-size: 14px;
-    }
-}
 
 @media only screen and (max-width: 1180px) {
     .headerTitle {
@@ -913,7 +917,11 @@ div.footerInfo p {
     }
 
     .text h5 {
-        font-size: 12px;
+        font-size: 14.5px;
+    }
+
+    .middle {
+        bottom: 50px;
     }
 }
 
@@ -978,11 +986,11 @@ div.footerInfo p {
     }
 
     .middle {
-        bottom: 40px;
+        bottom: 35px;
     }
 
     .text h5 {
-        font-size: 14px;
+        font-size: 13.5px;
     }
 
     .text h6 {
@@ -1008,11 +1016,6 @@ div.footerInfo p {
         font-size: 2rem;
     }
 
-    /*
-    .middle {
-        bottom: 40px;
-    }
-*/
     .projectContainer {
         padding: 3px;
     }
@@ -1027,6 +1030,19 @@ div.footerInfo p {
     .sectionContainer {
         /*        min-width: 1000px;*/
         width: 100%;
+    }
+
+    .toolButtonContainer img {
+        margin: 1px;
+        padding: 1px;
+    }
+
+    .image {
+        width: 13.5%;
+    }
+
+    .icons img {
+        height: 70px;
     }
 }
 
@@ -1044,21 +1060,42 @@ div.footerInfo p {
         top: 150px;
     }
 */
+    /*
+    .toolButtonContainer img {
+        margin: 1px;
+        padding: 1px;
+    }
+
+    .image {
+        width: 13.5%;
+    }
+*/
+    .image {
+        width: 18%;
+    }
+
+    .middle {
+        bottom: 50px;
+    }
+
+    .text h5 {
+        font-size: 17px;
+    }
+
 }
 
 @media only screen and (max-width: 829px) {
-    .image {
-        width: 16%;
-        padding: 3px;
-    }
-
     /*
-    .middle {
-        bottom: 60px;
+    .image {
+        width: 18%;
     }
 */
+    .middle {
+        bottom: 45px;
+    }
+
     .text h5 {
-        font-size: 17px;
+        font-size: 15px;
     }
 
     .text h6 {
@@ -1072,50 +1109,186 @@ div.footerInfo p {
 @media only screen and (max-width: 768px) {
 
     section {
-        width: 100%;
+        width: 95%;
+        margin-left: auto;
     }
 
-    .headerTitle {
-        font-size: 3.1rem;
-    }
-    .sectionContainer {
-        /*        min-width: 1000px;*/
-        width: 100%;
-    }
-
-    /*
-    .toolButtonContainer {
-        padding: 2px 10px;
-    }
-*/
-    /*
-    .middle {
-        bottom: 25px;
-    }
-*/
-    .projectContainer h6 {
+    section.aboutMe p {
         font-size: 19px;
     }
 
+    .headerContainer {
+        min-height: 600px;
+    }
+
+    .headerTitle {
+        font-size: 4.1rem;
+        min-width: 0;
+        margin-left: auto;
+        top: 240px;
+        margin: 5px;
+    }
+
+    .sectionContainer {
+        width: 100%;
+    }
+
+    .sidenav {
+        height: 90px;
+        width: 100%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #1e1e1e;
+        border-bottom: 4px solid black;
+        overflow: hidden;
+    }
+
+    .nav li {
+        overflow: hidden;
+        width: auto;
+        /*        width: 22.1%;*/
+        margin: 5px 15px;
+        padding: 10px 20px;
+        margin-left: 0px;
+    }
+
+    .navContact p {
+        font-size: 14px;
+    }
+
+    .nameContainer,
+    .navContact {
+        padding-top: 0;
+        display: none;
+        position: absolute;
+        margin-top: 15px;
+    }
+
+    .nameContainer {
+        top: 0px;
+        left: 0px;
+        margin-left: 15px;
+    }
+
+    .close,
+    .subIcons {
+        font-size: 2.4rem;
+    }
+
+    .nameContainer img {
+        height: 75px;
+    }
+
+    .navContact {
+        top: 0px;
+        left: 0;
+        right: 0;
+    }
+
+    main.navigation ul {
+        top: 0;
+        padding-top: 190px;
+        padding-right: 0px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+
+    .navIcon {
+        font-size: 18px;
+        width: auto;
+        /*        width: 25%;*/
+        vertical-align: baseline;
+        padding-right: 2px;
+    }
+
+    .aboutMeContainer {
+        width: 99%;
+        margin: 4px auto;
+        padding: 2px;
+    }
+
+    .headShotContainer {
+        width: 40%;
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+
+    div.headShotContainer img {
+        min-height: 209px;
+        min-width: 185px;
+    }
+
+    .projectContainer {
+        width: 85%;
+    }
+
+    .projectContainer h6 {
+        font-size: 25px;
+        border-bottom: 3px solid #9D9894;
+    }
+
     .projectContainer li {
-        padding: 2px 4px;
-        margin: 2px -1px;
-        font-size: 13px;
+        padding: 4px;
+        margin: 2px 0px;
+        font-size: 18px;
         border: 1px solid #232223;
+    }
+
+    .code,
+    .demo {
+        padding-top: 11px;
+        padding-bottom: 11px;
+        width: 150px;
+    }
+
+    .contact a {
+        font-size: 9rem;
+    }
+
+    a.footer i {
+        width: auto;
+        margin: 5px 10px;
+        padding: 5px 10px;
     }
 }
 
 
-@media screen and (min-width: 701px) {
+@media screen and (max-width: 701px) {
+
+    /*
     .nav li {
         overflow: hidden;
         background: #1e1e1e;
         -webkit-transition: width 0.3s ease;
         transition: width 0.3s ease;
     }
+*/
+    section.aboutMe p {
+        font-size: 20px;
+    }
+
+    .nav li {
+        width: auto;
+        margin: 5px 10px;
+        padding: 10px 10px;
+    }
 
     .navigation {
         overflow: visible;
+    }
+
+    .projectContainer li {
+        font-size: 16px;
+    }
+
+    .contact a {
+        font-size: 11rem;
+        margin: 2px;
+        padding: 4px;
     }
 }
 
@@ -1151,7 +1324,7 @@ div.footerInfo p {
         top: 0;
         left: 0;
         background-color: #1e1e1e;
-        /*        font-family: 'Raleway', sans-serif;*/
+        font-family: 'Raleway', sans-serif;
         border-bottom: 4px solid black;
     }
 
@@ -1248,7 +1421,9 @@ div.footerInfo p {
     }
 
     .headShotContainer {
-        width: 45%;
+        width: 50%;
+        margin-left: 6px;
+        margin-right: 10px;
     }
 
     div.resumeContainer button {
