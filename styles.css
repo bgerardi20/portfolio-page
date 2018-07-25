@@ -643,6 +643,13 @@ div.resumeContainer button {
 }
 
 
+.contactIconContainer {
+    margin: 5px;
+    padding: 5px;
+    display: inline-block;
+    width: 100%;
+}
+
 .contact a {
     font-size: 10rem;
     color: #686363;
@@ -834,7 +841,7 @@ div.footerInfo p {
     }
 
     .contact a {
-        font-size: 11rem;
+        font-size: 13rem;
     }
 
     .icons img {
@@ -1117,6 +1124,10 @@ div.footerInfo p {
         font-size: 19px;
     }
 
+    footer {
+        margin-left: auto;
+    }
+
     .headerContainer {
         min-height: 600px;
     }
@@ -1127,10 +1138,6 @@ div.footerInfo p {
         margin-left: auto;
         top: 240px;
         margin: 5px;
-    }
-
-    .sectionContainer {
-        width: 100%;
     }
 
     .sidenav {
@@ -1246,14 +1253,16 @@ div.footerInfo p {
     }
 
     .contact a {
-        font-size: 9rem;
+        font-size: 9.3rem;
     }
 
+    /*
     a.footer i {
-        width: auto;
-        margin: 5px 10px;
-        padding: 5px 10px;
+        width: 45%;
+        margin: 5px;
+        padding: 5px;
     }
+*/
 }
 
 
@@ -1286,9 +1295,14 @@ div.footerInfo p {
     }
 
     .contact a {
-        font-size: 11rem;
+        font-size: 9rem;
+        margin: 0px;
+        padding: 1px;
+    }
+
+    a.footer i {
+        width: 48%;
         margin: 2px;
-        padding: 4px;
     }
 }
 
@@ -1493,7 +1507,9 @@ div.footerInfo p {
 
 
     .contact a {
-        font-size: 4.5rem;
+        font-size: 7rem;
+        margin: 6px;
+        padding: 6px;
     }
 
     div.footerInfo p {
@@ -1513,14 +1529,16 @@ div.footerInfo p {
     }
 
     .contact a {
-        font-size: 5.5rem;
-        padding: 12px;
+        font-size: 6.5rem;
+        padding: 8px;
         /* margin-bottom: 18px; */
     }
 
     a.footer i {
-        width: 35%;
+        width: auto;
         display: inline-block;
+        padding: 5px;
+        margin: 5px;
         /* margin-bottom: 10px; */
     }
 
