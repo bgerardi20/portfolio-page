@@ -1148,18 +1148,21 @@ div.footerInfo p {
         top: 0;
         left: 0;
         background-color: #1e1e1e;
+        border-bottom: none;
         border-bottom: 4px solid black;
         overflow: hidden;
     }
 
     .nav li {
         overflow: visible;
-        width: 25%;
+        width: 100%;
         /* width: 22.1%; */
-        /* margin: 5px 15px; */
+        margin: 0;
         /* padding: 10px 20px; */
         margin-left: 0px;
-        float: left;
+        /*        float: left;*/
+        display: block;
+        border-bottom: 1px solid dimgray;
     }
 
     .navContact p {
@@ -1171,7 +1174,7 @@ div.footerInfo p {
         padding-top: 0;
         display: none;
         position: absolute;
-        margin-top: 15px;
+        margin-top: 7px;
     }
 
     .nameContainer {
@@ -1190,19 +1193,37 @@ div.footerInfo p {
     }
 
     .navContact {
-        top: 0px;
+        top: 0;
         left: 0;
         right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
     }
 
     main.navigation ul {
-        top: 0;
-        padding-top: 190px;
-        padding-right: 0px;
+        /* color: white; */
+        /*         margin: ; */
+        /*         text-align: center; */
+        position: static;
+        /*         top: 0; */
+        /* left: 0; */
+        /* right: 0; */
+        margin-left: auto;
+        margin-right: auto;
+        transform: none;
+        display: inline-block;
+        width: 100%;
+        padding-top: 0;
+        padding-right: 0;
+        max-height: none;
+        margin-top: 69px;
+        border-top: 1px solid dimgray;
     }
 
     .sidenav a {
         font-size: 18px;
+        width: auto;
     }
 
     .navIcon {
@@ -1210,7 +1231,7 @@ div.footerInfo p {
         width: auto;
         /*        width: 25%;*/
         vertical-align: baseline;
-        padding-right: 2px;
+        padding-right: 4px;
     }
 
     .aboutMeContainer {
@@ -1282,9 +1303,11 @@ div.footerInfo p {
     }
 
     .nav li {
+        /*
         width: auto;
         margin: 5px 10px;
         padding: 10px 10px;
+*/
     }
 
     .navigation {

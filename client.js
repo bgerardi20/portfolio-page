@@ -28,7 +28,7 @@ $(".subIcons").on("click", function () {
     //    });
     if (window.matchMedia('(max-width: 769px)').matches) {
         $("body").css({
-            'margin-left': '0px',
+            "margin-left": "0px",
             "transition": "height 1s"
         });
     } else if (window.matchMedia('(max-width: 1024px)').matches) {
@@ -56,55 +56,67 @@ $(".subIcons").on("click", function () {
 
     //    $("section").css("margin-left", "auto");
     if (window.matchMedia('(max-width: 768px)').matches) {
-        $("section").css('margin-left', 'auto');
+        $("section").css("margin-left", "auto");
     } else if (window.matchMedia('(max-width: 1024px)').matches) {
-        $("section").css('margin-left', '50px');
+        $("section").css("margin-left", "50px");
     } else {
-        $("section").css('margin-left', '70px');
+        $("section").css("margin-left", "70px");
     };
 
 
 
 
-    $(".nav ul").css({
-        "margin-left": "10px",
-        "transition": "margin-left .2s",
-        "transition-timing-function": "ease-in"
-    });
+    //    $(".nav ul").css({
+    //        "margin-left": "10px",
+    //        "transition": "margin-left .2s",
+    //        "transition-timing-function": "ease-in"
+    //    });
     if (window.matchMedia('(max-width: 768px)').matches) {
         $(".nav ul").css({
-            'margin-left': '0px',
-            'transition': 'none'
+            "margin-left": "auto",
+            "transition": "none",
+            "border-top": "1px solid dimgray"
         });
-    }
+    } else {
+        $(".nav ul").css({
+            "margin-left": "10px",
+            "transition": "margin-left .2s",
+            "transition-timing-function": "ease-in"
+        });
+    };
 
+
+    if (window.matchMedia('(max-width: 768px)').matches) {
+        $(".nav li").css("border-bottom", "1px solid dimgray");
+    };
 
 
 
     if (window.matchMedia('(max-width: 480px)').matches) {
-        console.log('hello');
+        console.log("hello");
         $(".sidenav").css({
-            'width': '100%',
-            'height': '130px',
-            'overflow': 'hidden',
+            "width": "100%",
+            "height": "130px",
+            "overflow": "hidden",
             "transition": "all 0.5s"
 
         });
     } else if (window.matchMedia('(max-width: 768px)').matches) {
-        console.log('hello');
+        console.log("hello");
         $(".sidenav").css({
-            'width': '100%',
-            'height': '160px',
-            'overflow': 'hidden',
-            "transition": "all 0.5s"
+            "width": "100%",
+            "height": "360px",
+            "overflow": "hidden",
+            "transition": "height .7s ease-in-out",
+            "border-bottom": "none"
 
         });
     } else if (window.matchMedia('(max-width: 1200px)').matches) {
-        console.log('hello');
+        console.log("hello");
         $(".sidenav").css({
-            'width': '220px',
-            'height': '100%',
-            'overflow': 'hidden',
+            "width": "220px",
+            "height": "100%",
+            "overflow": "hidden",
             "transition": "left 0.2s ease-in-out"
             //            "transition": "all 1s"
 
@@ -200,12 +212,23 @@ $(".close").on("click", function () {
     }
 
 
+    if (window.matchMedia('(max-width: 768px)').matches) {
+        $(".nav ul").css("border-bottom", "none");
+    } else {
+        $(".nav ul").css({
+            "margin-left": "2.5px",
+            "transition": "margin-left .2s",
+            "transition-timing-function": "ease-in"
+        });
+    }
 
-    $(".nav ul").css({
-        "margin-left": "2.5px",
-        "transition": "margin-left .2s",
-        "transition-timing-function": "ease-in"
-    });
+
+
+    if (window.matchMedia('(max-width: 768px)').matches) {
+        $(".nav li").css("border-bottom", "none");
+    };
+
+    //    $("..nav li").css("border-bottom", "none");
 
 
 
@@ -225,7 +248,8 @@ $(".close").on("click", function () {
         $(".sidenav").css({
             'width': '100%',
             'height': '90px',
-            "transition": "none"
+            "transition": "all .7s ease-in-out",
+            "border-bottom": "4px solid black"
         });
     } else {
         $(".sidenav").css({
@@ -319,6 +343,7 @@ $(document).ready(function () {
     $(".footerInfo").show();
     $(".toolsInnerSection").hide();
     $(".navLink").hide();
+    $(".navIcon").hide();
     $(".nameContainer").hide();
     $(".navContact").hide();
     //    if (window.matchMedia('(max-width: 768px)').matches) {
@@ -335,6 +360,7 @@ $(document).on("click", ".subIcons", function () {
     $(".nameContainer").show();
     $(".navContact").show();
     $(".navLink").show();
+    $(".navIcon").show();
 
     $('header, section').scrollLeft(1000);
 
@@ -354,6 +380,7 @@ $(document).on("click", ".close", function (event) {
     $(".nameContainer").hide();
     $(".navContact").hide();
     $(".navLink").hide();
+    $(".navIcon").hide();
 
     if (window.matchMedia('(max-width: 480px)').matches) {
         $(".sidenav ul").hide();
