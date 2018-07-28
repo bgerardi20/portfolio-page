@@ -31,74 +31,80 @@
 
     </main>
 
-    <main class="navigation navigationActive" id="toggle">
 
-        <div class="sidebar">
-            <div class="hiddenNav container">
+
+
+
+    <!--
+<div class="subIconContainer">
+<span class="subIcons">&#9776;</span>
+</div>
+
+<div class="subIconContainer">
+<spans class="close">&times</span>
+</div>
+-->
+
+    <main class="navigation sidebar" id="sidebar">
+
+        <div id="sidebar" class="sidebar">
+
+            <div class="container">
                 <div id="nav-trigger" class="">
                     <span></span>
                 </div>
 
 
-                <div class="nameContainer">
+                <div class="nameContainer logo-area">
                     <img src="./website-images/bg-logo-2.png" alt="logo" id="logo">
                 </div>
 
-                <div class="navContact">
+                <div class="navContact logo-area">
                     <p>(817) 606-7924</p>
                     <p>brendan.gerardi@gmail.com</p>
                 </div>
 
             </div>
 
+
+            <div class="nav-wrapper" id="nav-wrapper">
+                <nav class="nav" id="">
+
+                    <!--
+<div class="nameContainer logo-area">
+    <img src="./website-images/bg-logo-2.png" alt="logo" id="logo">
+</div>
+
+<div class="navContact logo-area">
+    <p>(817) 606-7924</p>
+    <p>brendan.gerardi@gmail.com</p>
+</div>
+-->
+
+                    <ul id="nav-wrapper">
+                        <li class="navItem" id="jsAboutNav">
+                            <i class="fas fa-user-astronaut navIcon"></i>
+                            <a class="navLink" href="#about">About</a>
+                        </li>
+                        <li class="navItem" id="jsToolNav">
+                            <i class="fas fa-wrench navIcon"></i>
+                            <a class="navLink" href="#skills">Tools</a>
+                        </li>
+                        <li class="navItem dropDown" id="jsProjectNav">
+                            <i class="far fa-folder-open navIcon"></i>
+                            <a class="navLink" href="#skills">Projects</a>
+                        </li>
+                        <li class="navItem dropDown" id="jsContactNav">
+                            <i class="fab fa-rocketchat navIcon"></i>
+                            <a class="navLink" href="#skills">Contact</a>
+                        </li>
+                    </ul>
+
+                </nav>
+            </div>
+
         </div>
 
-
-        <nav class="nav sidenav" id="">
-
-
-            <!--
-            <div class="subIconContainer">
-                <span class="subIcons">&#9776;</span>
-            </div>
-
-            <div class="subIconContainer">
-                <spans class="close">&times</span>
-            </div>
--->
-
-
-            <!--
-            <div class="nameContainer">
-                <img src="./website-images/bg-logo-2.png" alt="logo" id="logo">
-            </div>
-
-            <div class="navContact">
-                <p>(817) 606-7924</p>
-                <p>brendan.gerardi@gmail.com</p>
-            </div>
--->
-
-            <ul id="nav-wrapper">
-                <li class="navItem" id="jsAboutNav">
-                    <i class="fas fa-user-astronaut navIcon"></i>
-                    <a class="navLink" href="#about">About</a>
-                </li>
-                <li class="navItem" id="jsToolNav">
-                    <i class="fas fa-wrench navIcon"></i>
-                    <a class="navLink" href="#skills">Tools</a>
-                </li>
-                <li class="navItem dropDown" id="jsProjectNav">
-                    <i class="far fa-folder-open navIcon"></i>
-                    <a class="navLink" href="#skills">Projects</a>
-                </li>
-                <li class="navItem dropDown" id="jsContactNav">
-                    <i class="fab fa-rocketchat navIcon"></i>
-                    <a class="navLink" href="#skills">Contact</a>
-                </li>
-            </ul>
-
-        </nav>
 
 
 
