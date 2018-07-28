@@ -421,6 +421,10 @@ main.navigation ul {
     font-weight: bold;
 }
 
+.hiddenNav {
+    display: none;
+}
+
 section h3 {
     font-family: 'Raleway', sans-serif;
     color: #232223;
@@ -1140,6 +1144,124 @@ div.footerInfo p {
         margin: 5px;
     }
 
+    .hiddenNav {
+        display: block;
+        height: 90px;
+        width: 100%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #1e1e1e;
+        border-bottom: none;
+        border-bottom: 4px solid black;
+        overflow: hidden;
+    }
+
+    #nav-trigger.active span {
+        background-color: transparent;
+    }
+
+    #nav-trigger.active span:after {
+        -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    }
+
+    #nav-trigger.active span:before {
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+
+    #nav-trigger.active span:after,
+    #nav-trigger.active span:before {
+        top: 0;
+    }
+
+    #nav-trigger span:before {
+        top: -8px;
+    }
+
+    #nav-trigger span:after {
+        bottom: -8px;
+    }
+
+
+
+
+    #nav-trigger span,
+    #nav-trigger span:after,
+    #nav-trigger span:before {
+        background: #fff;
+        border-radius: 1px;
+        content: '';
+        cursor: pointer;
+        display: block;
+        height: 4px;
+        position: absolute;
+        -webkit-transition: all .5s ease-in-out;
+        transition: all .5s ease-in-out;
+        width: 23px;
+    }
+
+
+    #nav-trigger {
+        cursor: pointer;
+        font-size: 26px;
+        height: 21px;
+        right: .75em;
+        padding-top: 8px;
+        position: absolute;
+        top: 18px;
+        width: 23px;
+    }
+
+    .sidebar {
+        background-color: #19191b;
+        color: #fff;
+        padding: 6px 0 0;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 99;
+    }
+
+    .sidebar,
+    .container {
+        padding: 0;
+    }
+
+
+    *,
+    :after,
+    :before {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     .sidenav {
         height: 90px;
         width: 100%;
@@ -1151,6 +1273,8 @@ div.footerInfo p {
         border-bottom: none;
         border-bottom: 4px solid black;
         overflow: hidden;
+        /*        display: block;*/
+        transition: 1s ease-out;
     }
 
     .nav li {
@@ -1167,14 +1291,16 @@ div.footerInfo p {
 
     .navContact p {
         font-size: 14px;
+        margin: 5px;
     }
 
     .nameContainer,
     .navContact {
         padding-top: 0;
-        display: none;
+        display: block;
         position: absolute;
         margin-top: 7px;
+        /*        transition: all 2s linear;*/
     }
 
     .nameContainer {
@@ -1189,7 +1315,7 @@ div.footerInfo p {
     }
 
     .nameContainer img {
-        height: 75px;
+        height: 60px;
     }
 
     .navContact {
@@ -1212,12 +1338,12 @@ div.footerInfo p {
         margin-left: auto;
         margin-right: auto;
         transform: none;
-        display: inline-block;
+        /*        display: none;*/
         width: 100%;
         padding-top: 0;
         padding-right: 0;
         max-height: none;
-        margin-top: 69px;
+        margin-top: 90px;
         border-top: 1px solid dimgray;
     }
 
