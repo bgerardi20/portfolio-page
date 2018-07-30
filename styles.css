@@ -89,10 +89,12 @@ header {
 
 }
 
+/*
 header:hover {
     filter: alpha(opacity=100);
-    opacity: .9;
+    opacity: 1.0;
 }
+*/
 
 img {
     height: 110px;
@@ -139,6 +141,11 @@ footer {
     width: auto;
     font-family: 'Cinzel', serif;
     letter-spacing: 2px;
+}
+
+headerTitle:hover {
+    filter: alpha(opacity=100);
+    opacity: 1.0;
 }
 
 .imageContainer {
@@ -209,10 +216,10 @@ footer {
 
     /*    background: url(./website-images/light-bulb-header-image.jpg) no-repeat 50%;*/
     background-size: cover;
-    filter: alpha(opacity=60);
-    opacity: 0.6;
+    filter: alpha(opacity=40);
+    opacity: 0.4;
     /*    height: 100%;*/
-    filter: brightness(90%);
+    filter: brightness(80%);
     box-shadow: 0px 3px #383535;
 }
 
@@ -373,6 +380,7 @@ main.navigation ul {
     margin: 5px;
 }
 
+/*
 .dropDownContent a:hover {
     background-color: #EEE4E4;
     color: black;
@@ -388,7 +396,7 @@ main.navigation ul {
 .dropDownBtn a:hover {
     color: black;
 }
-
+*/
 
 .navLink {
     display: inline-block;
@@ -1146,11 +1154,12 @@ div.footerInfo p {
     }
 
     .headerTitle {
-        font-size: 4.1rem;
+        font-size: 4.5rem;
         min-width: 0;
-        margin-left: auto;
-        top: 240px;
-        margin: 5px;
+        /*        margin-left: auto;*/
+        top: 100px;
+        margin: 45px auto;
+        /*        width: auto;*/
     }
 
     .hiddenNav {
@@ -1177,7 +1186,7 @@ div.footerInfo p {
         top: 0;
         width: 100%;
         z-index: 99;
-        height: 90px;
+        height: 70px;
         transition: height .5s;
     }
 
@@ -1195,44 +1204,48 @@ div.footerInfo p {
 
     #nav-trigger {
         cursor: pointer;
-        font-size: 26px;
-        height: 21px;
-        left: .75em;
-        padding-top: 5px;
+        left: 20px;
+        /* padding-top: 5px; */
         position: absolute;
-        top: 20px;
-        width: 23px;
+        top: 28px;
+        width: 22px;
     }
 
 
 
     #nav-trigger.active span {
         background-color: transparent;
+        cursor: pointer;
     }
 
     #nav-trigger.active span:after {
         -webkit-transform: rotate(-45deg);
         -ms-transform: rotate(-45deg);
         transform: rotate(-45deg);
+        cursor: pointer;
     }
 
     #nav-trigger.active span:before {
         -webkit-transform: rotate(45deg);
         -ms-transform: rotate(45deg);
         transform: rotate(45deg);
+        cursor: pointer;
     }
 
     #nav-trigger.active span:after,
     #nav-trigger.active span:before {
         top: 0;
+        cursor: pointer;
     }
 
     #nav-trigger span:before {
         top: -8px;
+        cursor: pointer;
     }
 
     #nav-trigger span:after {
         bottom: -8px;
+        cursor: pointer;
     }
 
 
@@ -1246,12 +1259,12 @@ div.footerInfo p {
         content: '';
         cursor: pointer;
         display: block;
-        height: 4px;
+        height: 3px;
         /*        margin: 18px 0px;*/
         position: absolute;
-        -webkit-transition: all .7s ease-in-out;
-        transition: all .7s ease-in-out;
-        width: 30px;
+        -webkit-transition: all .6s ease-in-out;
+        transition: all .6s ease-in-out;
+        width: 25px;
     }
 
     #nav-wrapper {
@@ -1313,7 +1326,7 @@ div.footerInfo p {
 
     .container {
         border-bottom: 1px solid dimgray;
-        height: 90px;
+        height: 70px;
         width: 100%;
         position: fixed;
         transition: none;
@@ -1338,17 +1351,22 @@ div.footerInfo p {
 */
     .navLink {
         padding: 0;
+        font-size: 14px;
     }
 
     .navContact p {
-        font-size: 14px;
-        margin: 15px;
+        font-size: 13px;
+        /* margin-top: 10px; */
+        margin: 3px;
+        display: inline-block;
+        vertical-align: -webkit-baseline-middle;
+        letter-spacing: .4px;
     }
 
     .nameContainer,
     .navContact {
         padding-top: 0;
-        display: block;
+        /*        display: block;*/
         position: absolute;
         /*        margin-top: 7px;*/
         /*        transition: all 2s linear;*/
@@ -1356,26 +1374,20 @@ div.footerInfo p {
 
     .nameContainer {
         top: 0px;
-        right: 0px;
-        margin: 15px;
-    }
-
-    .close,
-    .subIcons {
-        font-size: 2.4rem;
+        right: 10px;
+        margin-top: 8px;
     }
 
     .nameContainer img {
-        height: 60px;
+        height: 50px;
     }
 
     .navContact {
         top: 0;
         left: 0;
         right: 0;
-        margin-left: auto;
-        margin-right: auto;
-        width: 50%;
+        margin: 0 auto;
+        width: 32%;
     }
 
     main.navigation ul {
@@ -1394,7 +1406,7 @@ div.footerInfo p {
         padding-top: 0;
         padding-right: 0;
         max-height: none;
-        margin-top: 90px;
+        margin-top: 70px;
         /*        border-top: 1px solid dimgray;*/
     }
 

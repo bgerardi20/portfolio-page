@@ -147,14 +147,14 @@ $("#nav-trigger").on("click", function () {
         //        $("#nav-trigger").on("load change", function () {
         if ($("#nav-trigger").hasClass("active")) {
             $(".sidebar").css({
-                "height": "90px",
+                "height": "70px",
                 //                "border-bottom": "1px solid dimgray"
             });
             //            console.log("its active!")
             //            $(".container").css("height", "90px");
         } else {
             $(".sidebar").css({
-                "height": "333px",
+                "height": "313px",
                 //                "border-bottom": "0px solid dimgray"
             });
             //            console.log("its not active!")
