@@ -1163,27 +1163,31 @@ div.footerInfo p {
         left: 0;
         background-color: #1e1e1e;
         border-bottom: none;
-        border-bottom: 4px solid black;
+        border-bottom: 3px solid black;
         overflow: hidden;
     }
 
     .sidebar {
         background-color: #1e1e1e;
         border-bottom: none;
-        /*        border-bottom: 4px solid black;*/
+        /*        border-bottom: 1px solid dimgray;*/
         color: #fff;
-        padding: 90px 0 0;
+        padding: 0;
         position: fixed;
         top: 0;
         width: 100%;
         z-index: 99;
+        height: 90px;
+        transition: height .5s;
     }
 
-    .sidebar,
-    .container {
-        /*        padding: 0;*/
-    }
 
+    /*
+    #sidebar {
+        border-bottom: 1px solid dimgrey;
+        transition: none;
+    }
+*/
     .logo-area {
         display: inline-block;
     }
@@ -1194,9 +1198,9 @@ div.footerInfo p {
         font-size: 26px;
         height: 21px;
         left: .75em;
-        padding-top: 8px;
+        padding-top: 5px;
         position: absolute;
-        top: 18px;
+        top: 20px;
         width: 23px;
     }
 
@@ -1243,16 +1247,17 @@ div.footerInfo p {
         cursor: pointer;
         display: block;
         height: 4px;
+        /*        margin: 18px 0px;*/
         position: absolute;
-        -webkit-transition: all .5s ease-in-out;
-        transition: all .5s ease-in-out;
-        width: 23px;
+        -webkit-transition: all .7s ease-in-out;
+        transition: all .7s ease-in-out;
+        width: 30px;
     }
 
-    .nav-wrapper {
+    #nav-wrapper {
         display: none;
+        /*        transition: display 4s ease;*/
     }
-
     /*
 
     #nav-trigger {
@@ -1303,7 +1308,15 @@ div.footerInfo p {
         border-bottom: 4px solid black;
         overflow: hidden;
         display: block;
-        transition: all 1s ease-out;
+        transition: all .7s ease-out;
+    }
+
+    .container {
+        border-bottom: 1px solid dimgray;
+        height: 90px;
+        width: 100%;
+        position: fixed;
+        transition: none;
     }
 
     .nav li {
@@ -1311,16 +1324,25 @@ div.footerInfo p {
         width: 100%;
         /* width: 22.1%; */
         margin: 0px;
-        /* padding: 10px 20px; */
+        padding: 20px 0px;
         /*        margin-left: 0px;*/
         /*        float: left;*/
         display: block;
         border-bottom: 1px solid dimgray;
     }
 
+    /*
+    .nav li:last-child {
+        border-bottom: 0px;
+    }
+*/
+    .navLink {
+        padding: 0;
+    }
+
     .navContact p {
         font-size: 14px;
-        margin: 5px;
+        margin: 15px;
     }
 
     .nameContainer,
@@ -1328,14 +1350,14 @@ div.footerInfo p {
         padding-top: 0;
         display: block;
         position: absolute;
-        margin-top: 7px;
+        /*        margin-top: 7px;*/
         /*        transition: all 2s linear;*/
     }
 
     .nameContainer {
         top: 0px;
         right: 0px;
-        margin-right: 15px;
+        margin: 15px;
     }
 
     .close,
@@ -1373,7 +1395,7 @@ div.footerInfo p {
         padding-right: 0;
         max-height: none;
         margin-top: 90px;
-        border-top: 1px solid dimgray;
+        /*        border-top: 1px solid dimgray;*/
     }
 
     .sidenav a {
@@ -1382,11 +1404,11 @@ div.footerInfo p {
     }
 
     .navIcon {
-        font-size: 18px;
+        font-size: 16px;
         width: auto;
-        /*        width: 25%;*/
-        vertical-align: baseline;
-        padding-right: 4px;
+        vertical-align: text-top;
+        margin-right: 3px;
+        padding: 0px;
     }
 
     .aboutMeContainer {

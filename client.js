@@ -107,8 +107,8 @@ $("#nav-trigger").on("click", function () {
     if (window.matchMedia('(max-width: 768px)').matches) {
         $(".nav ul").css({
             "margin-left": "auto",
-            "transition": "all .7s ease-in",
-            "border-top": "1px solid dimgray",
+            //            "transition": "all .7s ease-in",
+            //            "border-top": "1px solid dimgray",
             "display": "block"
         });
     } else {
@@ -122,6 +122,45 @@ $("#nav-trigger").on("click", function () {
 
     if (window.matchMedia('(max-width: 768px)').matches) {
         $(".nav li").css("border-bottom", "1px solid dimgray");
+        $(".nav li:last-child").css("border-bottom", "none");
+    };
+
+
+
+    if (window.matchMedia('(max-width: 768px)').matches) {
+        //            $("#nav-trigger span").addClass("active");
+        //            let wrapperDisplay = $("#nav-wrapper").css("display");
+
+        //        $("#nav-trigger span").addClass("active");
+
+        //            if ($("span").hasClass("active")) {
+        //                $("#sidebar").css("padding-top", "0px");
+        //            } else {
+        //                $("#sidebar").css("padding-top", "90px");
+        //            };
+
+
+
+
+        //if the nav wrappers display is set to none = padding is 90px 0 0
+        //if the nav wrappers display is set to block = padding is 0
+        //        $("#nav-trigger").on("load change", function () {
+        if ($("#nav-trigger").hasClass("active")) {
+            $(".sidebar").css({
+                "height": "90px",
+                //                "border-bottom": "1px solid dimgray"
+            });
+            //            console.log("its active!")
+            //            $(".container").css("height", "90px");
+        } else {
+            $(".sidebar").css({
+                "height": "333px",
+                //                "border-bottom": "0px solid dimgray"
+            });
+            //            console.log("its not active!")
+            //            $(".container").css("height", "0px");
+        };
+        //        });
     };
 
 
@@ -418,30 +457,49 @@ $(document).ready(function () {
     //    if (window.matchMedia('(max-width: 768px)').matches) {
     //        $(".sidenav ul").hide();
     //    };
-    $('#nav-trigger').click(function () {
-        $(this).toggleClass('active');
-        $('#nav-wrapper').slideToggle();
+    //    $('#nav-trigger').click(function () {
+    //        $(this).toggleClass('active');
+    //        $('#nav-wrapper').slideToggle();
+    //    });
+    $("#nav-trigger").click(function () {
+        $(this).toggleClass("active");
+        $("#nav-wrapper").slideToggle();
     });
 
-    $("#nav-trigger span").on("click", function () {
-        if (window.matchMedia('(max-width: 768px)').matches) {
-            $("#nav-trigger").addClass("active");
 
-            let wrapperDisplay = $("#nav-wrapper").css('display');
-            let $spanItems = $("#nav-trigger span");
-            console.log(wrapperDisplay);
+    //    $("#nav-trigger").on("click", function () {
+    //        if (window.matchMedia('(max-width: 768px)').matches) {
+    //            //            $("#nav-trigger span").addClass("active");
+    //            //            let wrapperDisplay = $("#nav-wrapper").css("display");
+    //
+    //            $("#nav-trigger span").addClass("active");
+    //
+    //            //            if ($("span").hasClass("active")) {
+    //            //                $("#sidebar").css("padding-top", "0px");
+    //            //            } else {
+    //            //                $("#sidebar").css("padding-top", "90px");
+    //            //            };
+    //
+    //
+    //
+    //
+    //            //if the nav wrappers display is set to none = padding is 90px 0 0
+    //            //if the nav wrappers display is set to block = padding is 0
+    //            $("#nav-trigger").on("click", function () {
+    //                if ($("#nav-trigger div").hasClass("active")) {
+    //                    //                    $("#sidebar").css("padding-top", "0px");
+    //                    console.log("its active!")
+    //                } else {
+    //                    //                    $("#sidebar").css("padding-top", "90px");
+    //                    console.log("its not active!")
+    //                };
+    //            });
+    //        }
+    //    });
 
-            //if the nav wrappers display is set to none = padding is 90px 0 0
-            //if the nav wrappers display is set to block = padding is 0
-            $spanItems.on("change", function () {
-                if (wrapperDisplay === "block") {
-                    $(".sidebar").css("padding", "0");
-                } else if (wrapperDisplay === "none") {
-                    $(".sidebar").css("padding", "90px 0 0");
-                }
-            });
-        }
-    });
+    if (window.matchMedia('(min-width: 769px)').matches) {
+        $("nav").addClass("sidenav");
+    }
 
 });
 
