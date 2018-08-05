@@ -243,11 +243,12 @@ main.navigation ul {
     transform: translate(-50%, -50%);
     display: block;
     width: 100%;
-    padding-top: 170px;
-    padding-right: 20px;
+    padding-top: 80px;
+    padding-right: 10px;
     max-height: 60%;
 }
 
+/*
 .subIcons {
     color: white;
     cursor: pointer;
@@ -264,14 +265,18 @@ main.navigation ul {
     font-size: 2rem;
     width: fit-content;
 }
+*/
 
+/*
 .subIcons:hover {
     filter: none;
     -ms-transform: rotateZ(270deg);
     -webkit-transform: rotateZ(270deg);
     transform: rotateZ(270deg);
 }
+*/
 
+/*
 .close {
     cursor: pointer;
     font-size: 2.5rem;
@@ -280,8 +285,6 @@ main.navigation ul {
     top: 1px;
     right: 0;
     z-index: 99;
-    /*    filter: alpha(opacity=60);*/
-    /*    opacity: .6;*/
     -moz-transition: all .4s;
     -o-transition: all .4s;
     -webkit-transition: all .4s;
@@ -289,18 +292,36 @@ main.navigation ul {
     margin-right: 15px;
     display: none;
 }
+*/
+
+/*
 
 .close:hover {
     -ms-transform: rotate(-180deg);
     -webkit-transform: rotate(-180deg);
     transform: rotate(-180deg);
     filter: alpha(opacity=100);
-    /*    opacity: 1;*/
+        opacity: 1;
 }
+*/
 
 /* Fixed sidenav, full height */
 
+/*
 .sidenav {
+    height: 100%;
+    width: 70px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #1e1e1e;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+*/
+
+.sidebar {
     height: 100%;
     width: 70px;
     position: fixed;
@@ -321,17 +342,32 @@ main.navigation ul {
 
 /* Style the sidenav links and the dropdown button */
 
-.sidenav a,
-.dropDownBtn {
+/*
+.sidenav a {
+    padding: 20px 0px;
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    display: inline-block;
+    width: 70%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+    letter-spacing: 2px;
+}
+*/
+
+.sidebar a {
     padding: 20px 0px;
     text-decoration: none;
     font-size: 20px;
     /*    font-weight: bold;*/
     text-transform: uppercase;
     /*    color: #818181;*/
+    /*    display: none;*/
     display: inline-block;
     /* border-bottom: 2px solid; */
-    /* background: none; */
+    /*     background: none; */
     width: 70%;
     text-align: left;
     cursor: pointer;
@@ -356,6 +392,7 @@ main.navigation ul {
 }
 */
 
+/*
 .dropDownContent a {
     color: #f1f1f1;
     padding: 10px 20px;
@@ -365,6 +402,7 @@ main.navigation ul {
     border: none;
     font-size: 14px;
 }
+*/
 
 .nav li {
     display: inline-block;
@@ -380,24 +418,6 @@ main.navigation ul {
     margin: 5px;
 }
 
-/*
-.dropDownContent a:hover {
-    background-color: #EEE4E4;
-    color: black;
-}
-
-.dropDown:hover .dropDownContent {
-    display: block;
-}
-
-
-
-
-.dropDownBtn a:hover {
-    color: black;
-}
-*/
-
 .navLink {
     display: inline-block;
     transition: 0.3s;
@@ -411,23 +431,7 @@ main.navigation ul {
     text-decoration-color: #f1f1f1;
 }
 
-/*
-.navLink a {
-    display: none;
-}
-*/
-
 .navContact {
-    /*    position: absolute;*/
-    /*
-    margin-left: auto;
-    margin-right: auto;
-*/
-    /*
-    left: 0;
-    right: 0;
-    bottom: 0;
-*/
     padding: 20px 0px;
     display: none;
 }
@@ -616,10 +620,7 @@ div.headShotContainer img {
 .headShotContainer {
     width: 28%;
     float: right;
-    /* display: inline-block; */
-    /* vertical-align: middle; */
     padding-top: 1rem;
-    /* margin-right: 0px; */
     margin-left: 15px;
 }
 
@@ -631,13 +632,8 @@ div.headShotContainer img {
 }
 
 div.resumeContainer button {
-    margin-top: 3rem;
-    /* margin-bottom: -8rem; */
+    margin: 3rem auto 0;
     display: contents;
-    /* text-align: center; */
-    margin-left: auto;
-    margin-right: auto;
-    /* padding-bottom: 10px; */
 }
 
 .resumeButton a {
@@ -802,6 +798,89 @@ a.footer i {
 div.footerInfo p {
     display: inline;
 }
+
+
+
+
+
+
+
+
+
+#nav-trigger {
+    cursor: pointer;
+    left: 20px;
+    /* padding-top: 5px; */
+    position: absolute;
+    top: 30px;
+    width: 22px;
+}
+
+#nav-trigger.active span {
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#nav-trigger.active span:after {
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    cursor: pointer;
+}
+
+#nav-trigger.active span:before {
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+
+#nav-trigger.active span:after,
+#nav-trigger.active span:before {
+    top: 0;
+    cursor: pointer;
+}
+
+#nav-trigger span:before {
+    top: -8px;
+    cursor: pointer;
+}
+
+#nav-trigger span:after {
+    bottom: -8px;
+    cursor: pointer;
+}
+
+#nav-trigger span,
+#nav-trigger span:after,
+#nav-trigger span:before {
+    background: #fff;
+    border-radius: 1px;
+    content: '';
+    cursor: pointer;
+    display: block;
+    height: 3px;
+    /*        margin: 18px 0px;*/
+    position: absolute;
+    -webkit-transition: all .6s ease-in-out;
+    transition: all .6s ease-in-out;
+    width: 25px;
+}
+
+#nav-wrapper {
+    display: inline-block;
+    /*        transition: display 4s ease;*/
+}
+
+/*
+
+
+
+
+
+
+
+
 
 
 
@@ -1270,7 +1349,7 @@ div.footerInfo p {
     }
 
     #nav-wrapper {
-        display: none;
+        /*        display: none;*/
         /*        transition: display 4s ease;*/
     }
     /*
@@ -1411,9 +1490,16 @@ div.footerInfo p {
         /*        border-top: 1px solid dimgray;*/
     }
 
+    /*
     .sidenav a {
         font-size: 18px;
         width: auto;
+    }
+*/
+    .sidebar a {
+        font-size: 16px;
+        width: auto;
+        display: inline;
     }
 
     .navIcon {
@@ -1505,29 +1591,16 @@ div.footerInfo p {
     #mLab {
         height: 65px;
     }
+
+    .fadeContainer {
+        margin: 10px;
+    }
 }
 
 
 @media screen and (max-width: 701px) {
-
-    /*
-    .nav li {
-        overflow: hidden;
-        background: #1e1e1e;
-        -webkit-transition: width 0.3s ease;
-        transition: width 0.3s ease;
-    }
-*/
     section.aboutMe p {
         font-size: 20px;
-    }
-
-    .nav li {
-        /*
-        width: auto;
-        margin: 5px 10px;
-        padding: 10px 10px;
-*/
     }
 
     .navigation {
@@ -1606,6 +1679,10 @@ div.footerInfo p {
 
     .contact a {
         font-size: 6rem;
+    }
+
+    .fadeContainer {
+        margin: 2px;
     }
 }
 
@@ -1779,26 +1856,6 @@ div.footerInfo p {
 }
 
 @media only screen and (max-width: 369px) {
-    /*
-    .sidenav a {
-        font-size: 11px;
-        letter-spacing: 0px;
-    }
-
-    .nav li {
-        margin: 5px 1px;
-        padding: 10px 1px;
-    }
-
-    .navContact p {
-        margin: 3px;
-        font-size: 11px;
-    }
-
-    .nameContainer {
-        margin-left: 10px;
-    }
-*/
     #logo {
         height: 45px;
     }
@@ -1817,18 +1874,9 @@ div.footerInfo p {
 
 @media only screen and (max-width: 320px) {
 
-
-    /*
     main.navigation ul {
-        padding-right: 0px;
-        margin-top: 55px;
+        margin-top: 50px;
     }
-*/
-
-    main.navigation ul {
-    margin-top: 50px;
-    }
-
 
     section {
         width: 100%;
@@ -1849,46 +1897,6 @@ div.footerInfo p {
         width: 100%;
     }
 
-    /*
-    .navContact p {
-        margin: 1px;
-    }
-*/
-    /*
-    .nav li {
-        width: 24%;
-        margin: 0px;
-        padding: 0px;
-        padding-right: 20px;
-    }
-
-    .navIcon {
-        vertical-align: baseline;
-    }
-
-    .close {
-        font-size: 2.5rem;
-        margin-right: 10px;
-        margin-top: -8px;
-    }
-
-    .sidenav a {
-        font-size: 12.5px;
-        letter-spacing: 1px;
-        width: auto;
-        padding: 2px 0px;
-    }
-
-    .navIcon {
-        vertical-align: middle;
-        font-size: 16px;
-    }
-
-    .navItem i {
-        margin-right: 0px;
-        display: block;
-    }
-*/
     #logo {
         height: 35px;
         /*        margin-top: 15px;*/
@@ -1999,12 +2007,6 @@ div.footerInfo p {
         margin: 15px 1px;
     }
 
-    /*
-    a.footer i {
-        width: 35%;
-        display: inline-block;
-    }
-*/
     .icons img {
         height: 70px;
     }
@@ -2015,14 +2017,6 @@ div.footerInfo p {
         /*        padding: 2px;*/
     }
 
-    /*
-    .contact a {
-        font-size: 5.5rem;
-        padding: 12px;
-    }
-*/
-    /*    .footer {*/
-    /*        width: 49%;*/
 }
 
 }
