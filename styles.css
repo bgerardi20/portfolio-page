@@ -141,6 +141,7 @@ footer {
     width: auto;
     font-family: 'Cinzel', serif;
     letter-spacing: 2px;
+    transition: margin .5s ease-in;
 }
 
 headerTitle:hover {
@@ -149,7 +150,7 @@ headerTitle:hover {
 }
 
 .imageContainer {
-    transition: all .5s;
+    transition: margin .5s linear;
     /*    padding: 25px;*/
     width: 100%;
     /*        margin: 0 auto;*/
@@ -158,13 +159,14 @@ headerTitle:hover {
 }
 
 .nameContainer {
-    padding-top: 2rem;
+    padding-top: 3rem;
     display: none;
 }
 
 .nameContainer img {
     filter: contrast(100%);
     padding: 0;
+    margin: 2px 60px;
 }
 
 .subIconContainer {
@@ -225,27 +227,30 @@ headerTitle:hover {
 
 .navIcon {
     font-size: 25px;
-    width: 25%;
+    /*    width: 25%;*/
     vertical-align: middle;
     color: white;
     display: inline-block;
-    padding: 20px 0px;
+    padding: 20px;
 }
 
 
 main.navigation ul {
-    /*    color: white;*/
-    margin: 0;
+    /* color: white; */
+    /* margin: 0; */
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 35%;
+    left: 0;
     right: 0;
-    transform: translate(-50%, -50%);
-    display: block;
-    width: 100%;
-    padding-top: 80px;
-    padding-right: 10px;
-    max-height: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+    /* transform: translate(-50%, -50%); */
+    /*    display: inline-block;*/
+    /*    width: 240px;*/
+    /* padding-top: 80px; */
+    /* padding-right: 10px; */
+    /* max-height: 60%; */
 }
 
 /*
@@ -337,7 +342,7 @@ main.navigation ul {
     opacity: .8;
 */
     /*    border-right: 1px solid #f1f1f1;*/
-    transition: 0.5s;
+    transition: width 0.5s ease-in-out;
 }
 
 /* Style the sidenav links and the dropdown button */
@@ -364,11 +369,11 @@ main.navigation ul {
     /*    font-weight: bold;*/
     text-transform: uppercase;
     /*    color: #818181;*/
-    /*    display: none;*/
-    display: inline-block;
+    display: none;
+    /*    display: inline-block;*/
     /* border-bottom: 2px solid; */
     /*     background: none; */
-    width: 70%;
+    /*    width: 70%;*/
     text-align: left;
     cursor: pointer;
     outline: none;
@@ -405,10 +410,11 @@ main.navigation ul {
 */
 
 .nav li {
-    display: inline-block;
+    display: inline-flex;
     width: 100%;
     cursor: pointer;
     margin: 10px auto;
+    transition: all 1s ease-in;
 }
 
 .specialTitle {
@@ -420,7 +426,7 @@ main.navigation ul {
 
 .navLink {
     display: inline-block;
-    transition: 0.3s;
+    /*    transition: all 1s ease-in;*/
     padding: 10px 0px;
     color: white;
     /*    opacity: 1;*/
@@ -812,7 +818,7 @@ div.footerInfo p {
     left: 20px;
     /* padding-top: 5px; */
     position: absolute;
-    top: 30px;
+    top: 20px;
     width: 22px;
 }
 
@@ -862,9 +868,9 @@ div.footerInfo p {
     height: 3px;
     /*        margin: 18px 0px;*/
     position: absolute;
-    -webkit-transition: all .6s ease-in-out;
-    transition: all .6s ease-in-out;
-    width: 25px;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    width: 28px;
 }
 
 #nav-wrapper {
@@ -967,7 +973,7 @@ div.footerInfo p {
     }
 
     .navContact p {
-        margin: 10px;
+        margin: 10px 15px;
         font-size: 15px;
     }
 
@@ -1047,10 +1053,12 @@ div.footerInfo p {
 /*laptop*/
 
 @media only screen and (max-width: 1024px) {
+/*
     body,
     html {
         overflow-x: hidden;
     }
+*/
 
     section {
         margin-left: 85px;
@@ -1349,7 +1357,7 @@ div.footerInfo p {
     }
 
     #nav-wrapper {
-        /*        display: none;*/
+        display: block;
         /*        transition: display 4s ease;*/
     }
     /*

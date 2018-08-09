@@ -76,17 +76,18 @@ $("#nav-trigger span").on("click", function () {
     };
 
 
-    $("main").css({
-        "margin-left": "auto",
-        "margin-right": "auto",
-        "width": "100%"
-    });
+    //    $(".navigation, .imageContainer").css({
+    //        //        "margin-left": "auto",
+    //        //        "margin-right": "auto",
+    //        //        "width": "100%"
+    //        "margin-left": "200px",
+    //    });
 
 
     if (window.matchMedia('(max-width: 768px)').matches) {
         $("section").css("margin-left", "auto");
     } else if (window.matchMedia('(max-width: 1024px)').matches) {
-        $("section").css("margin-left", "50px");
+        //        $("section").css("margin-left", "50px");
     } else {
         $("section").css("margin-left", "70px");
     };
@@ -123,45 +124,70 @@ $("#nav-trigger span").on("click", function () {
         };
     } else if (window.matchMedia('(max-width: 1024px)').matches) {
         if ($("#nav-trigger").hasClass("active")) {
-            $("body").css({
-                "margin-left": "0px",
-                "overflow-x": "scroll",
+            //            console.log("active");
+            $("#nav-trigger").show();
+            $("body, html").css({
+                "overflow": "auto",
+                //                "overflow-y": "visible"
+            });
+            $(".headerTitle").css({
+                //                "margin-left": "0px",
+                //                "overflow-x": "scroll",
                 //            "transition": "left 2s ease-in-out"
+            });
+            $(".imageContainer").css({
+                //        "margin-left": "auto",
+                //        "margin-right": "auto",
+                //        "width": "100%"
+                //                "margin-left": "70px",
             });
             $(".sidebar").css({
                 "width": "70px",
                 "height": "100%",
-                "overflow": "hidden"
+                //                "overflow": "hidden"
             });
-            //            $(".nav-wrapper").css({
-            //                "margin-left": "auto",
-            //                "display": "inline-block"
-            //            });
             $("#nav-trigger").css({
                 //                "margin-left": "auto",
                 "display": "inline-block"
             });
-            $(".nameContainer, .navContact, .sidenav a").css({
+            $(".nameContainer, .navContact, .sidebar a").css({
                 "display": "none",
                 //            "transition": "top .5s ease-out"
             });
         } else {
-            $("body").css({
-                "margin-left": "200px",
-                "overflow-x": "scroll",
+            console.log("not active");
+            //            $("#nav-trigger").show();
+
+            $("body, html").css({
+                "overflow": "hidden"
+                //                "overflow-y": "paged-y"
+            });
+            $(".headerTitle").css({
+                //                "margin-left": "200px",
+                //                "overflow-x": "scroll",
                 //            "transition": "left 2s ease-in-out"
             });
+            $(" .imageContainer").css({
+                //        "margin-left": "auto",
+                //        "margin-right": "auto",
+                //        "width": "100%"
+                //                "margin-left": "240px",
+            });
             $(".sidebar").css({
-                "width": "220px",
+                "width": "240px",
                 "height": "100%",
-                "overflow": "hidden"
+                //                "overflow": "hidden"
             });
             $("#nav-trigger").css({
                 //                "margin-left": "auto",
                 "display": "inline-block"
             });
-            $(".nameContainer, .navContact, .sidenav a").css({
-                "display": "block",
+            $(".nameContainer, .navContact").css({
+                "display": "inline-block",
+                //            "transition": "top .5s ease-out"
+            });
+            $(".sidebar a").css({
+                "display": "inline",
                 //            "transition": "top .5s ease-out"
             });
         };
@@ -169,18 +195,18 @@ $("#nav-trigger span").on("click", function () {
 });
 
 
-if (window.matchMedia('(min-width: 481px)').matches) {
-    $(".headerTitle").css('margin-right', 'auto');
-} else if (window.matchMedia('(min-width: 480px)').matches) {
-    $(".headerTitle").css('margin-right', 'auto');
-} else if (window.matchMedia('(min-width: 1px)').matches) {
-    $(".headerTitle").css('margin-right', 'auto');
-} else {
-    $(".headerTitle").css({
-        'margin-right': '165px',
-        'transition': "all 1s"
-    });
-};
+//if (window.matchMedia('(min-width: 481px)').matches) {
+//    $(".headerTitle").css('margin-right', 'auto');
+//} else if (window.matchMedia('(min-width: 480px)').matches) {
+//    $(".headerTitle").css('margin-right', 'auto');
+//} else if (window.matchMedia('(min-width: 1px)').matches) {
+//    $(".headerTitle").css('margin-right', 'auto');
+//} else {
+//    $(".headerTitle").css({
+//        'margin-right': '165px',
+//        'transition': "all 1s"
+//    });
+//};
 
 
 
@@ -318,11 +344,11 @@ $(document).ready(function () {
 
     $("#nav-trigger").click(function () {
         $(this).toggleClass("active");
-        $("#nav-wrapper").slideToggle();
-        $("#nav-wrapper").css("display", "inline-block");
+        //        $("#nav-wrapper").slideToggle();
+        //        $("#nav-wrapper").css("display", "inline-block");
     });
 
-    $("#nav-wrapper").css("display", "inline-block");
+    //    $("#nav-wrapper").css("display", "inline-block");
 
     //    if (window.matchMedia('(min-width: 768px)').matches) {
     //    $("nav").addClass("sidenav");
@@ -367,7 +393,7 @@ $(document).ready(function () {
 //});
 
 //trigger for tool icon buttons
-$(document).on("click", "#languages", function () {
+$(document).on("click", "#languages", function (event) {
     event.preventDefault();
     $(".languages").show();
     $(".front").hide();
@@ -378,7 +404,7 @@ $(document).on("click", "#languages", function () {
     $(".miscellaneous").hide();
 });
 //trigger for tool icon buttons
-$(document).on("click", "#frontend", function () {
+$(document).on("click", "#frontend", function (event) {
     event.preventDefault();
     $(".languages").hide();
     $(".front").show();
@@ -389,7 +415,7 @@ $(document).on("click", "#frontend", function () {
     $(".miscellaneous").hide();
 });
 //trigger for tool icon buttons
-$(document).on("click", "#backend", function () {
+$(document).on("click", "#backend", function (event) {
     event.preventDefault();
     $(".languages").hide();
     $(".front").hide();
@@ -400,7 +426,7 @@ $(document).on("click", "#backend", function () {
     $(".miscellaneous").hide();
 });
 //trigger for tool icon buttons
-$(document).on("click", "#database", function () {
+$(document).on("click", "#database", function (event) {
     event.preventDefault();
     $(".languages").hide();
     $(".front").hide();
@@ -411,7 +437,7 @@ $(document).on("click", "#database", function () {
     $(".miscellaneous").hide();
 });
 //trigger for tool icon buttons
-$(document).on("click", "#testing", function () {
+$(document).on("click", "#testing", function (event) {
     event.preventDefault();
     $(".languages").hide();
     $(".front").hide();
@@ -422,7 +448,7 @@ $(document).on("click", "#testing", function () {
     $(".miscellaneous").hide();
 });
 //trigger for tool icon buttons
-$(document).on("click", "#development", function () {
+$(document).on("click", "#development", function (event) {
     event.preventDefault();
     $(".languages").hide();
     $(".front").hide();
@@ -433,7 +459,7 @@ $(document).on("click", "#development", function () {
     $(".miscellaneous").hide();
 });
 //trigger for tool icon buttons
-$(document).on("click", "#miscellaneous", function () {
+$(document).on("click", "#miscellaneous", function (event) {
     event.preventDefault();
     $(".languages").hide();
     $(".front").hide();
