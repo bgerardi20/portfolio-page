@@ -122,7 +122,9 @@ $("#nav-trigger span").on("click", function () {
         } else {
             $(".sidebar").css("height", "313px");
         };
-    } else if (window.matchMedia('(max-width: 1024px)').matches) {
+    }
+//    else if (window.matchMedia('(max-width: 1024px)').matches) {
+        else {
         if ($("#nav-trigger").hasClass("active")) {
             //            console.log("active");
             $("#nav-trigger").show();
