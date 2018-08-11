@@ -161,12 +161,13 @@ headerTitle:hover {
 .nameContainer {
     padding-top: 3rem;
     display: none;
+    /*    width: 100%;*/
 }
 
 .nameContainer img {
     filter: contrast(100%);
     padding: 0;
-    margin: 2px 60px;
+    margin: 10px 60px;
 }
 
 .subIconContainer {
@@ -365,7 +366,7 @@ main.navigation ul {
 .sidebar a {
     padding: 20px 0px;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 21px;
     /*    font-weight: bold;*/
     text-transform: uppercase;
     /*    color: #818181;*/
@@ -438,14 +439,21 @@ main.navigation ul {
 }
 
 .navContact {
-    padding: 20px 0px;
+    padding: 20px 14px;
     display: none;
+    /*    width: 100%;*/
+    /*    margin: 0 auto;*/
 }
 
 .navContact p {
     margin: 5px;
     font-size: 12px;
     font-weight: bold;
+    /*    position: sticky;*/
+}
+
+#number {
+    padding: 0px 15px;
 }
 
 .hiddenNav {
@@ -973,7 +981,7 @@ div.footerInfo p {
     }
 
     .navContact p {
-        margin: 10px 15px;
+        margin: 2px 0px;
         font-size: 15px;
     }
 
@@ -1041,28 +1049,19 @@ div.footerInfo p {
     }
 }
 
-@media only screen and (min-width: 1025px) {
-    /*
-    body,
-    html {
-        overflow-x: scroll;
-    }
-*/
-}
 
 /*laptop*/
 
 @media only screen and (max-width: 1024px) {
-/*
     body,
     html {
         overflow-x: hidden;
+        overflow-y: auto;
     }
-*/
-
     section {
         margin-left: 85px;
         margin-right: auto;
+        width: 90%;
     }
 
     section.aboutMe p {
@@ -1145,6 +1144,10 @@ div.footerInfo p {
 }
 
 @media only screen and (max-width: 1000px) {
+    section {
+        width: 89%;
+    }
+
     .sectionContainer {
         /*        min-width: 1000px;*/
         width: 100%;
@@ -1164,30 +1167,12 @@ div.footerInfo p {
     }
 }
 
-/*
-@media only screen and (max-width: 500px) {
-    .sectionContainer {
-        min-width: 0;
-    }
-}
-*/
 
 @media screen and (max-width: 879px) {
-    /*
-    .headerTitle {
-        top: 150px;
-    }
-*/
-    /*
-    .toolButtonContainer img {
-        margin: 1px;
-        padding: 1px;
+    section {
+        width: 88%;
     }
 
-    .image {
-        width: 13.5%;
-    }
-*/
     .image {
         width: 19%;
     }
@@ -1203,11 +1188,10 @@ div.footerInfo p {
 }
 
 @media only screen and (max-width: 829px) {
-    /*
-    .image {
-        width: 18%;
+    section {
+        width: 87%;
     }
-*/
+
     .middle {
         bottom: 45px;
     }

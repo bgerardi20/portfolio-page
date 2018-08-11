@@ -127,8 +127,8 @@ $("#nav-trigger span").on("click", function () {
             //            console.log("active");
             $("#nav-trigger").show();
             $("body, html").css({
-                "overflow": "auto",
-                //                "overflow-y": "visible"
+                "overflow-x": "hidden",
+                "overflow-y": "auto"
             });
             $(".headerTitle").css({
                 //                "margin-left": "0px",
@@ -159,8 +159,8 @@ $("#nav-trigger span").on("click", function () {
             //            $("#nav-trigger").show();
 
             $("body, html").css({
-                "overflow": "hidden"
-                //                "overflow-y": "paged-y"
+                "overflow-x": "hidden",
+                "overflow-y": "hidden"
             });
             $(".headerTitle").css({
                 //                "margin-left": "200px",
@@ -174,7 +174,7 @@ $("#nav-trigger span").on("click", function () {
                 //                "margin-left": "240px",
             });
             $(".sidebar").css({
-                "width": "240px",
+                "width": "245px",
                 "height": "100%",
                 //                "overflow": "hidden"
             });
