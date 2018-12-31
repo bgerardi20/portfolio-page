@@ -83,7 +83,7 @@ img {
 
 section {
     width: 90%;
-    margin-left: 25px;
+    margin-left: 60px;
     margin-right: auto;
     padding: 5rem 0rem;
 }
@@ -138,12 +138,11 @@ section h3 {
 }
 
 .headerTitle {
-    min-width: 1000px;
+    /*    min-width: 1000px;*/
     color: white;
-    text-shadow: 2px 2px darkslategrey;
+    text-shadow: 1px 1px darkslategrey;
     position: absolute;
     margin-left: auto;
-    /*    margin-left: 60px;*/
     margin-right: auto;
     left: 0;
     right: 0;
@@ -151,7 +150,8 @@ section h3 {
     font-size: 7rem;
     width: auto;
     font-family: 'Cinzel', serif;
-    letter-spacing: 2px;
+    /*    letter-spacing: 2px;*/
+    letter-spacing: .5px;
     transition: margin .5s ease-in;
 }
 
@@ -193,11 +193,12 @@ section h3 {
 
 .headerContainer {
     /*    position: absolute;*/
-    min-width: 1200px;
-    width: 100%;
+    /*    min-width: 1200px;*/
     /*    min-height: 100%;*/
-    max-width: 100%;
+    width: 100%;
     height: auto;
+    /*    min-height: 600px;*/
+    max-width: 100%;
 
     margin: 0;
     padding: 0;
@@ -206,7 +207,6 @@ section h3 {
     background-size: cover;
     filter: alpha(opacity=40);
     opacity: 0.4;
-    /*    height: 100%;*/
     filter: brightness(80%);
     box-shadow: 0px 3px #383535;
 }
@@ -268,7 +268,7 @@ section h3 {
 
 .specialTitle {
     padding: 20px 0px 20px;
-    letter-spacing: 15px;
+    letter-spacing: 8px;
     color: white;
     margin: 5px;
 }
@@ -650,16 +650,20 @@ span.fa.fa-star.black {
 
 #nav-trigger {
     cursor: pointer;
-    left: 25px;
-    /* padding-top: 5px; */
+    width: 100%;
     position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0px;
+    right: 0px;
     top: 20px;
-    width: 22px;
 }
 
 #nav-trigger.active span {
     background-color: transparent;
     cursor: pointer;
+    margin-left: 25px;
+    /*    left: 10px;*/
 }
 
 #nav-trigger.active span:after {
@@ -705,12 +709,21 @@ span.fa.fa-star.black {
     cursor: pointer;
     display: block;
     height: 3px;
-    /*        margin: 18px 0px;*/
+    width: 28px;
     position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0px;
+    right: 0px;
     -webkit-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
-    width: 28px;
 }
+
+/*
+#nav-trigger span:after {
+    margin-left: unset;
+}
+*/
 
 #nav-wrapper {
     display: inline-block;
@@ -731,7 +744,7 @@ span.fa.fa-star.black {
     .aboutMeContent {
         padding: 11px;
         margin: 12px 5px;
-        font-size: 24px;
+        font-size: 25px;
     }
 
     .navContact p {
@@ -740,8 +753,9 @@ span.fa.fa-star.black {
     }
 
     .headerTitle {
-        /*        font-size: 7rem;*/
-        width: 90%;
+        font-size: 7.5rem;
+        margin-left: 45px;
+        /*        width: 90%;*/
     }
 
     .resumeContainer button {
@@ -802,6 +816,35 @@ span.fa.fa-star.black {
     .sidebar a {
         padding: 30px;
     }
+
+    .navContact {
+        padding: 20px;
+    }
+
+    .nameContainer {
+        padding: 3rem 4.1rem 0rem;
+        width: 100%;
+    }
+
+    .navIcon,
+    .sidebar a {
+        padding: 32px 45px 30px 30px;
+    }
+
+    .headShotContainer {
+        width: 25%;
+    }
+
+    #nav-trigger {
+        top: 30px;
+    }
+
+    #nav-trigger span,
+    #nav-trigger span:after,
+    #nav-trigger span:before {
+        height: 3px;
+        width: 34px;
+    }
 }
 
 
@@ -812,7 +855,7 @@ span.fa.fa-star.black {
     }
 
     .sidebar {
-        width: 80px;
+        width: 70px;
     }
 
     .navContact {
@@ -837,7 +880,7 @@ span.fa.fa-star.black {
     }
 
     .headerTitle {
-        margin-left: 60px;
+        margin-left: 70px;
     }
 
     .code,
@@ -892,7 +935,7 @@ span.fa.fa-star.black {
 @media only screen and (max-width: 1180px) {
     .headerTitle {
         font-size: 5.2rem;
-        margin-left: 50px;
+        /*        margin-left: 50px;*/
     }
 
     .aboutMeContent {
@@ -945,10 +988,6 @@ span.fa.fa-star.black {
         padding: 20px 45px 20px 20px;
     }
 
-    #nav-trigger {
-        left: 20px;
-    }
-
     .sectionContainer {
         min-width: 0;
         margin-left: auto;
@@ -956,13 +995,13 @@ span.fa.fa-star.black {
     }
 
     .specialTitle {
-        letter-spacing: 12px;
+        letter-spacing: 3px;
     }
-
 
     .headerTitle {
         font-size: 4.5rem;
-        /*        width: 80%;*/
+        /* width: 80%; */
+        top: 150px;
     }
 
     .projectContainer {
@@ -1035,7 +1074,7 @@ span.fa.fa-star.black {
     }
 
     .image {
-        width: 13.5%;
+        width: 14.5%;
     }
 
     .icons img {
@@ -1049,6 +1088,10 @@ span.fa.fa-star.black {
 @media screen and (max-width: 879px) {
     section {
         width: 88%;
+    }
+
+    .headerTitle {
+        font-size: 4rem;
     }
 
     .image {
@@ -1077,6 +1120,10 @@ span.fa.fa-star.black {
 @media only screen and (max-width: 829px) {
     section {
         width: 87%;
+    }
+
+    .headerTitle {
+        font-size: 3.7rem;
     }
 
     .middle {
@@ -1123,12 +1170,10 @@ span.fa.fa-star.black {
     }
 
     .headerTitle {
-        font-size: 4.5rem;
+        font-size: 4.6rem;
         min-width: 0;
-        /*        margin-left: auto;*/
         top: 100px;
-        margin: 45px auto;
-        /*        width: auto;*/
+        margin: auto;
     }
 
     /*
@@ -1147,15 +1192,14 @@ span.fa.fa-star.black {
     }
 */
     .sidebar {
-        background-color: #1e1e1e;
+        /*        background-color: #1e1e1e;*/
         border-bottom: none;
-        /*        border-bottom: 1px solid dimgray;*/
-        color: #fff;
+        /*        color: #fff;*/
         padding: 0;
         position: fixed;
         top: 0;
         width: 100%;
-        z-index: 99;
+        /*        z-index: 99;*/
         height: 70px;
         transition: height .5s;
     }
@@ -1165,17 +1209,17 @@ span.fa.fa-star.black {
     }
 
     #nav-trigger {
-        cursor: pointer;
-        left: 20px;
         /* padding-top: 5px; */
         position: absolute;
         top: 30px;
-        width: 22px;
+        left: 20px;
+        /*        width: 22px;*/
+        margin-left: unset;
     }
 
     #nav-trigger.active span {
         background-color: transparent;
-        cursor: pointer;
+        /*        cursor: pointer;*/
     }
 
     #nav-trigger.active span:after {
@@ -1203,12 +1247,12 @@ span.fa.fa-star.black {
 */
     #nav-trigger span:before {
         top: -8px;
-        cursor: pointer;
+        /*        cursor: pointer;*/
     }
 
     #nav-trigger span:after {
         bottom: -8px;
-        cursor: pointer;
+        /*        cursor: pointer;*/
     }
 
     #nav-trigger span,
@@ -1220,11 +1264,12 @@ span.fa.fa-star.black {
         cursor: pointer;
         display: block;
         height: 3px;
+        width: 30px;
+        margin-left: unset;
         /*        margin: 18px 0px;*/
         position: absolute;
         -webkit-transition: all .6s ease-in-out;
         transition: all .6s ease-in-out;
-        width: 25px;
     }
 
     #nav-wrapper {
@@ -1495,9 +1540,11 @@ span.fa.fa-star.black {
         margin: 2px;
     }
 
+    /*
     .specialTitle {
         letter-spacing: 10px;
     }
+*/
 }
 
 /*iPhone landscape*/
@@ -1535,12 +1582,11 @@ span.fa.fa-star.black {
     #logo {
         height: 50px;
     }
-/*
+    /*
 .nameContainer {
     right: 10px;
 }
 */
-
     .headShotContainer {
         width: 53%;
         margin-left: 4px;
@@ -1628,22 +1674,21 @@ span.fa.fa-star.black {
         font-size: 14px;
     }
 
+    /*
     .specialTitle {
         letter-spacing: 8px;
     }
-
+*/
 }
 
 
 @media only screen and (max-width: 420px) {
 
-/*
+    /*
     .nameContainer {
         margin-top: 10px;
     }
 */
-
-
     .toolContainer {
         padding: 5px;
         margin: 7px;
@@ -1813,7 +1858,7 @@ span.fa.fa-star.black {
     }
 
     .specialTitle {
-        letter-spacing: 3px;
+        letter-spacing: 1px;
         padding-bottom: 25px;
         font-size: 2.7rem;
     }

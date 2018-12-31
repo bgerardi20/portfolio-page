@@ -89,7 +89,7 @@ $("#nav-trigger span").on("click", function () {
     } else if (window.matchMedia('(max-width: 1024px)').matches) {
         //        $("section").css("margin-left", "50px");
     } else {
-        $("section").css("margin-left", "70px");
+        $("section").css("margin-left", "60px");
     };
 
     //
@@ -128,10 +128,10 @@ $("#nav-trigger span").on("click", function () {
         if ($("#nav-trigger").hasClass("active")) {
             //            console.log("active");
             $("#nav-trigger").show();
-                        $("body, html").css({
-                            "overflow-x": "hidden",
-                            "overflow-y": "auto"
-                        });
+            $("body, html").css({
+                "overflow-x": "hidden",
+                "overflow-y": "auto"
+            });
             $(".headerTitle").css({
                 //                "margin-left": "0px",
                 //                "overflow-x": "scroll",
@@ -160,10 +160,10 @@ $("#nav-trigger span").on("click", function () {
             console.log("not active");
             //            $("#nav-trigger").show();
 
-                        $("body, html").css({
-                            "overflow-x": "hidden",
-                            "overflow-y": "hidden"
-                        });
+            $("body, html").css({
+                "overflow-x": "hidden",
+                "overflow-y": "hidden"
+            });
             $(".headerTitle").css({
                 //                "margin-left": "200px",
                 //                "overflow-x": "scroll",
@@ -200,7 +200,7 @@ $("#nav-trigger span").on("click", function () {
                 "overflow-y": "auto"
             });
             $(".sidebar").css({
-                "width": "80px",
+                "width": "90px",
                 "height": "100%",
                 //                "overflow": "hidden"
             });
