@@ -366,14 +366,16 @@ section h3 {
 */
 
 .icons img {
-    height: 100px;
+    /*    height: 100px;*/
     padding: .5rem;
 }
 
-#mLab,
-#javascript {
+/*#javascript {*/
+/*
+#mLab {
     height: 95px;
 }
+*/
 
 .toolButtonContainer {
     margin-top: 30px;
@@ -791,9 +793,11 @@ span.fa.fa-star.black {
         font-size: 13rem;
     }
 
+    /*
     .icons img {
         height: 130px;
     }
+*/
 
     .code,
     .demo {
@@ -956,11 +960,13 @@ span.fa.fa-star.black {
 /*laptop*/
 
 @media only screen and (max-width: 1024px) {
+
     body,
     html {
         overflow-x: hidden;
         overflow-y: auto;
     }
+
     section {
         margin-left: 85px;
         margin-right: auto;
@@ -1030,10 +1036,10 @@ span.fa.fa-star.black {
 
     .icons img {
         padding: 0px;
-        height: 75px;
+        /*        height: 75px;*/
     }
 
-    #javascript,
+    /*    #javascript,*/
     #mLab {
         height: 73px;
     }
@@ -1078,7 +1084,7 @@ span.fa.fa-star.black {
     }
 
     .icons img {
-        height: 70px;
+        /*        height: 70px;*/
     }
 
 
@@ -1441,7 +1447,7 @@ span.fa.fa-star.black {
         font-size: 18px;
     }
 
-    #javascript,
+    /*    #javascript,*/
     #mLab {
         height: 65px;
     }
@@ -1550,6 +1556,7 @@ span.fa.fa-star.black {
 /*iPhone landscape*/
 
 @media only screen and (max-width: 480px) {
+
     body,
     html {
         overflow-x: hidden;
@@ -1582,6 +1589,7 @@ span.fa.fa-star.black {
     #logo {
         height: 50px;
     }
+
     /*
 .nameContainer {
     right: 10px;
@@ -1644,9 +1652,11 @@ span.fa.fa-star.black {
         width: 39%;
     }
 
-    #javascript {
-        height: 75px;
-    }
+    /*
+#javascript {
+    height: 75px;
+}
+*/
 
     .middle {
         bottom: 60px;
@@ -1661,7 +1671,7 @@ span.fa.fa-star.black {
     }
 
     .icons img {
-        height: 80px;
+        /*        height: 80px;*/
     }
 
     .contact a {
@@ -1870,9 +1880,11 @@ span.fa.fa-star.black {
         margin: 15px 1px;
     }
 
+    /*
     .icons img {
         height: 70px;
     }
+*/
 
     .contact a {
         font-size: 7rem;
