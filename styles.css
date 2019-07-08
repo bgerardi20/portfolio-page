@@ -212,7 +212,7 @@ section h3 {
 }
 
 .navIcon {
-    font-size: 25px;
+    font-size: 27px;
     width: 25%;
     vertical-align: middle;
     color: white;
@@ -221,6 +221,7 @@ section h3 {
 }
 
 .sidebar {
+    border-right: 0.2px solid dimgrey;
     height: 100%;
     width: 70px;
     position: fixed;
