@@ -1579,6 +1579,10 @@ span.fa.fa-star.black {
         min-width: 0;
     }
 
+    .headerContainer {
+        width: 0;
+    }
+
     .headerTitle {
         top: 170px;
         font-size: 3.7rem;
@@ -1759,9 +1763,19 @@ span.fa.fa-star.black {
         margin-top: 50px;
     }
 
+    .nameContainer img {
+        margin: auto;
+    }
+
+    /*
     .headerContainer {
         min-width: 800px;
         min-height: 100%;
+    }
+*/
+
+    .headerContainer {
+        min-height: 450px;
     }
 
     .sectionContainer {
