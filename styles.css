@@ -77,7 +77,7 @@ header {
 
 
 img {
-    height: 110px;
+    /*    height: 110px;*/
     padding: 1rem;
 }
 
@@ -223,7 +223,7 @@ section h3 {
 .sidebar {
     border-right: 0.2px solid dimgrey;
     height: 100%;
-    width: 70px;
+    width: 75px;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -321,7 +321,7 @@ section h3 {
     transition: .5s ease;
     /*    backface-visibility: hidden;*/
     display: inline-block;
-    width: 13%;
+    width: 14%;
 }
 
 .middle {
@@ -346,7 +346,7 @@ section h3 {
 .text h5 {
     margin: 5px;
     color: white;
-    font-size: 15px;
+    font-size: 17px;
 }
 
 .text h6 {
@@ -367,7 +367,7 @@ section h3 {
 */
 
 .icons img {
-    /*    height: 100px;*/
+    height: 95px;
     padding: .5rem;
 }
 
@@ -386,7 +386,7 @@ section h3 {
 
 .toolButtonContainer img {
     margin: 10px;
-    padding: 3px;
+    padding: 0.5px;
     /*    height: 120px;*/
 }
 
@@ -438,8 +438,12 @@ span.fa.fa-star.black {
 .toolContainer {
     /*    width: auto;*/
     display: inline-block;
+    /*
     padding: 10px 15px;
     margin: 15px 20px;
+*/
+    padding: 10px;
+    margin: 15px;
 }
 
 .toolName {
@@ -860,16 +864,18 @@ span.fa.fa-star.black {
     }
 
     .sidebar {
-        width: 70px;
+        width: 90px;
     }
 
     .navContact {
         padding: 25px 40px;
     }
 
-    .nameContainer {
-        padding: 65px 65px 15px;
-    }
+    /*
+.nameContainer {
+    padding: 65px 65px 15px;
+}
+*/
 
     .navContact p {
         margin: 2px 0px;
@@ -1037,7 +1043,7 @@ span.fa.fa-star.black {
 
     .icons img {
         padding: 0px;
-        /*        height: 75px;*/
+        height: 75px;
     }
 
     /*    #javascript,*/
