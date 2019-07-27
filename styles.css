@@ -77,7 +77,8 @@ header {
 
 
 img {
-    /*    height: 110px;*/
+    /*    height: auto;*/
+    /*        height: 110px;*/
     padding: 1rem;
 }
 
@@ -182,6 +183,7 @@ section h3 {
     filter: contrast(100%);
     padding: 0;
     margin: 10px 20px;
+    height: 110px;
 }
 
 
@@ -401,7 +403,7 @@ section h3 {
 .toolsInnerSection {
     border: 3px solid whitesmoke;
     border-radius: 1%;
-    width: 95%;
+    width: 85%;
     margin: 20px auto;
     /*
     margin-left: auto;
@@ -458,8 +460,8 @@ span.fa.fa-star.black {
 }
 
 .toolIconsContainer {
-    padding: 0.5rem;
-    margin-bottom: 1rem;
+    padding: 1rem;
+    margin: 1rem;
 }
 
 /*
@@ -782,7 +784,7 @@ span.fa.fa-star.black {
     }
 
     .middle {
-        bottom: 85px;
+        bottom: 100px;
     }
 
     .projectContainer li {
