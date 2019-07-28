@@ -346,7 +346,7 @@ section h3 {
 }
 
 .text h5 {
-    margin: 5px;
+    margin: 3px;
     color: white;
     font-size: 17px;
 }
@@ -387,9 +387,10 @@ section h3 {
 
 
 .toolButtonContainer img {
-    margin: 10px;
-    padding: 0.5px;
+    margin: 5px;
+    padding: 2px;
     /*    height: 120px;*/
+    width: 14.5%;
 }
 
 .toolHeader {
@@ -775,6 +776,13 @@ span.fa.fa-star.black {
         padding: 20px 125px;
     }
 
+    .toolButtonContainer img {
+        margin: 5px;
+        padding: 2px;
+        /* height: 120px; */
+        width: 15.5%;
+    }
+
     .text h5 {
         font-size: 24px;
     }
@@ -784,7 +792,7 @@ span.fa.fa-star.black {
     }
 
     .middle {
-        bottom: 100px;
+        bottom: 85px;
     }
 
     .projectContainer li {
@@ -865,9 +873,11 @@ span.fa.fa-star.black {
         font-size: 22px;
     }
 
+    /*
     .sidebar {
         width: 90px;
     }
+*/
 
     .navContact {
         padding: 25px 40px;
@@ -878,6 +888,17 @@ span.fa.fa-star.black {
     padding: 65px 65px 15px;
 }
 */
+    .middle {
+        bottom: 80px;
+    }
+
+    .text h5 {
+        font-size: 20px;
+    }
+
+    .text h6 {
+        font-size: 10px;
+    }
 
     .navContact p {
         margin: 2px 0px;
@@ -931,8 +952,18 @@ span.fa.fa-star.black {
         font-size: 21px;
     }
 
+
     .middle {
-        bottom: 55px;
+        bottom: 70px;
+    }
+
+
+    .text h5 {
+        font-size: 18px;
+    }
+
+    .text h6 {
+        font-size: 9px;
     }
 
     .code,
@@ -957,11 +988,15 @@ span.fa.fa-star.black {
     }
 
     .text h5 {
-        font-size: 14.5px;
+        font-size: 16px;
+    }
+
+    .text h6 {
+        font-size: 8px;
     }
 
     .middle {
-        bottom: 50px;
+        bottom: 60px;
     }
 }
 
@@ -1027,16 +1062,25 @@ span.fa.fa-star.black {
         font-size: 13px;
     }
 
+    .toolButtonContainer img {
+        margin: 2px;
+        padding: 0.5px;
+        /* height: 120px; */
+        width: 15%;
+    }
+
     .toolContainer {
         padding: 10px 10px;
     }
 
+
     .middle {
-        bottom: 35px;
+        bottom: 60px;
     }
 
+
     .text h5 {
-        font-size: 13.5px;
+        font-size: 14px;
     }
 
     .text h6 {
@@ -1096,6 +1140,9 @@ span.fa.fa-star.black {
         /*        height: 70px;*/
     }
 
+    .middle {
+        bottom: 50px;
+    }
 
 }
 
@@ -1114,18 +1161,25 @@ span.fa.fa-star.black {
     }
 
     .middle {
-        bottom: 50px;
+        bottom: 45px;
     }
 
+    /*
     .text h5 {
         font-size: 17px;
     }
+*/
 
     .code,
     .demo {
         padding-top: 10px;
         padding-bottom: 10px;
         width: 100px;
+    }
+
+    .toolButtonContainer img {
+        margin: 0.5px;
+        width: 15%;
     }
 
 
@@ -1141,13 +1195,20 @@ span.fa.fa-star.black {
         font-size: 3.7rem;
     }
 
-    .middle {
-        bottom: 45px;
+    .toolButtonContainer img {
+        margin: 0px;
+        width: 16%;
     }
 
-    .text h5 {
-        font-size: 15px;
+    .middle {
+        bottom: 40px;
     }
+
+    /*
+    .text h5 {
+        font-size: 14px;
+    }
+*/
 
     .text h6 {
         font-size: 10px;
@@ -1398,12 +1459,18 @@ span.fa.fa-star.black {
         min-width: 190px;
     }
 
+    .toolButtonContainer img {
+        margin: 8px;
+        width: 25%;
+        padding: 2px;
+    }
+
     .image {
         width: 23%;
     }
 
     .middle {
-        bottom: 55px;
+        bottom: 75px;
     }
 
     .text h5 {
@@ -1461,9 +1528,11 @@ span.fa.fa-star.black {
         height: 65px;
     }
 
+    /*
     .fadeContainer {
         margin: 10px;
     }
+*/
 }
 
 
@@ -1524,6 +1593,10 @@ span.fa.fa-star.black {
         padding: 8px;
     }
 
+    .toolButtonContainer img {
+        width: 28%;
+    }
+
     .image {
         width: 30%;
     }
@@ -1533,7 +1606,7 @@ span.fa.fa-star.black {
     }
 
     .text h5 {
-        font-size: 15.5px;
+        font-size: 15px;
     }
 
     .text h6 {
